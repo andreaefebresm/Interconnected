@@ -1,19 +1,20 @@
 module.exports = {
+  pathPrefix: '/MakingConnectionsVisible',
   siteMetadata: {
-    title: "MakingConnectionsVisible",
+    title: 'MakingConnectionsVisible',
   },
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-react-helmet",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-sass',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/',
       },
-      __key: "images",
+      __key: 'images',
     },
   ],
 };
