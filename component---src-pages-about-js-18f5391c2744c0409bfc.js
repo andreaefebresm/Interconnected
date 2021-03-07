@@ -1,0 +1,2 @@
+(self.webpackChunkmaking_connections_visible=self.webpackChunkmaking_connections_visible||[]).push([[682],{518:function(n,e,t){"use strict";t.r(e),t.d(e,{default:function(){return u}});var i=t(294);function u(){return i.createElement("div",null,i.createElement("h1",null,"About"))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-18f5391c2744c0409bfc.js.map
