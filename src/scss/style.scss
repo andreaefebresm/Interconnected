@@ -1,12 +1,33 @@
 
 //qui riscrivere le variabili
 
+
+
+//font-family: 'Archivo', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+//Messapia
+@font-face {
+  font-family: Messapia-Bold;
+  src: url('../font/Messapia-Bold.woff') format('woff'),
+  url('../font/Messapia-Bold.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: Messapia-Reg;
+  src: url('../font/Messapia-Regular.woff') format('woff'),
+  url('../font/Messapia-Regular.woff2') format('woff2')
+}
+
+
 //background color
 $primary: #FCFBF6;
 
 //yellow
 $secondary: #F4B63E;
 
+//Main font
+$font-family-sans-serif: Archivo, sans-serif;
 
-$font-family-sans-serif: Work Sans;
+
 @import "~bootstrap";
