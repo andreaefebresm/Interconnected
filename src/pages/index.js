@@ -10,27 +10,30 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Index() {
   const container = useRef();
+  const intro = useRef();
 
   useEffect(() => {
+    console.log(container.current);
+
     gsap.to(container.current, {
       x: () => `${-(container.current.scrollWidth - document.documentElement.clientWidth)}px`,
       ease: 'none',
       scrollTrigger: {
-        trigger: container.current,
+        trigger: intro.current,
+        start: 'bottom top',
         invalidateOnRefresh: true,
-        pin: true,
+        // pin: true,
         scrub: 1,
         markers: true,
-        end: () => `+=${container.current.offsetWidth}`,
+        end: () => `+=${container.current.innerWidth}`,
       },
     });
   }, []);
 
   return (
     <div>
-
+      <div id="intro" ref={intro}>Intro</div>
       <div id="container" ref={container}>
-
         <ScrollModule>
           <div className="row h-100">
             <div className="col-8 display-6">
