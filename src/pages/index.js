@@ -23,6 +23,7 @@ export default function Index() {
         pin: true,
         start: 'top top',
         scrub: 1,
+        invalidateOnRefresh: true,
         snap: {
           snapTo: 1 / (panels.length - 1),
           duration: { min: 0.1, max: 0.1 },
@@ -57,7 +58,7 @@ export default function Index() {
             {
           panels.map((text, index) => (
 
-            <article className="panel full-screen red">
+            <article key={index} className="panel full-screen red">
               <div className="container-fluid">
                 <div className={`row h-100 ${(index % 2) ? 'align-items-end' : ''}`}>
                   <div className="col-10 ">
