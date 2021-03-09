@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://making-connections-visible/./src/pages/about.js"],"names":["About"],"mappings":"sMAEe,SAASA,IACtB,OACE,2BACE","file":"component---src-pages-about-js-18f5391c2744c0409bfc.js","sourcesContent":["import React from 'react';\n\nexport default function About() {\n  return (\n    <div>\n      <h1>About</h1>\n    </div>\n  );\n}\n"],"sourceRoot":""}
