@@ -27,7 +27,31 @@ $primary: #FCFBF6;
 $secondary: #F4B63E;
 
 //Main font
-$font-family-sans-serif: Archivo, sans-serif;
+$font-family-sans-serif: Messapia-Bold, sans-serif;
+
+html,body{
+  padding:0;
+  margin:0;
+}
+body {
+  overflow-x: hidden;
+}
+
+#container {
+  background-color:grey;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  height:100vh;
+}
+
+.module{
+  height:100%;
+  width: 100%;
+  display:flex;
+}
+
+
 
 
 @import "~bootstrap";
