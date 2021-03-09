@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import ScrollModule from '../components/ScrollModule';
+import { Link } from 'gatsby';
 
 import '../scss/style.scss';
 import { useEffect, useRef } from 'react';
@@ -71,6 +71,10 @@ export default function Index() {
         }
           </div>
 
+        </section>
+        <section id="intro" className="full-screen bg-primary">
+          <h1>Do you know what smart objects can tell about you?</h1>
+          <h2><Link to="/menu">Home</Link></h2>
         </section>
       </main>
     </div>
