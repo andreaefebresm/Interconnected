@@ -31,22 +31,9 @@ $font-family-sans-serif: Messapia-Bold, sans-serif;
 
 @import "~bootstrap";
 
-html,
-body {
-  margin: 0;
-  height: 100%;
-  font-weight: 300;
+main {
+  overflow-x: hidden;
 }
-
-a {
-  color: white;
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
 .full-screen {
   display: block;
   width: 100%;
@@ -60,18 +47,6 @@ h2 {
   justify-content: center;
 }
 
-#masthead {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 9999;
-}
-#masthead a {
-  padding: 1rem 2rem;
-}
-
-
 #panels #panels-container {
   height: 100vh;
   display: -webkit-box;
@@ -81,8 +56,8 @@ h2 {
   flex-wrap: nowrap;
   padding: 0;
   overflow: hidden;
-  background-color: #ddd;
 }
+
 #panels #panels-container .panel {
   position: relative;
   width: 100%;
@@ -91,10 +66,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #333;
-  text-align: left;
-  border-right: 1px solid #f00;
 }
+
 #panels #panels-container .panel img {
   max-width: 100%;
   height: auto;
@@ -109,18 +82,8 @@ h2 {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-#panels #panels-container .panel .anchor-panel,
-#panels #panels-container .panel .nav-panel {
-  color: #000;
-  text-transform: uppercase;
-  margin-right: 2rem;
-}
-#panels #panels-container .panels-navigation {
-  position: absolute;
-  width: 100%;
-  bottom: 2rem;
-  right: 2rem;
-}
+
+
 
 
 
