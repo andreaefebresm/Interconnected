@@ -6,7 +6,7 @@ export default function Header() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <Link to="/home">Logo</Link>
+          <Link to="/menu">Logo</Link>
           <a className="navbar-brand ms-auto " href="#">Use safely</a>
           <Link to="/about">About</Link>
         </div>
