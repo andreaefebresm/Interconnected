@@ -2,6 +2,7 @@ import * as React from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef } from 'react';
+import { Link } from 'gatsby';
 import Header from '../components/Header';
 import { ReactComponent as Assistant } from '../svg/assistant.svg';
 import { ReactComponent as Bulb } from '../svg/bulb.svg';
@@ -59,12 +60,16 @@ export default function Menu() {
             choice.map(({
               title, description, items, icon,
             }) => (
+
               <div className="col-2">
-                {icon}
-                <p className="display-7">{title}</p>
-                <p className="display-7">{description}</p>
-                <p className="display-7">{items}</p>
+                <Link to="/start">
+                  {icon}
+                  <p className="display-7">{title}</p>
+                  <p className="display-7">{description}</p>
+                  <p className="display-7">{items}</p>
+                </Link>
               </div>
+
             ))
           }
         </div>
