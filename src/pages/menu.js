@@ -18,31 +18,31 @@ export default function Menu() {
       title: 'VOICE ASSISTANT',
       description: 'It can perform tasks or services for an individual based on commands or questions',
       items: 'Home pod, Google Home, Amazon Echo',
-      icon: <Assistant style={{ height: '200px' }} />,
+      icon: <Assistant style={{ height: '15vh' }} />,
     },
     {
       title: 'VOICE ASSISTANT',
       description: 'It can perform tasks or services for an individual based on commands or questions',
       items: 'Home pod, Google Home, Amazon Echo',
-      icon: <Bulb style={{ height: '200px' }} />,
+      icon: <Bulb style={{ height: '15vh' }} />,
     },
     {
       title: 'VOICE ASSISTANT',
       description: 'It can perform tasks or services for an individual based on commands or questions',
       items: 'Home pod, Google Home, Amazon Echo',
-      icon: <Thermostat style={{ height: '200px' }} />,
+      icon: <Thermostat style={{ height: '15vh' }} />,
     },
     {
       title: 'VOICE ASSISTANT',
       description: 'It can perform tasks or services for an individual based on commands or questions',
       items: 'Home pod, Google Home, Amazon Echo',
-      icon: <DoorBell style={{ height: '200px' }} />,
+      icon: <DoorBell style={{ height: '15vh' }} />,
     },
     {
       title: 'VOICE ASSISTANT',
       description: 'It can perform tasks or services for an individual based on commands or questions',
       items: 'Home pod, Google Home, Amazon Echo',
-      icon: <Vacuum style={{ height: '200px' }} />,
+      icon: <Vacuum style={{ height: '15vh' }} />,
     },
   ];
 
@@ -51,8 +51,8 @@ export default function Menu() {
       <Header />
       <div className="container-fluid">
         <div className="row">
-          <p className="display-4">Do you know what smart objects can tell about you?</p>
-          <p className="display-6">Choose one device to discover it.</p>
+          <p className="display-4 messapiaSerif">Do you know what smart objects can tell about you?</p>
+          <p className="display-6 workSansStrong">Choose one device to discover it.</p>
         </div>
 
         <div className="row justify-content-center align-items-center" style={{ height: '70vh' }}>
@@ -64,9 +64,9 @@ export default function Menu() {
               <div className="col-2">
                 <Link to="/start">
                   {icon}
-                  <p className="display-7">{title}</p>
-                  <p className="display-7">{description}</p>
-                  <p className="display-7">{items}</p>
+                  <p className="display-7 workSansStrong pt-2">{title}</p>
+                  <p className="display-7 workSansReg">{description}</p>
+                  <p className="display-7 workSansReg">{items}</p>
                 </Link>
               </div>
 

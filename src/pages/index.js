@@ -74,8 +74,13 @@ export default function Index() {
 
         </section>
         <section id="intro" className="full-screen bg-primary">
-          <p>Do you know what smart objects can tell about you?</p>
-          <p><Link to="/menu">Home</Link></p>
+          <div className="container-fluid">
+            <div className="row">
+              <p className="messapiaSerif finalQuote display-4">Do you know what smart objects can tell about you?</p>
+              <p className="finalQuote"><Link to="/menu">Home</Link></p>
+            </div>
+
+          </div>
         </section>
       </main>
     </div>

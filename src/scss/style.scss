@@ -34,6 +34,26 @@ $font-family-sans-serif: Messapia-Bold, sans-serif;
 main {
   overflow-x: hidden;
 }
+
+a {
+  color: #1a1e21;
+  text-decoration: none;
+}
+
+.messapiaSerif {
+  font-family: Messapia-Reg;
+}
+
+.workSansReg {
+  font-family: "Work Sans";
+}
+
+.workSansStrong {
+  font-family: "Work Sans";
+  font-weight: 500;
+}
+
+//##################### INDEX #####################
 .full-screen {
   display: block;
   width: 100%;
@@ -83,8 +103,14 @@ main {
   justify-content: flex-end;
 }
 
-a {
-  color: #1a1e21;
+
+
+
+
+.finalQuote {
+  text-align: center;
+  padding-right: 30vh;
+  padding-left: 30vh;
 }
 
 //##################### ABOUT #####################
@@ -106,4 +132,7 @@ a {
 }
 
 
-
+//##################### MENU #####################
+.altezzaSvg {
+height: 10px;
+}
