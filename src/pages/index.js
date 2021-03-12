@@ -47,7 +47,7 @@ export default function Index() {
       <main id="content" className="site-content" role="main">
 
         <section id="intro" className="full-screen bg-secondary">
-          <h1>Alexa I am home</h1>
+          <p>Alexa I am home</p>
 
         </section>
 
@@ -74,8 +74,8 @@ export default function Index() {
 
         </section>
         <section id="intro" className="full-screen bg-primary">
-          <h1>Do you know what smart objects can tell about you?</h1>
-          <h2><Link to="/menu">Home</Link></h2>
+          <p>Do you know what smart objects can tell about you?</p>
+          <p><Link to="/menu">Home</Link></p>
         </section>
       </main>
     </div>
