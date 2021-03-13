@@ -31,6 +31,17 @@ $font-family-sans-serif: Messapia-Bold, sans-serif;
 
 @import "~bootstrap";
 
+html {
+  --font-text: "Archivo", sans-serif;
+  --font-light: 400;
+  --font-reg: 400;
+  --font-med: 500;
+  --font-bold: 600;
+  --font-xbold: 700;
+  --font-xxbold: 800;
+  --fontitalic: italic;
+}
+
 main {
   overflow-x: hidden;
 }
@@ -44,13 +55,19 @@ a {
   font-family: Messapia-Reg;
 }
 
-.workSansReg {
-  font-family: "Work Sans";
+.fontText {
+  font-family: var(--font-text);
 }
 
-.workSansStrong {
-  font-family: "Work Sans";
-  font-weight: 500;
+.fontTextStrong {
+  font-family: var(--font-text);
+  font-weight: var(--font-bold);
+}
+
+.fontTextItalic {
+  font-family: var(--font-text);
+  font-style: var(--fontitalic);
+  font-weight: var(--font-light);
 }
 
 //##################### INDEX #####################
@@ -131,6 +148,9 @@ a {
   border-bottom: 1px solid  black;
 }
 
+.upper {
+  text-transform: uppercase;
+}
 
 //##################### MENU #####################
 .altezzaSvg {

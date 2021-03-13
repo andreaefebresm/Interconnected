@@ -52,7 +52,7 @@ export default function Menu() {
       <div className="container-fluid">
         <div className="row">
           <p className="display-4 messapiaSerif">Do you know what smart objects can tell about you?</p>
-          <p className="display-6 workSansStrong">Choose one device to discover it.</p>
+          <p className="display-6 fontTextStrong">Choose one device to discover it.</p>
         </div>
 
         <div className="row justify-content-center align-items-center" style={{ height: '70vh' }}>
@@ -64,9 +64,9 @@ export default function Menu() {
               <div className="col-2">
                 <Link to="/start">
                   {icon}
-                  <p className="display-7 workSansStrong pt-2">{title}</p>
-                  <p className="display-7 workSansReg">{description}</p>
-                  <p className="display-7 workSansReg">{items}</p>
+                  <p className="display-7 fontTextStrong pt-2">{title}</p>
+                  <p className="display-7 fontText">{description}</p>
+                  <p className="display-7 fontTextItalic">{items}</p>
                 </Link>
               </div>
 
