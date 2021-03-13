@@ -12,12 +12,12 @@ export default function Start() {
       contenuto: 'first option',
     },
     {
-      link: 'secondOption',
-      contenuto: '/second option',
+      link: '/secondOption',
+      contenuto: 'second option',
     },
     {
-      link: 'thirdOption',
-      contenuto: '/third option',
+      link: '/thirdOption',
+      contenuto: 'third option',
     },
   ];
 
