@@ -49,7 +49,7 @@ export default function About() {
             </div>
           </div>
           <div className="col-10 overflow-auto borderLeftAbout" style={{ height: '70vh' }}>
-            <p className="fontText">{intro}</p>
+            <p className="fontText pt-2">{intro}</p>
             {
               paragraph.map(({
                 content, title,
