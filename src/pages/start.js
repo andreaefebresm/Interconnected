@@ -6,6 +6,21 @@ import '../scss/style.scss';
 import { Link } from 'gatsby';
 
 export default function Start() {
+  const option = [
+    {
+      link: '/firstOption',
+      contenuto: 'first option',
+    },
+    {
+      link: 'secondOption',
+      contenuto: '/second option',
+    },
+    {
+      link: 'thirdOption',
+      contenuto: '/third option',
+    },
+  ];
+
   return (
     <div>
       <Header />
@@ -16,17 +31,15 @@ export default function Start() {
           </div>
           <div className="col-6">
             <p>Choose one option to interact with the device</p>
-            <div className="row pb-3">
-              <Link to="firstOption"><button>first option</button></Link>
-            </div>
-            <div className="row pb-3">
-              <Link to="secondOption"><button>second option</button></Link>
-            </div>
-            <div className="row">
-              <Link to="thirdOption">
-                <button>third option</button>
-              </Link>
-            </div>
+            {
+              option.map(({
+                link, contenuto,
+              }) => (
+                <div className="row pb-3">
+                  <Link to={link}><button>{contenuto}</button></Link>
+                </div>
+              ))
+            }
           </div>
         </div>
       </div>
