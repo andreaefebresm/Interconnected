@@ -8,7 +8,7 @@ import '../scss/style.scss';
 import { useEffect, useRef } from 'react';
 import Header from '../components/Header';
 import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
-import { ReactComponent as Prova } from '../svg/provalogo.svg';
+import { ReactComponent as Prova } from '../svg/test.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
@@ -24,25 +24,41 @@ export default function Index() {
         trigger: '#panels-container',
         start: 'top top',
         pin: true,
-        scrub: 1,
+        scrub: 0,
         end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
 
       },
     });
 
-    gsap.to('#provalogo_svg__circle', {
+    gsap.to('#test_svg__circle', {
       scrollTrigger: {
         trigger: '#panels-container',
         start: 'top top',
         pin: true,
-        scrub: 1,
+        scrub: 0,
         end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
 
       },
       motionPath: {
-        path: '#provalogo_svg__path',
-        align: '#provalogo_svg__path',
+        path: '#test_svg__path',
+        align: '#test_svg__path',
         alignOrigin: [0.5, 0.5],
+      },
+    });
+
+    gsap.to('#test', {
+      scrollTrigger: {
+        trigger: '#panels-container',
+        start: 'top top',
+        pin: true,
+        scrub: 0,
+        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
+
+      },
+      motionPath: {
+        path: '#test_svg__path',
+        align: '#test_svg__path',
+        alignOrigin: [0, 0],
       },
     });
 
@@ -51,7 +67,7 @@ export default function Index() {
         trigger: '#panels-container',
         start: 'top top',
         pin: true,
-        scrub: 1,
+        scrub: 0,
         end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
 
       },
@@ -118,10 +134,16 @@ export default function Index() {
           <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
 
             <div className="panel">
-              <Prova className="w-100 position-relative" id="fuck" />
+              <div id="test" className="position-absolute">targa che si muove</div>
+              <Prova className="position-relative" id="fuck" />
+
             </div>
 
           </div>
+
+        </section>
+        <section id="intro" className="full-screen">
+          <p>Alexa I am home</p>
 
         </section>
       </main>

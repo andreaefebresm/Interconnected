@@ -24,25 +24,25 @@ export default function Menu() {
       title: 'SMART DOORBELL',
       description: 'Notifies the smartphone of the home owner when a visitor arrives at the door.',
       items: 'Ring Doorbell, Dingling Xiaomi, Xiaomi Mijia',
-      icon: <DoorBell style={{ height: '15vh' }} />,
+      icon: <DoorBell style={{ height: '15vh' }} className="mx-auto w-100" />,
     },
     {
       title: 'VOICE ASSISTANT',
       description: 'It can perform tasks or services for an individual based on commands or questions',
       items: 'Home pod, Google Home, Amazon Echo',
-      icon: <Assistant style={{ height: '15vh' }} />,
+      icon: <Assistant style={{ height: '15vh' }} className="mx-auto w-100" />,
     },
     {
       title: 'SMART VACUUM CLEANER',
       description: 'Also called robot vacuums, they clean rooms automatically based on a virtual map.',
       items: 'Roomba, Roborock, Netbot',
-      icon: <Vacuum style={{ height: '15vh' }} />,
+      icon: <Vacuum style={{ height: '15vh' }} className="mx-auto w-100" />,
     },
     {
       title: 'SMART BULB',
       description: 'Light can be controlled with just a few taps on smartphone, tablet and virtual assistants.',
       items: 'Wyze Bulb, Philips Hue, Sengled Smart Wi-Fi LED',
-      icon: <Bulb style={{ height: '15vh' }} />,
+      icon: <Bulb style={{ height: '15vh' }} className="mx-auto w-100" />,
     },
   ];
 
