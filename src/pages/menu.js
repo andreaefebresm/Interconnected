@@ -60,8 +60,7 @@ export default function Menu() {
             choice.map(({
               title, description, items, icon,
             }) => (
-
-              <div className="col-2" key={title} onClick={() => navigate('start')}>
+              <div className="col-2" key={title} onClick={() => navigate('/start')} role="link">
                 {icon}
                 <p className="display-7 fontTextStrong pt-2">{title}</p>
                 <p className="display-7 fontText">{description}</p>
