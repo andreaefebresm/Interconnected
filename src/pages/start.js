@@ -5,7 +5,7 @@ import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { Link } from 'gatsby';
 
 import '../scss/style.scss';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Header from '../components/Header';
 import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
 import { ReactComponent as Prova } from '../svg/test.svg';
@@ -26,11 +26,10 @@ export default function Index() {
         pin: true,
         scrub: 0,
         end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
-
       },
     });
 
-    gsap.to('#test_svg__circle', {
+    gsap.to('#test_svg__simuove', {
       scrollTrigger: {
         trigger: '#panels-container',
         start: 'top top',
@@ -42,23 +41,7 @@ export default function Index() {
       motionPath: {
         path: '#test_svg__path',
         align: '#test_svg__path',
-        alignOrigin: [0.5, 0.5],
-      },
-    });
-
-    gsap.to('#test', {
-      scrollTrigger: {
-        trigger: '#panels-container',
-        start: 'top top',
-        pin: true,
-        scrub: 0,
-        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
-
-      },
-      motionPath: {
-        path: '#test_svg__path',
-        align: '#test_svg__path',
-        alignOrigin: [0, 0],
+        alignOrigin: [0.5, 0.7],
       },
     });
 
@@ -69,12 +52,19 @@ export default function Index() {
         pin: true,
         scrub: 0,
         end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
-
       },
       xPercent: -100,
       ease: 'none',
     });
   }, []);
+
+  const [targa, setTarga] = useState('ciao targa');
+
+  useEffect(() => {
+    const targaContainer = document.getElementById('test_svg__customtext');
+
+    targaContainer.innerHTML = targa;
+  }, [targa]);
 
   const panels = [
     'Smart objects are devices that have network connectivity and they work by collecting user data, '
@@ -118,9 +108,9 @@ export default function Index() {
                     link, contenuto,
                   }, index) => (
                     <div className="row pb-3" key={index}>
-                      <Link to={link}>
+                      <a href="#fuck" onClick={() => setTarga(contenuto)}>
                         <button>{contenuto}</button>
-                      </Link>
+                      </a>
                     </div>
                   ))
                 }
@@ -134,7 +124,6 @@ export default function Index() {
           <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
 
             <div className="panel">
-              <div id="test" className="position-absolute">targa che si muove</div>
               <Prova className="position-relative" id="fuck" />
 
             </div>
