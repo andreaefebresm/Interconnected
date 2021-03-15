@@ -15,34 +15,34 @@ import '../scss/style.scss';
 export default function Menu() {
   const choice = [
     {
-      title: 'VOICE ASSISTANT',
-      description: 'It can perform tasks or services for an individual based on commands or questions',
-      items: 'Home pod, Google Home, Amazon Echo',
-      icon: <Assistant style={{ height: '15vh' }} />,
-    },
-    {
-      title: 'VOICE ASSISTANT',
-      description: 'It can perform tasks or services for an individual based on commands or questions',
-      items: 'Home pod, Google Home, Amazon Echo',
-      icon: <Bulb style={{ height: '15vh' }} />,
-    },
-    {
-      title: 'VOICE ASSISTANT',
-      description: 'It can perform tasks or services for an individual based on commands or questions',
-      items: 'Home pod, Google Home, Amazon Echo',
+      title: 'SMART THERMOSTAT',
+      description: 'The thermostats can be controlled remotly and they regulate the temperature by themselves.',
+      items: 'Nest, Ecobee Smart Thermostat, Honeywell Home',
       icon: <Thermostat style={{ height: '15vh' }} />,
     },
     {
-      title: 'VOICE ASSISTANT',
-      description: 'It can perform tasks or services for an individual based on commands or questions',
-      items: 'Home pod, Google Home, Amazon Echo',
+      title: 'SMART DOORBELL',
+      description: 'Notifies the smartphone of the home owner when a visitor arrives at the door.',
+      items: 'Ring Doorbell, Dingling Xiaomi, Xiaomi Mijia',
       icon: <DoorBell style={{ height: '15vh' }} />,
     },
     {
       title: 'VOICE ASSISTANT',
       description: 'It can perform tasks or services for an individual based on commands or questions',
       items: 'Home pod, Google Home, Amazon Echo',
+      icon: <Assistant style={{ height: '15vh' }} />,
+    },
+    {
+      title: 'SMART VACUUM CLEANER',
+      description: 'Also called robot vacuums, they clean rooms automatically based on a virtual map.',
+      items: 'Roomba, Roborock, Netbot',
       icon: <Vacuum style={{ height: '15vh' }} />,
+    },
+    {
+      title: 'SMART BULB',
+      description: 'Light can be controlled with just a few taps on smartphone, tablet and virtual assistants.',
+      items: 'Wyze Bulb, Philips Hue, Sengled Smart Wi-Fi LED',
+      icon: <Bulb style={{ height: '15vh' }} />,
     },
   ];
 
@@ -51,8 +51,8 @@ export default function Menu() {
       <Header />
       <div className="container-fluid">
         <div className="row">
-          <p className="display-4 messapiaSerif">Do you know what smart objects can tell about you?</p>
-          <p className="display-6 fontTextStrong">Choose one device to discover it.</p>
+          <p className="offset-1 col-9 display-3 bigText">Do you know what smart objects can tell about you?</p>
+          <p className="offset-1 display-5 fontTextItalic">Choose one device to discover it.</p>
         </div>
 
         <div className="row justify-content-center align-items-center" style={{ height: '70vh' }}>
@@ -66,7 +66,7 @@ export default function Menu() {
                   {icon}
                   <p className="display-7 fontTextStrong pt-2">{title}</p>
                   <p className="display-7 fontText">{description}</p>
-                  <p className="display-7 fontTextItalic">{items}</p>
+                  <p className="display-6 fontTextItalic">{items}</p>
                 </Link>
               </div>
 

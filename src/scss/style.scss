@@ -19,6 +19,101 @@
   url('../font/Messapia-Regular.woff2') format('woff2')
 }
 
+@font-face {
+  font-family: Favorit-Bold;
+  src: url('../font/favorit-bold-webfont.woff2') format('woff2'),
+  url('../font/favorit-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Favorit-Exp-Bold;
+  src: url('../font/favorit-boldexpanded-webfont.woff2') format('woff2'),
+  url('../font/favorit-boldexpanded-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'favoritextended_bold';
+  src: url('../font/favorit-boldextended-webfont.woff2') format('woff2'),
+  url('../font/favorit-boldextended-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'favoritbold_italic';
+  src: url('../font/favorit-boldita-webfont.woff2') format('woff2'),
+  url('../font/favorit-boldita-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'favoritlight';
+  src: url('../font/favorit-light-webfont.woff2') format('woff2'),
+  url('../font/favorit-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Favorit-Exp-Light;
+  src: url('../font/favorit-lightexpanded-webfont.woff2') format('woff2'),
+  url('../font/favorit-lightexpanded-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'favoritextended_light';
+  src: url('../font/favorit-lightextended-webfont.woff2') format('woff2'),
+  url('../font/favorit-lightextended-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'favoritlight_italic';
+  src: url('../font/favorit-lightita-webfont.woff2') format('woff2'),
+  url('../font/favorit-lightita-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'favoritmedium';
+  src: url('../font/favorit-medium-webfont.woff2') format('woff2'),
+  url('../font/favorit-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Favorit-Exp-Medium;
+  src: url('../font/favorit-mediumexpanded-webfont.woff2') format('woff2'),
+  url('../font/favorit-mediumexpanded-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'favoritextended_medium';
+  src: url('../font/favorit-mediumextended-webfont.woff2') format('woff2'),
+  url('../font/favorit-mediumextended-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'favoritmedium_italic';
+  src: url('../font/favorit-mediumita-webfont.woff2') format('woff2'),
+  url('../font/favorit-mediumita-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 //background color
 $primary: #FCFBF6;
@@ -27,7 +122,18 @@ $primary: #FCFBF6;
 $secondary: #F4B63E;
 
 //Main font
-$font-family-sans-serif: Messapia-Bold, sans-serif;
+$font-family-sans-serif: Archivo, sans-serif;
+
+// scss-docs-start display-headings
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 2.25rem,
+  6: 0.8rem
+) !default;
+
 
 @import "~bootstrap";
 
@@ -55,8 +161,13 @@ a {
   font-family: Messapia-Reg;
 }
 
+.bigText {
+  font-family: Favorit-Exp-Light;
+}
+
 .fontText {
   font-family: var(--font-text);
+  line-height: 1.1rem;
 }
 
 .fontTextStrong {

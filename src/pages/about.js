@@ -9,7 +9,7 @@ export default function About() {
   const paragraph = [
     {
       title: 'Starting Point',
-      content: 'primo testo',
+      content: 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet',
     },
     {
       title: 'The Goal',
@@ -31,7 +31,7 @@ export default function About() {
       <Header />
       <div className="container-fluid h-100">
         <div className="row">
-          <p className="display-4">BECAUSE STORING THIS DATA COMPANIES KNOW DATA COMPANIES KNOW</p>
+          <p className="display-4 col-11">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
         </div>
         <div className="row bordoTopAbout bordoBottomAbout">
           <div className="col-2">
@@ -49,8 +49,10 @@ export default function About() {
             </div>
           </div>
           <div className="col-10 overflow-auto borderLeftAbout" style={{ height: '70vh' }}>
-            <p className="fontText pt-2">{intro}</p>
-            {
+            <div className="row">
+              <div className="col-10">
+                <p className="fontText pt-2">{intro}</p>
+                {
               paragraph.map(({
                 content, title,
               }) => (
@@ -62,6 +64,8 @@ export default function About() {
 
               ))
             }
+              </div>
+            </div>
           </div>
         </div>
 

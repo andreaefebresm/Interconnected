@@ -51,7 +51,7 @@ export default function Index() {
 
         </section>
 
-        <section id="panels" className="bg-primary">
+        <section id="panels" className="bg-primary bigText">
 
           <div id="panels-container" style={{ width: '500%' }} ref={panelsContainer}>
 
