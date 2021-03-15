@@ -2,7 +2,7 @@ import * as React from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef } from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import Header from '../components/Header';
 import { ReactComponent as Assistant } from '../svg/assistant.svg';
 import { ReactComponent as Bulb } from '../svg/bulb.svg';
@@ -18,7 +18,7 @@ export default function Menu() {
       title: 'SMART THERMOSTAT',
       description: 'The thermostats can be controlled remotly and they regulate the temperature by themselves.',
       items: 'Nest, Ecobee Smart Thermostat, Honeywell Home',
-      icon: <Thermostat style={{ height: '15vh' }} />,
+      icon: <Thermostat style={{ height: '15vh' }} className="mx-auto w-100" />,
     },
     {
       title: 'SMART DOORBELL',
@@ -60,14 +60,11 @@ export default function Menu() {
             choice.map(({
               title, description, items, icon,
             }) => (
-
-              <div className="col-2">
-                <Link to="/start">
-                  {icon}
-                  <p className="display-7 fontTextStrong pt-2">{title}</p>
-                  <p className="display-7 fontText">{description}</p>
-                  <p className="display-6 fontTextItalic">{items}</p>
-                </Link>
+              <div className="col-2" key={title} onClick={() => navigate('/start')} role="link">
+                {icon}
+                <p className="display-7 fontTextStrong pt-2">{title}</p>
+                <p className="display-7 fontText">{description}</p>
+                <p className="display-6 fontTextItalic">{items}</p>
               </div>
 
             ))
