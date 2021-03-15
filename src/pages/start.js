@@ -30,21 +30,33 @@ export default function Index() {
       },
     });
 
-    const panels = gsap.utils.toArray('#panels-container .panel');
+    gsap.to('#provalogo_svg__circle', {
+      scrollTrigger: {
+        trigger: '#panels-container',
+        start: 'top top',
+        pin: true,
+        scrub: 1,
+        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
 
-    tl.to(panels, {
-      xPercent: -100 * (panels.length - 1),
-      ease: 'none',
-    });
-
-    tl.to('#provalogo_svg__circle', {
-      xPercent: -100 * (3),
-
+      },
       motionPath: {
         path: '#provalogo_svg__path',
         align: '#provalogo_svg__path',
         alignOrigin: [0.5, 0.5],
       },
+    });
+
+    gsap.to('#fuck', {
+      scrollTrigger: {
+        trigger: '#panels-container',
+        start: 'top top',
+        pin: true,
+        scrub: 1,
+        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
+
+      },
+      xPercent: -100,
+      ease: 'none',
     });
   }, []);
 
@@ -103,10 +115,10 @@ export default function Index() {
 
         <section id="panels" className="bg-primary bigText">
 
-          <div id="panels-container" style={{ width: '400%' }} ref={panelsContainer}>
+          <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
 
-            <div className="panel ">
-              <Prova className="w-100" />
+            <div className="panel">
+              <Prova className="w-100 position-relative" id="fuck" />
             </div>
 
           </div>

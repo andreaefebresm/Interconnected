@@ -16,6 +16,7 @@ export default function Index() {
     /* Panels */
     const panels = gsap.utils.toArray('#panels-container .panel');
     gsap.to(panels, {
+      xPercent: -100 * (panels.length - 1),
       ease: 'none',
       scrollTrigger: {
         trigger: '#panels-container',
