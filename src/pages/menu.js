@@ -55,14 +55,14 @@ export default function Menu() {
           <p className="offset-1 display-5 fontTextItalic">Choose one device to discover it.</p>
         </div>
 
-        <div className="row justify-content-center align-items-center" style={{ height: '70vh' }}>
+        <div className="row justify-content-center" style={{ paddingTop: '15vh' }}>
           {
             choice.map(({
               title, description, items, icon,
             }) => (
-              <div className="col-2" key={title} onClick={() => navigate('/start')} role="link">
+              <div className="col-2" key={title} onClick={() => navigate('/start')} role="link" style={{ paddingRight: '20px', paddingLeft: '20px' }}>
                 {icon}
-                <p className="display-7 fontTextStrong pt-2">{title}</p>
+                <p className="display-7 fontTextStrong pt-2 text-center">{title}</p>
                 <p className="display-7 fontText">{description}</p>
                 <p className="display-6 fontTextItalic">{items}</p>
               </div>

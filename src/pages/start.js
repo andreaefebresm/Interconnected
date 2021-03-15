@@ -14,6 +14,8 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 
 export default function Index() {
+  const panels1 = useRef();
+
   const panelsContainer = useRef();
 
   useEffect(() => {
@@ -131,11 +133,9 @@ export default function Index() {
           </div>
 
         </section>
-        <section id="intro" className="full-screen">
-          <p>Alexa I am home</p>
 
-        </section>
       </main>
+
     </div>
 
   );
