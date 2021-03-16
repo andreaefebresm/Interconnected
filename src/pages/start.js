@@ -27,7 +27,7 @@ export default function Index() {
         start: 'top top',
         pin: true,
         scrub: 0,
-        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
+        end: () => `+=${panelsContainer.current.offsetWidth + innerWidth}`,
       },
     });
 
@@ -37,7 +37,7 @@ export default function Index() {
         start: 'top top',
         pin: true,
         scrub: 0,
-        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
+        end: () => `+=${panelsContainer.current.offsetWidth + innerWidth}`,
 
       },
       motionPath: {
@@ -53,7 +53,7 @@ export default function Index() {
         start: 'top top',
         pin: true,
         scrub: 0,
-        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
+        end: () => `+=${panelsContainer.current.offsetWidth + innerWidth}`,
       },
       xPercent: -100,
       ease: 'none',

@@ -244,8 +244,14 @@ a {
   text-align: center;
   padding-right: 30vh;
   padding-left: 30vh;
+  margin-top: 20vh;;
 }
 
+.scroll {
+  position: absolute;
+  bottom: 5%;
+  left:50%;
+}
 //##################### ABOUT #####################
 
 .bordoTopAbout {
@@ -272,3 +278,6 @@ a {
 .altezzaSvg {
 height: 10px;
 }
+
+
+//##################### USESAFELY #####################

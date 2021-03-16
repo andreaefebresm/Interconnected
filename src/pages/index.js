@@ -47,7 +47,8 @@ export default function Index() {
       <main id="content" className="site-content" role="main">
 
         <section id="intro" className="full-screen bg-secondary">
-          <p>Alexa I am home</p>
+          <p className="bigText text-center display-3">Alexa I am home</p>
+          <span className="scroll">scroll</span>
 
         </section>
 
