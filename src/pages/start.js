@@ -20,15 +20,13 @@ function PathOfData({ Svg }) {
   const panelsContainer = useRef();
 
   useLayoutEffect(() => {
-    /* Panels */
-
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#panels-container',
         start: 'top top',
         pin: true,
         scrub: 0,
-        end: () => `+=${panelsContainer.current.offsetWidth + innerWidth}`,
+        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
       },
     });
 
@@ -39,7 +37,7 @@ function PathOfData({ Svg }) {
         pin: true,
         scrub: 0,
         markers: true,
-        end: () => `+=${panelsContainer.current.offsetWidth + innerWidth}`,
+        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
 
       },
       motionPath: {
@@ -56,9 +54,9 @@ function PathOfData({ Svg }) {
         pin: true,
         scrub: 0,
 
-        end: () => `+=${panelsContainer.current.offsetWidth * 2}`,
+        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
       },
-      xPercent: -100,
+      xPercent: -66, // Questo definisce a che punto si ferma il SVG
       ease: 'none',
     });
   }, [Svg]);
