@@ -78,6 +78,7 @@ function PathOfData({ Svg }) {
     </section>
   );
 }
+
 export default function Start() {
   const [selectedItem, setSelectedItem] = useState();
 
@@ -87,7 +88,6 @@ export default function Start() {
   const deviceData = data[index];
 
   const { options } = deviceData;
-
   return (
     <div>
       <main id="content" className="site-content" role="main">
