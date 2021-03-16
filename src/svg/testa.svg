@@ -1,0 +1,106 @@
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3040.69995 767.79999">
+  <path id="path" d="M14.1,353.1l1693.3-.1s331.5-8.3,343.4-243.9" fill="none" stroke="#000" stroke-miterlimit="10"/>
+  <g id="simuove">
+    <g id="circle">
+      <circle id="circle-2" cx="19" cy="353.10001" r="8.5"/>
+    </g>
+    <rect x="-11" y="324.39999" width="148.10001" height="19.70001" fill="none"/>
+    <text id="customtext" transform="translate(25.0932 332.91541)" font-size="12" font-family="MyriadPro-Regular, Myriad Pro" style="isolation: isolate"><tspan letter-spacing="-0.06401em">T</tspan><tspan x="5.1958" y="0">a</tspan><tspan x="10.97998" y="0" letter-spacing="-0.00798em">r</tspan><tspan x="14.80811" y="0" letter-spacing="-0.00004em">ga si mu</tspan><tspan x="56.56738" y="0" letter-spacing="-0.007em">o</tspan><tspan x="63.07129" y="0" letter-spacing="-0.01001em">v</tspan><tspan x="68.72314" y="0" letter-spacing="0.00004em">e</tspan></text>
+  </g>
+  <g>
+    <rect x="2047.09998" y="58.9" width="180.40002" height="26.5" fill="none"/>
+    <text transform="translate(2047.04797 84.9942)" font-size="36" font-family="Archivo-Medium, Archivo" font-weight="500" style="isolation: isolate">First party</text>
+    <rect x="2048" y="43.7" width="180.3999" height="11.6" fill="none"/>
+    <text transform="translate(2047.98596 53.84473)" font-size="14" font-family="Archivo-Italic, Archivo" font-style="italic" style="isolation: isolate">The producer of the device</text>
+    <rect x="2478.5" y="237.5" width="210" height="13.2" fill="none"/>
+    <text transform="translate(2478.49414 247.6828)" font-size="14" font-family="Archivo-Italic, Archivo" font-style="italic" style="isolation: isolate">The company that stores the data</text>
+    <rect x="2371.6001" y="625.29999" width="179" height="13.20001" fill="none"/>
+    <text transform="translate(2371.54785 635.4129)" font-size="14" font-family="Archivo-Italic, Archivo" font-style="italic" style="isolation: isolate">The company that buys data</text>
+    <rect x="2476.69995" y="250.5" width="227.30005" height="26.5" fill="none"/>
+    <text transform="translate(2476.7207 276.57764)" font-size="36" font-family="Archivo-Medium, Archivo" font-weight="500" style="isolation: isolate">Second party</text>
+    <rect x="2371.6001" y="639.5" width="179" height="26.5" fill="none"/>
+    <text transform="translate(2371.54785 665.54779)" font-size="36" font-family="Archivo-Medium, Archivo" font-weight="500" style="isolation: isolate">Third party</text>
+    <path d="M1707.4,353s2.1.1,6,.2" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10"/>
+    <path d="M1725.4,353.7c97.6,3.3,564.6,13.9,731.1-78.1" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="12.0465 12.0465"/>
+    <path d="M2461.7,272.6c1.69995-1,3.5-2.1,5.1001-3.1" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10"/>
+    <path d="M2353,656c-2,.1-4,.1-6,.1" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10"/>
+    <path d="M2335.1001,656.1c-210-4.9-233.80005-219.7-437.7-266.8-43-9.9-143.9-28.1-178.3-34.2" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="11.8902 11.8902"/>
+    <path d="M1713.30005,354.1c-3.80005-.7-5.9-1-5.9-1" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10"/>
+    <path d="M2473.6001,286.3S2325.5,375.7,2357.5,633.69995" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="12"/>
+    <path d="M2065.80005,109.1s127.7,183.5,405.1001,150.7" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="12"/>
+    <path d="M2057.30005,109.1s51.2,411.4,297.2,535" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="12"/>
+    <path d="M2458.80005,72H2269.2A14.25462,14.25462,0,0,1,2255,57.8h0a14.25462,14.25462,0,0,1,14.2-14.2h189.6001A14.25462,14.25462,0,0,1,2473,57.8h0A14.25462,14.25462,0,0,1,2458.80005,72Z"/>
+    <path d="M1707.4,353s34.7,5.1,104,58.5,135.9,269.3,206.4,215.2,10.19995-272.1,56.5-308.6,192.30005,49.8,234.80005,48.6c38.5-1.1,161.69995-77,161.69995-77" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="12"/>
+    <path d="M1707.4,353s190.2-70,218.6-127.9S1968.6,59,1999.2,40.4s104.8999-36.1,146.3999,82c41.5,118,93.3,498.8,140.3,528.3s68.5,17.9,68.5,17.9" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="12"/>
+    <circle cx="2465.69995" cy="259.89999" r="5.5"/>
+    <circle cx="2358.5" cy="629.79999" r="5.5"/>
+    <path d="M2215.2,75.5s23.5.9,25.6001-17.7" fill="none" stroke="#000" stroke-miterlimit="10"/>
+    <path d="M2213.8999,81.2s18.8999.5,26.8999,10.1" fill="none" stroke="#000" stroke-miterlimit="10"/>
+    <path d="M2213.8999,85.8s24.5,7.4,26.8999,37.5" fill="none" stroke="#000" stroke-miterlimit="10"/>
+    <path d="M2703.5,268.1s12.1001-2.4,14-16.6" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="5"/>
+    <path d="M2703.5,274.6s14.7-.1,16.7,10.9" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="5"/>
+    <path d="M2703.5,281.7s12.6001,0,16.7,39.3" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="5"/>
+    <path d="M2550.6001,655s24,1.2,28.69995-15.5" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="5"/>
+    <path d="M2550.6001,660.6s22.8999-.6,29.6001,12.2" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="5"/>
+    <path d="M2549.6001,666.7s26.8,8.5,32,41.6" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="5"/>
+    <rect x="967" y="405" width="161.40002" height="14.39999" fill="none"/>
+    <text transform="translate(982.99609 419.1543)" font-size="19.5654" font-family="Archivo-Medium, Archivo" font-weight="500" style="isolation: isolate">WIFI ROUTER</text>
+    <path d="M1127.80005,372v-1.7A4.84642,4.84642,0,0,1,1127.80005,372Z" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M1127.80005,372a12.14935,12.14935,0,0,1-9.1,10.9H978.6a11.14259,11.14259,0,0,1-11.1-9.8v-8.8h.1a7.11116,7.11116,0,0,0,.7,3.2,8.93727,8.93727,0,0,0,8.2,5.5l141.2.4a9.9217,9.9217,0,0,0,9.4-6.6,6.96178,6.96178,0,0,0,.5-2.5l.1,1.8v.3Z" fill="#5b5b5b" stroke="#3700ff" stroke-miterlimit="10" stroke-width="0.1645"/>
+    <path d="M1127.7,364.2a18.42816,18.42816,0,0,1-.5,2.5,9.92158,9.92158,0,0,1-9.4,6.6l-141.2-.4a8.93736,8.93736,0,0,1-8.2-5.5,8.75532,8.75532,0,0,1-.7-3.2,10.074,10.074,0,0,1,.3-2.5l6.8-24.9.7-2.6,1.4-5.2h0a17.22132,17.22132,0,0,1,16.4-12.6h8.9v.1h1.9v-.1h3.6l80.3-.1h14a17.1365,17.1365,0,0,1,16.6,12.7l8.6,31.8A6.73844,6.73844,0,0,1,1127.7,364.2Z" fill="#dbdbdb" stroke="#3700ff" stroke-miterlimit="10" stroke-width="0.1645"/>
+    <path d="M965.3,363.2a3.87994,3.87994,0,0,0,.2,2.1c.4,2,.5,2.9.3,3.6a3.126,3.126,0,0,1-.9,1.1l-2,.3a3.59173,3.59173,0,0,1-4-3.1L957.4,355c1,1.7,2.3,2.9,3.8,3,2.1.2,4.7-1.8,5.8-5.2l.7,6.5a11.78323,11.78323,0,0,1-1.1,1.9C965.9,362.1,965.5,362.4,965.3,363.2Z" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M967,352.8c-1.1,3.4-3.8,5.4-5.8,5.2-1.4-.1-2.8-1.3-3.8-3l-11.3-91.5a2.01539,2.01539,0,0,1,1.7-2.2h0l5.8-.7a3.51545,3.51545,0,0,1,3.8,2.9Z" fill="#dbdbdb" stroke="#3700ff" stroke-miterlimit="10" stroke-width="0.1645"/>
+    <ellipse cx="961.70001" cy="365.79999" rx="0.90002" ry="0.70001" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M965.7,366.2l2.1.1a25.20324,25.20324,0,0,1-.4-4.3,12.41114,12.41114,0,0,0,.3-2.7" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M976.2,321.6c-1.1,2.6-3.3,4.1-5,4a4.74038,4.74038,0,0,1-3.3-2.3l-8.4-83.2a1.2655,1.2655,0,0,1,1.2-1.4l5.2-.5a2.69721,2.69721,0,0,1,2.9,2.5Z" fill="#dbdbdb" stroke="#3700ff" stroke-miterlimit="10" stroke-width="0.1645"/>
+    <path d="M976.8,327.9a2.696,2.696,0,0,1-.7.8c-.2.2-.4.3-.6.5a2.7296,2.7296,0,0,0-.5,1.8,2.38754,2.38754,0,0,0,.2.9,5.10456,5.10456,0,0,1,.3,2.1l-.7,2.6-1.8.3a3.61015,3.61015,0,0,1-4-3.2v-.1l-1.1-10.7a4.55473,4.55473,0,0,0,3.3,2.3c1.7.1,3.9-1.4,5-4Z" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M976.9,329l-1.4,5.2a7.1061,7.1061,0,0,0-.3-2.1,2.88818,2.88818,0,0,1,.3-2.7,2.65233,2.65233,0,0,1,.6-.5,2.69644,2.69644,0,0,0,.7-.8Z" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <ellipse cx="971.79999" cy="333.10001" rx="0.79999" ry="0.70001" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M1130.1,363.2a3.881,3.881,0,0,1-.2,2.1c-.4,2-.5,2.9-.3,3.6a3.12543,3.12543,0,0,0,.9,1.1l2,.3a3.59176,3.59176,0,0,0,4-3.1L1138,355c-1,1.7-2.30005,2.9-3.80005,3-2.1.2-4.69995-1.8-5.80005-5.2l-.69995,6.5a11.78253,11.78253,0,0,0,1.1,1.9C1129.5,362.1,1129.9,362.4,1130.1,363.2Z" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M1128.5,352.8c1.1,3.4,3.80005,5.4,5.80005,5.2,1.4-.1,2.80005-1.3,3.80005-3l11.3-91.4a2.01537,2.01537,0,0,0-1.69995-2.2h0l-5.7-.7a3.51552,3.51552,0,0,0-3.8,2.9Z" fill="#dbdbdb" stroke="#3700ff" stroke-miterlimit="10" stroke-width="0.1645"/>
+    <ellipse cx="1133.69995" cy="365.79999" rx="0.90002" ry="0.70001" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M1129.80005,366.2l-2.1.1a25.20324,25.20324,0,0,0,.4-4.3,12.41555,12.41555,0,0,1-.30005-2.7" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M1119.2,321.6c1.1,2.6,3.30005,4.1,5,4a4.74055,4.74055,0,0,0,3.30005-2.3l8.4-83.2a1.26549,1.26549,0,0,0-1.19995-1.4l-5.2-.5a2.8524,2.8524,0,0,0-3,2.5Z" fill="#dbdbdb" stroke="#3700ff" stroke-miterlimit="10" stroke-width="0.1645"/>
+    <path d="M1118.6,327.9a2.69565,2.69565,0,0,0,.69995.8c.2.2.4.3.6.5a2.72954,2.72954,0,0,1,.5,1.8,2.38852,2.38852,0,0,1-.19995.9,4.972,4.972,0,0,0-.1,2.1l.69995,2.6,1.6.4a3.61012,3.61012,0,0,0,4-3.2v-.1l1.1-10.7a4.55477,4.55477,0,0,1-3.30005,2.3c-1.69995.1-3.9-1.4-5-4Z" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <ellipse cx="1123.59998" cy="333.10001" rx="0.80005" ry="0.70001" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M997.7,230.6l1.9-.1Z" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M1000,309.5h0l-4.1-77.3a1.33755,1.33755,0,0,1,1.4-1.5h.4" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <polygon points="1004.1 316.5 1002.2 316.5 1002.2 316.4 997.6 230.7 999.6 230.6 1004.1 316.4 1004.1 316.5" fill="#dbdbdb" stroke="#3700ff" stroke-miterlimit="10" stroke-width="0.1645"/>
+    <path d="M999.6,230.5h.4a1.39138,1.39138,0,0,1,1.5,1.4l3.9,73.9" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M999.6,316.2l-.4-4.8a2.72526,2.72526,0,0,1,.6-1.2c.4-.5.2-2,.2-2" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M1005.5,305.8a8.39175,8.39175,0,0,0,.7,2.6,7.012,7.012,0,0,1,1.2,2.8c0,.9.3,4.8.3,5.2" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M1005.5,305.8v-.2" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M1088,316.3l.5-6.9c.30005-.2.5-.4.80005-.6a1.75606,1.75606,0,0,0,.4-.5" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M1089.7,308.2l.1-.4,4.9-77.2a.86035.86035,0,0,1,.80005-.8h0l3.5.3a.96153.96153,0,0,1,.80005.9l-4.5,76.8.1.2.2.7" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <path d="M1095.30005,308.2h0a9.29092,9.29092,0,0,0,.5,1c.19995.3.30005.6.5.9l-.5,6.2" fill="none" stroke="#0019ff" stroke-miterlimit="10" stroke-width="1.4808"/>
+    <polyline points="1093.7 316.3 1094.1 308.1 1098.5 230.4 1096.6 230.3 1092.2 308 1091.7 316.3" fill="#dbdbdb" stroke="#3700ff" stroke-miterlimit="10" stroke-width="0.1645"/>
+    <path d="M1056.30005,351.8c-.19995,2.6-3.4,4.6-7.4,4.9h-2.19995c-4-.4-7.1-2.5-7.2-5.1v-.3l.2-8.4.1-2.3.30005-11.3.1-1.4c.6-2.3,3.9-4.1,7.8-4.1a11.55364,11.55364,0,0,1,5.29993,1.3,4.6496,4.6496,0,0,1,2.6,3.3v.5h0l.4,22.2Z" fill="#212121" stroke="#3700ff" stroke-miterlimit="10" stroke-width="0.1645"/>
+    <path d="M1053.30005,325l-13.5,17.9.1-2.3,12.30005-16.1A9.75182,9.75182,0,0,1,1053.30005,325Z" fill="#dbdbdb" stroke="#3700ff" stroke-miterlimit="10" stroke-width="0.1645" opacity="0.43" style="isolation: isolate"/>
+    <rect x="2265.69995" y="51.1" width="200.3999" height="16.9" fill="none"/>
+    <text transform="translate(2265.69775 64.12402)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">MA<tspan x="27.64746" y="0" letter-spacing="-0.01799em">P</tspan><tspan x="39.32959" y="0" xml:space="preserve"> OF</tspan><tspan x="69.33545" y="0" letter-spacing="-0.006em"> </tspan><tspan x="74.23145" y="0">THE HOUSE</tspan></text>
+    <path d="M2432.30005,138.8h-165c-6.8,0-12.3999-6.4-12.3999-14.2h0c0-7.8,5.60009-14.2,12.3999-14.2h165c6.80005,0,12.3999,6.4,12.3999,14.2h0C2444.7,132.4,2439.1001,138.8,2432.30005,138.8Z"/>
+    <rect x="2265.69995" y="117.9" width="200.3999" height="16.9" fill="none"/>
+    <text transform="translate(2265.69775 130.92401)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">DI<tspan x="17.99951" y="0" letter-spacing="-0.00597em">R</tspan><tspan x="30.8877" y="0" letter-spacing="-0.00003em">TINESS LEVE</tspan><tspan x="147.58008" y="0" letter-spacing="-0.01199em">L</tspan></text>
+    <path d="M2488.5,104.4h-217.2c-8.8999,0-16.3-6.4-16.3-14.2h0c0-7.8,7.3-14.2,16.3-14.2h217.2c8.8999,0,16.3,6.4,16.3,14.2h0C2504.7,98,2497.3999,104.4,2488.5,104.4Z"/>
+    <rect x="2265.69995" y="83.5" width="234.1001" height="16.9" fill="none"/>
+    <text transform="translate(2265.69775 96.52399)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">OBS<tspan x="38.66357" y="0" letter-spacing="-0.074em">T</tspan><tspan x="48.32959" y="0">ACLE RECOGNITION</tspan></text>
+    <path d="M2935.8999,263.9H2746.2998a14.25462,14.25462,0,0,1-14.19995-14.2h0a14.25462,14.25462,0,0,1,14.19995-14.2h189.6001a14.25462,14.25462,0,0,1,14.2,14.2h0A14.25445,14.25445,0,0,1,2935.8999,263.9Z"/>
+    <rect x="2742.80005" y="243" width="200.3999" height="16.89999" fill="none"/>
+    <text transform="translate(2742.81689 256.02191)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">MA<tspan x="27.64746" y="0" letter-spacing="-0.01799em">P</tspan><tspan x="39.32959" y="0" xml:space="preserve"> OF</tspan><tspan x="69.33545" y="0" letter-spacing="-0.006em"> </tspan><tspan x="74.23145" y="0">THE HOUSE</tspan></text>
+    <path d="M2909.5,330.7h-165c-6.8,0-12.3999-6.4-12.3999-14.2h0c0-7.8,5.6001-14.2,12.3999-14.2h165c6.8,0,12.3999,6.4,12.3999,14.2h0C2921.80005,324.3,2916.2,330.7,2909.5,330.7Z"/>
+    <rect x="2742.80005" y="309.79999" width="200.3999" height="16.89999" fill="none"/>
+    <text transform="translate(2742.81689 322.8219)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">DI<tspan x="17.99951" y="0" letter-spacing="-0.00597em">R</tspan><tspan x="30.8877" y="0" letter-spacing="-0.00003em">TINESS LEVE</tspan><tspan x="147.58008" y="0" letter-spacing="-0.01199em">L</tspan></text>
+    <path d="M2965.6001,296.3h-217.2c-8.89991,0-16.3-6.4-16.3-14.2h0c0-7.8,7.3-14.2,16.3-14.2h217.2c8.8999,0,16.3,6.4,16.3,14.2h0C2981.8999,289.9,2974.5,296.3,2965.6001,296.3Z"/>
+    <rect x="2742.80005" y="275.39999" width="234.1001" height="16.89999" fill="none"/>
+    <text transform="translate(2742.81689 288.42188)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">OBS<tspan x="38.66357" y="0" letter-spacing="-0.074em">T</tspan><tspan x="48.32959" y="0">ACLE RECOGNITION</tspan></text>
+    <path d="M2799.1001,653.6H2609.5a14.25465,14.25465,0,0,1-14.2-14.2h0a14.25464,14.25464,0,0,1,14.2-14.2h189.6001a14.25464,14.25464,0,0,1,14.19995,14.2h0A14.25477,14.25477,0,0,1,2799.1001,653.6Z"/>
+    <rect x="2606" y="632.70001" width="200.3999" height="16.90002" fill="none"/>
+    <text transform="translate(2606.00586 645.72388)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">MA<tspan x="27.64746" y="0" letter-spacing="-0.01799em">P</tspan><tspan x="39.32959" y="0" xml:space="preserve"> OF</tspan><tspan x="69.33545" y="0" letter-spacing="-0.006em"> </tspan><tspan x="74.23145" y="0">THE HOUSE</tspan></text>
+    <path d="M2772.6001,720.4h-165c-6.80005,0-12.3999-6.4-12.3999-14.2h0c0-7.8,5.60009-14.2,12.3999-14.2h165c6.8,0,12.3999,6.4,12.3999,14.2h0C2785,714,2779.3999,720.4,2772.6001,720.4Z"/>
+    <rect x="2606" y="699.5" width="200.3999" height="16.90002" fill="none"/>
+    <text transform="translate(2606.00586 712.52393)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">DI<tspan x="17.99951" y="0" letter-spacing="-0.00597em">R</tspan><tspan x="30.8877" y="0" letter-spacing="-0.00003em">TINESS LEVE</tspan><tspan x="147.58008" y="0" letter-spacing="-0.01199em">L</tspan></text>
+    <path d="M2828.80005,686H2611.6001c-8.8999,0-16.30005-6.4-16.30005-14.2h0c0-7.8,7.30005-14.2,16.30005-14.2h217.19995c8.8999,0,16.30005,6.4,16.30005,14.2h0C2845.1001,679.6,2837.7,686,2828.80005,686Z"/>
+    <rect x="2606" y="665.09998" width="234.1001" height="16.90002" fill="none"/>
+    <text transform="translate(2606.00586 678.12402)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">OBS<tspan x="38.66357" y="0" letter-spacing="-0.074em">T</tspan><tspan x="48.32959" y="0">ACLE RECOGNITION</tspan></text>
+  </g>
+</svg>

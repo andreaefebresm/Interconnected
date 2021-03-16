@@ -8,7 +8,8 @@ import '../scss/style.scss';
 import { useEffect, useRef, useState } from 'react';
 import Header from '../components/Header';
 import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
-import { ReactComponent as Prova } from '../svg/test.svg';
+import { ReactComponent as Vacuum1 } from '../svg/vacuum1/test.svg';
+import { ReactComponent as Vacuum2 } from '../svg/vacuum2/test.svg';
 import EndContent from '../components/endContent';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -45,7 +46,7 @@ export default function Index() {
       motionPath: {
         path: '#test_svg__path',
         align: '#test_svg__path',
-        alignOrigin: [0, 0.5],
+        alignOrigin: [0.5, 0.9],
       },
     });
 
@@ -63,13 +64,13 @@ export default function Index() {
     });
   }, []);
 
-  const [targa, setTarga] = useState('ciao targa');
-
-  useEffect(() => {
-    const targaContainer = document.getElementById('test_svg__customtext');
-
-    targaContainer.innerHTML = targa;
-  }, [targa]);
+  // const [targa, setTarga] = useState('ciao targa');
+  //
+  // useEffect(() => {
+  //   const targaContainer = document.getElementById('test_svg__customtext');
+  //
+  //   targaContainer.innerHTML = targa;
+  // }, [targa]);
 
   const option = [
     {
@@ -121,7 +122,7 @@ export default function Index() {
           <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
 
             <div className="panel">
-              <Prova className="position-relative" id="fuck" />
+              <Vacuum1 className="position-relative" id="fuck" />
 
             </div>
 

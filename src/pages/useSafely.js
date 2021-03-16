@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Header from '../components/Header';
 
 import '../scss/style.scss';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import { gsap } from 'gsap';
 
 export default function UseSafely() {
@@ -11,25 +11,25 @@ export default function UseSafely() {
       who: 'aa',
       title: 'ee',
       decription: 'questa è una descrizione dellarticolo',
-      link: '',
+      link: 'https://www.youtube.com/',
     },
     {
       who: 'aa',
       title: 'ee',
       decription: 'questa è una descrizione dellarticolo',
-      link: '',
+      link: 'https://www.youtube.com/',
     },
     {
       who: 'aa',
       title: 'ee',
       decription: 'questa è una descrizione dellarticolo',
-      link: '',
+      link: 'https://www.youtube.com/',
     },
     {
       who: 'aa',
       title: 'ee',
       decription: 'questa è una descrizione dellarticolo',
-      link: '',
+      link: 'https://www.youtube.com/',
     },
 
   ];
@@ -45,12 +45,17 @@ export default function UseSafely() {
           <div className="row">
             {
               article.map(({
-                who, title, decription,
+                who, title, decription, link,
               }) => (
-                <div className="col-3">
-                  <p>{who}</p>
-                  <p>{title}</p>
-                  <p>{decription}</p>
+                <div className="col-3" onClick={() => document.location.href = link}>
+                  <div style={{ border: '1px solid black' }}>
+                    <div style={{ padding: '10px' }}>
+                      <p>{who}</p>
+                      <p className="bigText display-4">{title}</p>
+                      <p className="fontTextItalic display-6">{decription}</p>
+                    </div>
+                  </div>
+
                 </div>
               ))
             }

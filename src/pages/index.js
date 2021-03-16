@@ -5,7 +5,6 @@ import { Link } from 'gatsby';
 
 import '../scss/style.scss';
 import { useEffect, useRef } from 'react';
-import { ReactComponent as Prova } from '../svg/test.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
