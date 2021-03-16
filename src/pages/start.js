@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from 'react';
 import Header from '../components/Header';
 import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
 import { ReactComponent as Prova } from '../svg/test.svg';
+import EndContent from '../components/endContent';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
@@ -37,13 +38,14 @@ export default function Index() {
         start: 'top top',
         pin: true,
         scrub: 0,
+        markers: true,
         end: () => `+=${panelsContainer.current.offsetWidth + innerWidth}`,
 
       },
       motionPath: {
         path: '#test_svg__path',
         align: '#test_svg__path',
-        alignOrigin: [0.5, 0.7],
+        alignOrigin: [0, 0.5],
       },
     });
 
@@ -53,7 +55,8 @@ export default function Index() {
         start: 'top top',
         pin: true,
         scrub: 0,
-        end: () => `+=${panelsContainer.current.offsetWidth + innerWidth}`,
+
+        end: () => `+=${panelsContainer.current.offsetWidth * 2}`,
       },
       xPercent: -100,
       ease: 'none',

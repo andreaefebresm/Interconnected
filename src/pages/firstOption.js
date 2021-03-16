@@ -27,11 +27,22 @@ export default function UseSafely() {
     });
   });
 
+  const endContent = [
+    {
+      what: 'how much you use your spaces in the house (map + dirtiness) how untidy you are',
+      link1: 'a',
+      link2: 'b',
+      link3: 'c',
+      cta: 'can i use roomba more safely?',
+    },
+
+  ];
+
   return (
     <div ref={panels1}>
 
       <section className="panel1 red full-screen bg-primary">
-        <EndContent />
+        <EndContent {...endContent[0]} />
 
       </section>
       <section className="panel1 full-screen bg-secondary">
