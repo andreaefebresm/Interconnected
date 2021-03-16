@@ -5,22 +5,21 @@ import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { Link } from 'gatsby';
 
 import '../scss/style.scss';
-import { useEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import Header from '../components/Header';
 import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
 import { ReactComponent as Vacuum1 } from '../svg/vacuum1/test.svg';
 import { ReactComponent as Vacuum2 } from '../svg/vacuum2/test.svg';
 import EndContent from '../components/endContent';
+import data from '../data';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 
-export default function Index() {
-  const panels1 = useRef();
-
+function PathOfData({ Svg }) {
   const panelsContainer = useRef();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     /* Panels */
 
     const tl = gsap.timeline({
@@ -62,30 +61,32 @@ export default function Index() {
       xPercent: -100,
       ease: 'none',
     });
-  }, []);
+  }, [Svg]);
 
-  // const [targa, setTarga] = useState('ciao targa');
-  //
-  // useEffect(() => {
-  //   const targaContainer = document.getElementById('test_svg__customtext');
-  //
-  //   targaContainer.innerHTML = targa;
-  // }, [targa]);
+  return (
+    <section id="panels" className="bg-primary bigText">
 
-  const option = [
-    {
-      link: '/firstOption',
-      contenuto: 'first option',
-    },
-    {
-      link: '/secondOption',
-      contenuto: 'second option',
-    },
-    {
-      link: '/thirdOption',
-      contenuto: 'third option',
-    },
-  ];
+      <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
+
+        <div className="panel">
+          <Svg className="position-relative" id="fuck" />
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+}
+export default function Start() {
+  const [selectedItem, setSelectedItem] = useState();
+
+  const params = new URLSearchParams(window.location.search);
+
+  const index = typeof params.get('selected') !== 'undefined' ? params.get('selected') : 0;
+  const deviceData = data[index];
+
+  const { options } = deviceData;
 
   return (
     <div>
@@ -102,12 +103,13 @@ export default function Index() {
               <div className="col-6">
                 <p>Choose one option to interact with the device</p>
                 {
-                  option.map(({
-                    link, contenuto,
-                  }, index) => (
+                  options.map(({ label, Svg, collectedData }, index) => (
                     <div className="row pb-3" key={index}>
-                      <a href="#fuck" onClick={() => setTarga(contenuto)}>
-                        <button>{contenuto}</button>
+                      <a
+                        href="#discover-data"
+                        onClick={() => setSelectedItem({ label, Svg, collectedData })}
+                      >
+                        <button>{label}</button>
                       </a>
                     </div>
                   ))
@@ -117,18 +119,8 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="panels" className="bg-primary bigText">
-
-          <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
-
-            <div className="panel">
-              <Vacuum1 className="position-relative" id="fuck" />
-
-            </div>
-
-          </div>
-
-        </section>
+        <div className="w-100" id="discover-data" />
+        { selectedItem && <PathOfData Svg={selectedItem.Svg} collectedData={selectedItem.collectedData} />}
 
       </main>
 

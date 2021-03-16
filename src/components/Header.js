@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light sticky-top bg-primary">
+    <nav className="navbar navbar-expand-lg navbar-light position-sticky bg-primary">
       <div className="container-fluid">
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <Link className="navbar-brand messapiaReg " to="/menu">InterConnected</Link>
