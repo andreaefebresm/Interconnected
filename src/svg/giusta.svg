@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2601.3 218.1" style="enable-background:new 0 0 2601.3 218.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st2{fill:none;}
+	.st3{font-family:'ArialMT';}
+	.st4{font-size:12px;}
+	.st5{font-family:'MyriadPro-Regular';}
+</style>
+<path id="path" class="st0" d="M19,137.8h2011.7c0,0,404.4-32.2,465.8-137.5"/>
+<g>
+	<g>
+		<rect x="1048.7" y="40.9" class="st1" width="160.5" height="172.5"/>
+		
+			<image style="overflow:visible;enable-background:new    ;" width="372" height="372" xlink:href="D3CFB8AB.png"  transform="matrix(0.4636 0 0 0.4636 1042.6893 40.8167)">
+		</image>
+		<rect x="1085.7" y="194.2" class="st2" width="86.5" height="23.9"/>
+		<text transform="matrix(1 0 0 1 1085.6658 202.8018)" class="st3 st4">WI-FI ROUTER</text>
+	</g>
+	<rect x="2514.8" y="2.9" class="st2" width="86.5" height="23.9"/>
+	<text transform="matrix(1 0 0 1 2514.7634 11.4993)" class="st3 st4">First Party</text>
+</g>
+<g id="simuove">
+	<g id="circle">
+		<circle id="circle-2" cx="19" cy="137.8" r="19"/>
+	</g>
+	<rect x="-55" y="97.8" class="st2" width="148.1" height="19.7"/>
+	<text id="customtext" transform="matrix(1 0 0 1 -18.9013 106.3568)" class="st5 st4">Targa si muove</text>
+</g>
+</svg>
