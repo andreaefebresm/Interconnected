@@ -31,6 +31,24 @@ export default function UseSafely() {
       decription: 'questa è una descrizione dellarticolo',
       link: 'https://www.youtube.com/',
     },
+    {
+      who: 'aa',
+      title: 'ee',
+      decription: 'questa è una descrizione dellarticolo',
+      link: 'https://www.youtube.com/',
+    },
+    {
+      who: 'aa',
+      title: 'ee',
+      decription: 'questa è una descrizione dellarticolo',
+      link: 'https://www.youtube.com/',
+    },
+    {
+      who: 'aa',
+      title: 'ee',
+      decription: 'questa è una descrizione dellarticolo',
+      link: 'https://www.youtube.com/',
+    },
 
   ];
   return (
@@ -47,7 +65,7 @@ export default function UseSafely() {
               article.map(({
                 who, title, decription, link,
               }) => (
-                <div className="col-3" onClick={() => document.location.href = link}>
+                <div className="col-3 pt-4" onClick={() => document.location.href = link}>
                   <div style={{ border: '1px solid black' }}>
                     <div style={{ padding: '10px' }}>
                       <p>{who}</p>
