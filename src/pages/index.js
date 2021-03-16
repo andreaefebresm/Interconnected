@@ -5,6 +5,7 @@ import { Link } from 'gatsby';
 
 import '../scss/style.scss';
 import { useEffect, useRef } from 'react';
+import { ReactComponent as Prova } from '../svg/test.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,7 +62,7 @@ export default function Index() {
 
             <article key={index} className="panel full-screen red">
               <div className="container-fluid">
-                <div className={`row h-100 ${(index % 2) ? 'align-items-end' : ''}`}>
+                <div className={`row h-100 pt-5 pb-5 ${(index % 2) ? 'align-items-end' : ''}`}>
                   <div className="col-10 ">
                     <p className="display-5">{text}</p>
                   </div>
@@ -74,6 +75,7 @@ export default function Index() {
           </div>
 
         </section>
+
         <section id="intro" className="full-screen bg-primary">
           <div className="container-fluid">
             <div className="row">

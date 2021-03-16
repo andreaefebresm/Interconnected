@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Header from '../components/Header';
+import EndContent from '../components/endContent';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import '../scss/style.scss';
@@ -30,7 +31,8 @@ export default function UseSafely() {
     <div ref={panels1}>
 
       <section className="panel1 red full-screen bg-primary">
-        ONE
+        <EndContent />
+
       </section>
       <section className="panel1 full-screen bg-secondary">
         TWO

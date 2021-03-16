@@ -68,14 +68,6 @@ export default function Index() {
     targaContainer.innerHTML = targa;
   }, [targa]);
 
-  const panels = [
-    'Smart objects are devices that have network connectivity and they work by collecting user data, '
-    + 'process and analyse that data and then return it back to the user.',
-    'The data they collect comes from our interaction with the objects: your voice, your face, the map of your house and even your habits.',
-    'Data is stored in big server farms where Artificial Intelligences analyse this data and understand stuff from it. ',
-    'This data is not only stored by the company that produces the object (FIRST PARTY), but also from other companies that are called second and third parties. ',
-    'The path of the data from first parties to second and third parties is still not clear, but we do know that data has economical value.',
-  ];
   const option = [
     {
       link: '/firstOption',
