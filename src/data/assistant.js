@@ -1,16 +1,19 @@
 import * as React from 'react';
-import { ReactComponent as Thermostat } from '../svg/thermosta.svg';
-import { ReactComponent as Thermostat1, ReactComponent as Thermostat2 } from '../svg/vacuum1/test.svg';
+import { ReactComponent as Assistant1 } from '../svg/vacuum1/test.svg';
+import { ReactComponent as Assistant2 } from '../svg/vacuum2/test.svg';
+import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
+import { ReactComponent as DoorBell } from '../svg/doorbell.svg';
+import { ReactComponent as Assistant } from '../svg/assistant.svg';
 
-const thermostat = {
-  title: 'SMART THERMOSTAT',
-  description: 'The thermostats can be controlled remotly and they regulate the temperature by themselves.',
-  items: 'Nest, Ecobee Smart Thermostat, Honeywell Home',
-  icon: <Thermostat style={{ height: '15vh' }} className="mx-auto w-100" />,
+const assistant = {
+  title: 'VOICE ASSISTANT',
+  description: 'It can perform tasks or services for an individual based on commands or questions',
+  items: 'Home pod, Google Home, Amazon Echo',
+  icon: <Assistant style={{ height: '15vh' }} className="mx-auto w-100" />,
   options: [
     {
-      label: 'thermostat Option 1',
-      Svg: Thermostat1,
+      label: 'assistant option 1',
+      Svg: Assistant1,
       collectedData: [
         {
           label: 'Map of the house',
@@ -33,8 +36,8 @@ const thermostat = {
       ],
     },
     {
-      label: 'thermostat Option 2',
-      Svg: Thermostat2,
+      label: 'assistant option 2',
+      Svg: Assistant2,
       collectedData: [
         {
           label: 'Map of the house',
@@ -57,8 +60,8 @@ const thermostat = {
       ],
     },
     {
-      label: 'thermostat Option 3',
-      Svg: Thermostat2,
+      label: 'assistant option 3',
+      Svg: Assistant2,
       collectedData: [
         {
           label: 'Map of the house',
@@ -84,4 +87,4 @@ const thermostat = {
 
 };
 
-export default thermostat;
+export default assistant;

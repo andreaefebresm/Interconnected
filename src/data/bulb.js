@@ -1,16 +1,18 @@
 import * as React from 'react';
-import { ReactComponent as Thermostat } from '../svg/thermosta.svg';
-import { ReactComponent as Thermostat1, ReactComponent as Thermostat2 } from '../svg/vacuum1/test.svg';
+import { ReactComponent as Bulb1 } from '../svg/vacuum1/test.svg';
+import { ReactComponent as Bulb2 } from '../svg/vacuum2/test.svg';
+import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
+import { ReactComponent as Bulb } from '../svg/bulb.svg';
 
-const thermostat = {
-  title: 'SMART THERMOSTAT',
-  description: 'The thermostats can be controlled remotly and they regulate the temperature by themselves.',
-  items: 'Nest, Ecobee Smart Thermostat, Honeywell Home',
-  icon: <Thermostat style={{ height: '15vh' }} className="mx-auto w-100" />,
+const bulb = {
+  title: 'SMART BULB',
+  description: 'Light can be controlled with just a few taps on smartphone, tablet and virtual assistants.',
+  items: 'Wyze Bulb, Philips Hue, Sengled Smart Wi-Fi LED',
+  icon: <Bulb style={{ height: '15vh' }} className="mx-auto w-100" />,
   options: [
     {
-      label: 'thermostat Option 1',
-      Svg: Thermostat1,
+      label: 'bulb option 1',
+      Svg: Bulb1,
       collectedData: [
         {
           label: 'Map of the house',
@@ -33,8 +35,8 @@ const thermostat = {
       ],
     },
     {
-      label: 'thermostat Option 2',
-      Svg: Thermostat2,
+      label: 'bulb option 2',
+      Svg: Bulb2,
       collectedData: [
         {
           label: 'Map of the house',
@@ -57,8 +59,8 @@ const thermostat = {
       ],
     },
     {
-      label: 'thermostat Option 3',
-      Svg: Thermostat2,
+      label: 'bulb option 3',
+      Svg: Bulb1,
       collectedData: [
         {
           label: 'Map of the house',
@@ -84,4 +86,4 @@ const thermostat = {
 
 };
 
-export default thermostat;
+export default bulb;
