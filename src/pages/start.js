@@ -79,10 +79,12 @@ function PathOfData({ Svg }) {
 
 export default function Start() {
   const [selectedItem, setSelectedItem] = useState();
+  let index = 0;
+  if (typeof window !== 'undefined') {
+    const params = new URLSearchParams(window.location.search);
 
-  const params = new URLSearchParams(window.location.search);
-
-  const index = typeof params.get('selected') !== 'undefined' ? params.get('selected') : 0;
+    index = typeof params.get('selected') !== 'undefined' ? params.get('selected') : 0;
+  }
   const deviceData = data[index];
 
   const { options, Icon } = deviceData;
@@ -118,7 +120,7 @@ export default function Start() {
         </section>
 
         <div className="w-100" id="discover-data" />
-        { selectedItem && <PathOfData Svg={selectedItem.Svg} collectedData={selectedItem.collectedData} />}
+        {selectedItem && <PathOfData Svg={selectedItem.Svg} collectedData={selectedItem.collectedData} />}
 
       </main>
 
