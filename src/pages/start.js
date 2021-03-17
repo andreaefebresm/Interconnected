@@ -96,7 +96,7 @@ export default function Start() {
           <div className="container-fluid">
             <div className="row justify-content-center align-items-center" style={{ height: '90vh' }}>
               <div className="col-6">
-                <Icon style={{ height: '15vh' }} className="mx-auto w-100" />
+                <Icon style={{ height: '40vh' }} className="mx-auto w-100" />
               </div>
               <div className="col-6">
                 <p>Choose one option to interact with the device</p>
