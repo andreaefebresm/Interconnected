@@ -236,10 +236,6 @@ a {
   justify-content: flex-end;
 }
 
-
-
-
-
 .finalQuote {
   text-align: center;
   padding-right: 30vh;
@@ -255,23 +251,24 @@ a {
 //##################### ABOUT #####################
 
 .bordoTopAbout {
-  border-top: 1px solid black;
+  border-top: 1px solid #0D4135;
 }
 
 .bordoBottomAbout {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0D4135;
 }
 
 .borderLeftAbout {
-  border-left: 1px solid black;
+  border-left: 1px solid #0D4135;
 }
 
 .borderBottomAbout {
-  border-bottom: 1px solid  black;
+  border-bottom: 1px solid  #0D4135;
 }
 
 .upper {
   text-transform: uppercase;
+  color: #0D4135;
 }
 
 //##################### MENU #####################
@@ -288,6 +285,11 @@ height: 10px;
 
 
 
-
-
+.contentGreen {
+  color: #0D4135;
+}
+section {
+margin-left: 30px;
+  margin-right: 30px;
+}
 

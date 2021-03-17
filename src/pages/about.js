@@ -30,7 +30,7 @@ export default function About() {
   ];
 
   return (
-    <div>
+    <div className="contentGreen">
       <Header />
       <div className="container-fluid h-100">
         <div className="row">
