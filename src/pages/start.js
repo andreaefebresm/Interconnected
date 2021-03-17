@@ -88,8 +88,8 @@ export default function Start() {
   const { options } = deviceData;
   return (
     <div>
+      <Header className="sticky-top" />
       <main id="content" className="site-content" role="main">
-        <Header />
 
         <section id="intro" className="full-screen  ">
 

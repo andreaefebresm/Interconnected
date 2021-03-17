@@ -53,7 +53,7 @@ export default function UseSafely() {
   ];
   return (
     <div>
-      <Header />
+      <Header className="sticky-top" />
       <section>
         <p>What can you do</p>
         <p>This archive collects guides to opt out from personalisation and to use more safely your devices. </p>
