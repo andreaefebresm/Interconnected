@@ -17,8 +17,8 @@ import data from '../data';
 export default function Menu() {
   return (
     <div>
-      <Header />
-      <div className="container-fluid">
+      <Header className="sticky-top" />
+      <div className="container-fluid pt-5">
         <div className="row">
           <p className="offset-1 col-9 display-3 bigText">Do you know what smart objects can tell about you?</p>
           <p className="offset-1 display-5 fontTextItalic">Choose one device to discover it.</p>
