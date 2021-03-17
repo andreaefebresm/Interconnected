@@ -31,8 +31,8 @@ export default function Menu() {
             }, index) => (
               <div className="col-2" key={title} onClick={() => navigate(`/start?selected=${index}`)} role="link" style={{ paddingRight: '20px', paddingLeft: '20px' }}>
                 <Icon style={{ height: '15vh' }} className="mx-auto w-100" />
-                <p className="display-7 fontTextStrong pt-2 text-center">{title}</p>
-                <p className="display-7 fontText">{description}</p>
+                <p className="display-8 fontTextStrong pt-2 text-center">{title}</p>
+                <p className="display-8 fontText">{description}</p>
                 <p className="display-6 fontTextItalic">{items}</p>
               </div>
 

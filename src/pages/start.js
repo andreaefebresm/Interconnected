@@ -101,16 +101,22 @@ export default function Start() {
                 <Icon style={{ height: '40vh' }} className="mx-auto w-100" />
               </div>
               <div className="col-6">
-                <p>Choose one option to interact with the device</p>
+                <p className="bigText display-4">
+                  Choose one option to
+                  <br />
+                  interact with the device
+                </p>
                 {
                   options.map(({ label, Svg, collectedData }, index) => (
                     <div className="row pb-3" key={index}>
-                      <a
-                        href="#discover-data"
-                        onClick={() => setSelectedItem({ label, Svg, collectedData })}
-                      >
-                        <button>{label}</button>
-                      </a>
+                      <div className="col-5">
+                        <a
+                          href="#discover-data"
+                          onClick={() => setSelectedItem({ label, Svg, collectedData })}
+                        >
+                          <button className="display-7">{label}</button>
+                        </a>
+                      </div>
                     </div>
                   ))
                 }

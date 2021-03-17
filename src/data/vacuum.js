@@ -10,7 +10,7 @@ const vacuum = {
   Icon: Vacuum,
   options: [
     {
-      label: 'First Option',
+      label: 'Vacuum robot does his automated routine.',
       Svg: Vacuum1,
       collectedData: [
         {
@@ -34,7 +34,7 @@ const vacuum = {
       ],
     },
     {
-      label: 'Second Option',
+      label: 'Ask the vacuum robot to clean the kitchen.',
       Svg: Vacuum2,
       collectedData: [
         {

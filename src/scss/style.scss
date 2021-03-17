@@ -128,9 +128,10 @@ $font-family-sans-serif: Archivo, sans-serif;
 $display-font-sizes: (
   1: 5rem,
   2: 4.5rem,
-  3: 4rem,
-  4: 3.5rem,
-  5: 2.25rem,
+  3: 3.5rem,
+  4: 2.5rem,
+  5: 2rem,
+  7: 1.3rem,
   6: 0.8rem
 ) !default;
 
@@ -251,24 +252,24 @@ a {
 //##################### ABOUT #####################
 
 .bordoTopAbout {
-  border-top: 1px solid #0D4135;
+  border-top: 1px solid #497065;
 }
 
 .bordoBottomAbout {
-  border-bottom: 1px solid #0D4135;
+  border-bottom: 1px solid #497065;
 }
 
 .borderLeftAbout {
-  border-left: 1px solid #0D4135;
+  border-left: 1px solid #497065;
 }
 
 .borderBottomAbout {
-  border-bottom: 1px solid  #0D4135;
+  border-bottom: 1px solid  #497065;
 }
 
 .upper {
   text-transform: uppercase;
-  color: #0D4135;
+  color: #497065;
 }
 
 //##################### MENU #####################
@@ -286,6 +287,24 @@ height: 10px;
 
 
 .contentGreen {
-  color: #0D4135;
+  color: #497065;
 }
+
+button {
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: #FCFBF6;
+  padding: 0.5rem;
+  font-weight: var(--font-bold);
+}
+
+
+
+
+
+
+
+
+
+
 
