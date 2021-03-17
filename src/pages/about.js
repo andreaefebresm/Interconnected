@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Header from '../components/Header';
 
 import '../scss/style.scss';
-import { Link } from 'gatsby';
 
 export default function About() {
   const intro = '';
@@ -35,7 +35,8 @@ export default function About() {
       <div className="container-fluid h-100">
         <div className="row">
           <p className="display-4 col-11">
-            Technology is not neutral. We’re inside of what we make, and it’s inside of us. We’re living in a world of connections — and it matters which ones get made and unmade.
+            Technology is not neutral. We’re inside of what we make, and it’s inside of us.
+            We’re living in a world of connections — and it matters which ones get made and unmade.
             <em> Donna Haraway, 1991</em>
           </p>
         </div>
