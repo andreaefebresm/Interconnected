@@ -6,7 +6,7 @@ const thermostat = {
   title: 'SMART THERMOSTAT',
   description: 'The thermostats can be controlled remotly and they regulate the temperature by themselves.',
   items: 'Nest, Ecobee Smart Thermostat, Honeywell Home',
-  icon: <Thermostat style={{ height: '15vh' }} className="mx-auto w-100" />,
+  Icon: Thermostat,
   options: [
     {
       label: 'thermostat Option 1',

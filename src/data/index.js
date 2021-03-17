@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import thermostat from './thermostat';
 import vacuum from './vacuum';
 import doorbell from './doorbell';

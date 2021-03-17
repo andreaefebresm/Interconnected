@@ -85,7 +85,7 @@ export default function Start() {
   const index = typeof params.get('selected') !== 'undefined' ? params.get('selected') : 0;
   const deviceData = data[index];
 
-  const { options } = deviceData;
+  const { options, Icon } = deviceData;
   return (
     <div>
       <main id="content" className="site-content" role="main">
@@ -96,7 +96,7 @@ export default function Start() {
           <div className="container-fluid">
             <div className="row justify-content-center align-items-center" style={{ height: '90vh' }}>
               <div className="col-6">
-                <Vacuum style={{ height: '400px' }} />
+                <Icon style={{ height: '15vh' }} className="mx-auto w-100" />
               </div>
               <div className="col-6">
                 <p>Choose one option to interact with the device</p>

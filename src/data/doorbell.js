@@ -8,7 +8,7 @@ const doorbell = {
   title: 'SMART DOORBELL',
   description: 'Notifies the smartphone of the home owner when a visitor arrives at the door.',
   items: 'Ring Doorbell, Dingling Xiaomi, Xiaomi Mijia',
-  icon: <DoorBell style={{ height: '15vh' }} className="mx-auto w-100" />,
+  Icon: DoorBell,
   options: [
     {
       label: 'doorbell option 1',

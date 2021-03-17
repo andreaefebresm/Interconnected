@@ -8,7 +8,7 @@ const bulb = {
   title: 'SMART BULB',
   description: 'Light can be controlled with just a few taps on smartphone, tablet and virtual assistants.',
   items: 'Wyze Bulb, Philips Hue, Sengled Smart Wi-Fi LED',
-  icon: <Bulb style={{ height: '15vh' }} className="mx-auto w-100" />,
+  Icon: Bulb,
   options: [
     {
       label: 'bulb option 1',

@@ -7,7 +7,7 @@ const vacuum = {
   title: 'SMART VACUUM CLEANER',
   description: 'Also called robot vacuums, they clean rooms automatically based on a virtual map.',
   items: 'Roomba, Roborock, Netbot',
-  icon: <Vacuum style={{ height: '15vh' }} className="mx-auto w-100" />,
+  Icon: Vacuum,
   options: [
     {
       label: 'First Option',

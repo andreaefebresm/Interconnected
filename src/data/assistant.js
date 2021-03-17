@@ -9,7 +9,7 @@ const assistant = {
   title: 'VOICE ASSISTANT',
   description: 'It can perform tasks or services for an individual based on commands or questions',
   items: 'Home pod, Google Home, Amazon Echo',
-  icon: <Assistant style={{ height: '15vh' }} className="mx-auto w-100" />,
+  Icon: Assistant,
   options: [
     {
       label: 'assistant option 1',

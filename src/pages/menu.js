@@ -27,10 +27,10 @@ export default function Menu() {
         <div className="row justify-content-center" style={{ paddingTop: '15vh' }}>
           {
             data.map(({
-              title, description, items, icon,
+              title, description, items, Icon,
             }, index) => (
               <div className="col-2" key={title} onClick={() => navigate(`/start?selected=${index}`)} role="link" style={{ paddingRight: '20px', paddingLeft: '20px' }}>
-                {icon}
+                <Icon style={{ height: '15vh' }} className="mx-auto w-100" />
                 <p className="display-7 fontTextStrong pt-2 text-center">{title}</p>
                 <p className="display-7 fontText">{description}</p>
                 <p className="display-6 fontTextItalic">{items}</p>
