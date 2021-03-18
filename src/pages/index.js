@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'gatsby';
 import { ReactComponent as Intro } from '../svg/intro.svg';
+import { ReactComponent as Intro2 } from '../svg/intro2.svg';
 import '../scss/style.scss';
 import { useEffect, useRef } from 'react';
 
@@ -51,6 +52,10 @@ export default function Index() {
         </section>
 
         <section id="intro" className="full-screen bg-primary">
+          <Intro2 />
+        </section>
+
+        <section id="intro" className="full-screen bg-primary">
           <div className="container-fluid">
             <div className="row">
               <p className="messapiaSerif finalQuote display-4">Do you know what smart objects can tell about you?</p>
@@ -59,6 +64,7 @@ export default function Index() {
 
           </div>
         </section>
+
       </main>
     </div>
 
