@@ -17,14 +17,14 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 
 function PathOfData({ Svg }) {
-  $('#test_svg__prova1').click(() => {
-    $('#uno').removeClass('unoa');
-    $('#uno').addClass('unoaPost');
-  });
-
   const panelsContainer = useRef();
 
   useLayoutEffect(() => {
+    $('#test_svg__prova1').click(() => {
+      $('#uno').removeClass('unoa');
+      $('#uno').addClass('unoaPost');
+    });
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#panels-container',
@@ -73,11 +73,8 @@ function PathOfData({ Svg }) {
 
         <div className="panel">
           <Svg className="position-relative" id="fuck" />
-          <div
-            id="uno"
-            className="unoa"
-          >
-            <div style={{ width: '40%' }} className="box">
+          <div id="uno" className="unoa">
+            <div style={{ width: '30%' }} className="box">
               <div style={{ padding: '15px' }}>
                 <p>MAP OF THE HOUSE:</p>
                 <p>
