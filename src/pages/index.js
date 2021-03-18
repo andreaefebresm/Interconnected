@@ -1,11 +1,10 @@
-import * as React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'gatsby';
 import { ReactComponent as Intro } from '../svg/intro.svg';
 import { ReactComponent as Intro2 } from '../svg/intro2.svg';
 import '../scss/style.scss';
-import { useEffect, useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 

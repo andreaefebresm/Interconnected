@@ -1,7 +1,5 @@
-import * as React from 'react';
 import { ReactComponent as Bulb1 } from '../svg/vacuum1/test.svg';
 import { ReactComponent as Bulb2 } from '../svg/vacuum2/test.svg';
-import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
 import { ReactComponent as Bulb } from '../svg/bulb.svg';
 
 const bulb = {

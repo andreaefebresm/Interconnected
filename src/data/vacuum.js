@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { ReactComponent as Vacuum1 } from '../svg/vacuum1/test.svg';
 import { ReactComponent as Vacuum2 } from '../svg/vacuum2/test.svg';
 import { ReactComponent as Vacuum } from '../svg/vacuum.svg';

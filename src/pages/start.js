@@ -1,11 +1,11 @@
-import * as React from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { Link } from 'gatsby';
 import $ from 'jquery';
 import '../scss/style.scss';
-import { useLayoutEffect, useRef, useState } from 'react';
+
 import Header from '../components/Header';
 import FirstOption from './firstOption';
 import { ReactComponent as Vacuum } from '../svg/vacuum.svg';

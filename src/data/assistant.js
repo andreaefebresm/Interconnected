@@ -1,8 +1,5 @@
-import * as React from 'react';
 import { ReactComponent as Assistant1 } from '../svg/vacuum1/test.svg';
 import { ReactComponent as Assistant2 } from '../svg/vacuum2/test.svg';
-import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
-import { ReactComponent as DoorBell } from '../svg/doorbell.svg';
 import { ReactComponent as Assistant } from '../svg/assistant.svg';
 
 const assistant = {

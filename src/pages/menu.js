@@ -1,14 +1,6 @@
-import * as React from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect, useRef } from 'react';
-import { Link, navigate } from 'gatsby';
+import React from 'react';
+import { navigate } from 'gatsby';
 import Header from '../components/Header';
-import { ReactComponent as Assistant } from '../svg/assistant.svg';
-import { ReactComponent as Bulb } from '../svg/bulb.svg';
-import { ReactComponent as Thermostat } from '../svg/thermosta.svg';
-import { ReactComponent as DoorBell } from '../svg/doorbell.svg';
-import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
 
 import '../scss/style.scss';
 
