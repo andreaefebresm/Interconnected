@@ -298,10 +298,31 @@ button {
   font-weight: var(--font-bold);
 }
 
+.box {
+  background: #F4B63E;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 24px;
+  color:white;
+}
 
+.unoa {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  opacity: 0;
+}
 
+.unoaPost {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  opacity: 1;
+}
 
-
+#test_svg__prova1 {
+  cursor: pointer;
+}
 
 
 

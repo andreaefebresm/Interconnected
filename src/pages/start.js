@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { Link } from 'gatsby';
-
+import $ from 'jquery';
 import '../scss/style.scss';
 import { useLayoutEffect, useRef, useState } from 'react';
 import Header from '../components/Header';
@@ -17,6 +17,11 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 
 function PathOfData({ Svg }) {
+  $('#test_svg__prova1').click(() => {
+    $('#uno').removeClass('unoa');
+    $('#uno').addClass('unoaPost');
+  });
+
   const panelsContainer = useRef();
 
   useLayoutEffect(() => {
@@ -68,12 +73,25 @@ function PathOfData({ Svg }) {
 
         <div className="panel">
           <Svg className="position-relative" id="fuck" />
-
+          <div
+            id="uno"
+            className="unoa"
+          >
+            <div style={{ width: '40%' }} className="box">
+              <div style={{ padding: '15px' }}>
+                <p>MAP OF THE HOUSE:</p>
+                <p>
+                  PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.USERS GIVE THE NAME OF EACH ROOM.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
 
     </section>
+
   );
 }
 

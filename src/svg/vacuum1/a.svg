@@ -30,6 +30,7 @@
       <path d="M2819.58181,501.1267s-148.1001,89.4-116.1001,347.4" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="12"/>
       <path d="M2411.78176,323.92671s127.7,183.5,405.1001,150.7" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="12"/>
       <path d="M2403.28176,323.92671s51.2,411.4,297.2,535" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="12"/>
+      <path d="M2804.78176,286.82671H2615.18167a14.25463,14.25463,0,0,1-14.2-14.2h0a14.25463,14.25463,0,0,1,14.2-14.2h189.60009a14.25462,14.25462,0,0,1,14.2,14.2h0A14.25462,14.25462,0,0,1,2804.78176,286.82671Z"/>
       <path d="M2053.38174,567.82671s34.7,5.1,104,58.5,135.9,269.3,206.4,215.2,10.2-272.1,56.5-308.6,192.30005,49.8,234.80005,48.6c38.5-1.1,160.70635-89.7,160.70635-89.7" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="12"/>
       <path d="M2053.38174,567.82671s190.2-70,218.6-127.9,42.6-166.1,73.2-184.7,104.8999-36.1,146.3999,82c41.5,118,93.30005,498.8,140.30005,528.3s68.5,17.9,68.5,17.9" fill="none" stroke="#497065" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="12"/>
       <circle cx="2811.68167" cy="474.7267" r="5.5"/>
@@ -46,10 +47,7 @@
       <rect x="1312.98171" y="619.82671" width="161.40002" height="14.39999" fill="none"/>
       <text transform="translate(1328.97778 633.98132)" font-size="19.5654" font-family="Archivo-Medium, Archivo" font-weight="500" style="isolation: isolate">WIFI ROUTER</text>
       <rect x="2611.68167" y="265.92671" width="200.3999" height="16.9" fill="none"/>
-      <g id="prova1">
-        <path d="M2804.78176,286.82671H2615.18167a14.25463,14.25463,0,0,1-14.2-14.2h0a14.25463,14.25463,0,0,1,14.2-14.2h189.60009a14.25462,14.25462,0,0,1,14.2,14.2h0A14.25462,14.25462,0,0,1,2804.78176,286.82671Z"/>
-        <text transform="translate(2611.67773 278.9505)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">MA<tspan x="27.64746" y="0" letter-spacing="-0.01799em">P</tspan><tspan x="39.32959" y="0" xml:space="preserve"> OF</tspan><tspan x="69.33545" y="0" letter-spacing="-0.006em"> </tspan><tspan x="74.23145" y="0">THE HOUSE</tspan></text>
-      </g>
+      <text transform="translate(2611.67773 278.9505)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">MA<tspan x="27.64746" y="0" letter-spacing="-0.01799em">P</tspan><tspan x="39.32959" y="0" xml:space="preserve"> OF</tspan><tspan x="69.33545" y="0" letter-spacing="-0.006em"> </tspan><tspan x="74.23145" y="0">THE HOUSE</tspan></text>
       <path d="M2778.28176,353.62671h-165c-6.8,0-12.3999-6.4-12.3999-14.2h0c0-7.8,5.6001-14.2,12.3999-14.2h165c6.80005,0,12.39991,6.4,12.39991,14.2h0C2790.68167,347.2267,2785.08181,353.62671,2778.28176,353.62671Z"/>
       <rect x="2611.68167" y="332.72671" width="200.3999" height="16.9" fill="none"/>
       <text transform="translate(2611.67773 345.75092)" font-size="18" fill="#fff" font-family="Archivo-SemiBold, Archivo" font-weight="600" style="isolation: isolate">DI<tspan x="17.99951" y="0" letter-spacing="-0.00597em">R</tspan><tspan x="30.8877" y="0" letter-spacing="-0.00003em">TINESS LEVE</tspan><tspan x="147.58008" y="0" letter-spacing="-0.01199em">L</tspan></text>

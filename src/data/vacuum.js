@@ -17,7 +17,7 @@ const vacuum = {
           label: 'Map of the house',
           description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
             + 'USERS GIVE THE NAME OF EACH ROOM.',
-          id: '#test__ciccio_svg',
+          id: '#test_svg__prova1',
         },
         {
           label: 'Map of the house',
