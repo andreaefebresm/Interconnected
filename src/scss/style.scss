@@ -306,6 +306,7 @@ button {
   color:white;
 }
 
+
 .unoa {
   position: absolute;
   top: 15%;
@@ -320,10 +321,37 @@ button {
   opacity: 1;
 }
 
-#test_svg__prova1 {
-  cursor: pointer;
+.duea {
+  position: absolute;
+  top: 24%;
+  left: 23%;
+  opacity: 0;
 }
 
+.dueaPost {
+  position: absolute;
+  top: 24%;
+  left: 23%;
+  opacity: 1;
+}
+
+.trea {
+  position: absolute;
+  top: 44%;
+  left: 13%;
+  opacity: 0;
+}
+
+.treaPost {
+  position: absolute;
+  top: 44%;
+  left: 13%;
+  opacity: 1;
+}
+
+#test_svg__uno, #test_svg__due, #test_svg__tre{
+  cursor: pointer;
+}
 
 
 

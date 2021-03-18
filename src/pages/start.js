@@ -7,6 +7,7 @@ import $ from 'jquery';
 import '../scss/style.scss';
 import { useLayoutEffect, useRef, useState } from 'react';
 import Header from '../components/Header';
+import FirstOption from './firstOption';
 import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
 import { ReactComponent as Vacuum1 } from '../svg/vacuum1/test.svg';
 import { ReactComponent as Vacuum2 } from '../svg/vacuum2/test.svg';
@@ -20,9 +21,17 @@ function PathOfData({ Svg }) {
   const panelsContainer = useRef();
 
   useLayoutEffect(() => {
-    $('#test_svg__prova1').click(() => {
+    $('#test_svg__uno').click(() => {
       $('#uno').removeClass('unoa');
       $('#uno').addClass('unoaPost');
+    });
+    $('#test_svg__due').click(() => {
+      $('#due').removeClass('duea');
+      $('#due').addClass('dueaPost');
+    });
+    $('#test_svg__tre').click(() => {
+      $('#tre').removeClass('trea');
+      $('#tre').addClass('treaPost');
     });
 
     const tl = gsap.timeline({
@@ -67,27 +76,53 @@ function PathOfData({ Svg }) {
   }, [Svg]);
 
   return (
-    <section id="panels" className="bg-primary bigText">
+    <div>
+      <section id="panels" className="bg-primary bigText">
 
-      <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
+        <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
 
-        <div className="panel">
-          <Svg className="position-relative" id="fuck" />
-          <div id="uno" className="unoa">
-            <div style={{ width: '30%' }} className="box">
-              <div style={{ padding: '15px' }}>
-                <p>MAP OF THE HOUSE:</p>
-                <p>
-                  PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.USERS GIVE THE NAME OF EACH ROOM.
-                </p>
+          <div className="panel">
+            <Svg className="position-relative" id="fuck" />
+            <div id="uno" className="unoa">
+              <div style={{ width: '30%' }} className="box">
+                <div style={{ padding: '15px' }}>
+                  <p>MAP OF THE HOUSE:</p>
+                  <p>
+                    PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.USERS GIVE THE NAME OF EACH ROOM.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="due" className="duea">
+              <div style={{ width: '30%' }} className="box">
+                <div style={{ padding: '15px' }}>
+                  <p>MAP OF THE HOUSE:</p>
+                  <p>
+                    PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.USERS GIVE THE NAME OF EACH ROOM.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="tre" className="trea">
+              <div style={{ width: '30%' }} className="box">
+                <div style={{ padding: '15px' }}>
+                  <p>MAP OF THE HOUSE:</p>
+                  <p>
+                    PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.USERS GIVE THE NAME OF EACH ROOM.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
 
-      </div>
-
-    </section>
+      </section>
+      <section>
+        <FirstOption />
+      </section>
+    </div>
 
   );
 }
