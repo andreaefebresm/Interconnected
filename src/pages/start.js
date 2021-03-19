@@ -58,6 +58,14 @@ function PathOfData({ Svg, collectedData, prefix }) {
     });
 
     /**
+     * Movimento sull'asse x di tutto l'svg
+     */
+    tl.to('#path-of-data', {
+      xPercent: -66, // Questo definisce a che punto si ferma il SVG
+      ease: 'none',
+    }, 0);
+
+    /**
      * Animazione dell'etichetta che si mouove
      */
     tl.to(`#${svgPrefix}__` + 'simuove', {
@@ -66,14 +74,6 @@ function PathOfData({ Svg, collectedData, prefix }) {
         align: `#${svgPrefix}__` + 'path',
         alignOrigin: [0.5, 0.9],
       },
-    }, 0);
-
-    /**
-     * Movimento sull'asse x di tutto l'svg
-     */
-    tl.to('#path-of-data', {
-      xPercent: -66, // Questo definisce a che punto si ferma il SVG
-      ease: 'none',
     }, 0);
   }, [Svg]);
 
