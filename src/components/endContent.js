@@ -4,7 +4,7 @@ import '../scss/style.scss';
 import { Link } from 'gatsby';
 
 export default function EndContent({
-  link1, link2, link3, what, cta,
+  links, what, cta,
 }) {
   return (
     <div className="container-fluid" style={{ height: '90vh' }}>
@@ -19,20 +19,12 @@ export default function EndContent({
 
         </div>
         <div className="col-12">
-          <div className="row">
-            <div className="col-4">
-              {link1}
-            </div>
-            <div className="col-4">
-              { link2}
-            </div>
-            <div className="col-4">
-              { link3}
-            </div>
+          <div className="row row-cols-3">
+            {links.map(({ href, label }, i) => <div><a href={href} key={i + label}>{label}</a></div>)}
           </div>
           <div className="row">
             <p>
-              { cta}
+              {cta}
             </p>
           </div>
           <div className="row">

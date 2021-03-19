@@ -11,7 +11,9 @@ import data from '../data';
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 
-function PathOfData({ Svg, collectedData, prefix }) {
+function PathOfData({
+  Svg, collectedData, prefix, end,
+}) {
   const svgPrefix = prefix || 'test_svg';
   /**
    * Questa variabile ha gli id e le classi che hanno i box gialli.
@@ -106,7 +108,7 @@ function PathOfData({ Svg, collectedData, prefix }) {
         </div>
       </section>
       <section>
-        <FirstOption />
+        <FirstOption end={end} />
       </section>
     </div>
 
@@ -123,7 +125,7 @@ export default function Start() {
   }
   const deviceData = data[index];
 
-  const { options, Icon } = deviceData;
+  const { options, Icon, end } = deviceData;
   return (
     <div>
       <Header className="sticky-top" />
@@ -151,7 +153,7 @@ export default function Start() {
                         <a
                           href="#discover-data"
                           onClick={() => setSelectedItem({
-                            label, Svg, collectedData, prefix,
+                            label, Svg, collectedData, prefix, end,
                           })}
                         >
                           <button className="display-7">{label}</button>
@@ -167,7 +169,7 @@ export default function Start() {
 
         <div className="w-100" id="discover-data" />
         {selectedItem
-        && <PathOfData Svg={selectedItem.Svg} collectedData={selectedItem.collectedData} prefix={selectedItem.prefix} />}
+        && <PathOfData {...selectedItem} />}
       </main>
 
     </div>
