@@ -11,6 +11,7 @@ const vacuum = {
     {
       label: 'Vacuum robot does his automated routine.',
       Svg: Vacuum1,
+      prefix: 'test_svg',
       collectedData: [
         {
           label: 'Map of the house',
@@ -23,60 +24,55 @@ const vacuum = {
           description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
             + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
             + 'but the fact that you own such type of furniture remains. ',
-          id: '#test__ciccio_svg',
         },
         {
           label: 'Map of the house',
           description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
-          id: '#test__ciccio_svg',
         },
       ],
     },
     {
       label: 'Ask the vacuum robot to clean the kitchen.',
       Svg: Vacuum2,
+      prefix: 'test_svg',
       collectedData: [
         {
           label: 'Map of the house',
           description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
             + 'USERS GIVE THE NAME OF EACH ROOM.',
-          id: '#test__ciccio_svg',
         },
         {
           label: 'Map of the house',
           description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
             + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
             + 'but the fact that you own such type of furniture remains. ',
-          id: '#test__ciccio_svg',
         },
         {
           label: 'Map of the house',
           description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
-          id: '#test__ciccio_svg',
         },
       ],
     },
     {
       label: 'Third Option',
       Svg: Vacuum2,
+      prefix: 'test_svg',
+
       collectedData: [
         {
           label: 'Map of the house',
           description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
             + 'USERS GIVE THE NAME OF EACH ROOM.',
-          id: '#test__ciccio_svg',
         },
         {
           label: 'Map of the house',
           description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
             + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
             + 'but the fact that you own such type of furniture remains. ',
-          id: '#test__ciccio_svg',
         },
         {
           label: 'Map of the house',
           description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
-          id: '#test__ciccio_svg',
         },
       ],
     },

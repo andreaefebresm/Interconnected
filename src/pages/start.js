@@ -2,38 +2,51 @@ import React, { useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
-import { Link } from 'gatsby';
-import $ from 'jquery';
 import '../scss/style.scss';
 
 import Header from '../components/Header';
 import FirstOption from './firstOption';
-import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
-import { ReactComponent as Vacuum1 } from '../svg/vacuum1/test.svg';
-import { ReactComponent as Vacuum2 } from '../svg/vacuum2/test.svg';
-import EndContent from '../components/endContent';
 import data from '../data';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 
-function PathOfData({ Svg }) {
+function PathOfData({ Svg, collectedData, prefix }) {
+  const svgPrefix = prefix || 'test_svg';
+  /**
+   * Questa variabile ha gli id e le classi che hanno i box gialli.
+   * @type {({className: string, id: string}|{className: string, id: string}|{className: string, id: string})[]}
+   */
+  const ids = [
+    {
+      id: 'uno', className: 'unoa',
+    },
+    {
+      id: 'due', className: 'duea',
+    },
+    {
+      id: 'tre', className: 'trea',
+    },
+  ];
+
   const panelsContainer = useRef();
 
   useLayoutEffect(() => {
-    $('#test_svg__uno').click(() => {
-      $('#uno').removeClass('unoa');
-      $('#uno').addClass('unoaPost');
-    });
-    $('#test_svg__due').click(() => {
-      $('#due').removeClass('duea');
-      $('#due').addClass('dueaPost');
-    });
-    $('#test_svg__tre').click(() => {
-      $('#tre').removeClass('trea');
-      $('#tre').addClass('treaPost');
-    });
+    /**
+     * Aggiungo un evento onclick per ciascuna delle etichette che triggerano i box gialli
+     */
+    for (const { id, className } of ids) {
+      document.getElementById(`${prefix || 'test_svg'}__${id}`).addEventListener('click', () => {
+        const el = document.getElementById(id);
+        el.classList.remove(className);
+        el.classList.add(`${className}Post`);
+      });
+    }
 
+    /**
+     * La timeline di GSAP
+     * @type {gsap.core.Timeline}
+     */
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#panels-container',
@@ -44,35 +57,24 @@ function PathOfData({ Svg }) {
       },
     });
 
-    gsap.to('#test_svg__simuove', {
-      scrollTrigger: {
-        trigger: '#panels-container',
-        start: 'top top',
-        pin: true,
-        scrub: 0,
-        markers: true,
-        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
-
-      },
+    /**
+     * Animazione dell'etichetta che si mouove
+     */
+    tl.to(`#${svgPrefix}__` + 'simuove', {
       motionPath: {
-        path: '#test_svg__path',
-        align: '#test_svg__path',
+        path: `#${svgPrefix}__` + 'path',
+        align: `#${svgPrefix}__` + 'path',
         alignOrigin: [0.5, 0.9],
       },
-    });
+    }, 0);
 
-    gsap.to('#fuck', {
-      scrollTrigger: {
-        trigger: '#panels-container',
-        start: 'top top',
-        pin: true,
-        scrub: 0,
-
-        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
-      },
+    /**
+     * Movimento sull'asse x di tutto l'svg
+     */
+    tl.to('#path-of-data', {
       xPercent: -66, // Questo definisce a che punto si ferma il SVG
       ease: 'none',
-    });
+    }, 0);
   }, [Svg]);
 
   return (
@@ -82,42 +84,26 @@ function PathOfData({ Svg }) {
         <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
 
           <div className="panel">
-            <Svg className="position-relative" id="fuck" />
-            <div id="uno" className="unoa">
-              <div style={{ width: '30%' }} className="box">
-                <div style={{ padding: '15px' }}>
-                  <p>MAP OF THE HOUSE:</p>
-                  <p>
-                    PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.USERS GIVE THE NAME OF EACH ROOM.
-                  </p>
+            <Svg className="position-relative" id="path-of-data" />
+            {
+              collectedData.map(({ label, description }, i) => (
+                <div id={ids[i].id} className={ids[i].className} key={label}>
+                  <div style={{ width: '30%' }} className="box">
+                    <div style={{ padding: '15px' }}>
+                      <p>
+                        {label}
+                        :
+                      </p>
+                      <p>
+                        {description}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div id="due" className="duea">
-              <div style={{ width: '30%' }} className="box">
-                <div style={{ padding: '15px' }}>
-                  <p>MAP OF THE HOUSE:</p>
-                  <p>
-                    PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.USERS GIVE THE NAME OF EACH ROOM.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div id="tre" className="trea">
-              <div style={{ width: '30%' }} className="box">
-                <div style={{ padding: '15px' }}>
-                  <p>MAP OF THE HOUSE:</p>
-                  <p>
-                    PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.USERS GIVE THE NAME OF EACH ROOM.
-                  </p>
-                </div>
-              </div>
-            </div>
+              ))
+            }
           </div>
-
         </div>
-
       </section>
       <section>
         <FirstOption />
@@ -157,12 +143,16 @@ export default function Start() {
                   interact with the device
                 </p>
                 {
-                  options.map(({ label, Svg, collectedData }, index) => (
-                    <div className="row pb-3" key={index}>
+                  options.map(({
+                    label, Svg, collectedData, prefix,
+                  }, i) => (
+                    <div className="row pb-3" key={i}>
                       <div className="col-5">
                         <a
                           href="#discover-data"
-                          onClick={() => setSelectedItem({ label, Svg, collectedData })}
+                          onClick={() => setSelectedItem({
+                            label, Svg, collectedData, prefix,
+                          })}
                         >
                           <button className="display-7">{label}</button>
                         </a>
@@ -176,8 +166,8 @@ export default function Start() {
         </section>
 
         <div className="w-100" id="discover-data" />
-        {selectedItem && <PathOfData Svg={selectedItem.Svg} collectedData={selectedItem.collectedData} />}
-
+        {selectedItem
+        && <PathOfData Svg={selectedItem.Svg} collectedData={selectedItem.collectedData} prefix={selectedItem.prefix} />}
       </main>
 
     </div>
