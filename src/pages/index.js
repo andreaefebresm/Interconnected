@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Index() {
   const panelsContainer = useRef();
-  const intro = useRef();
+  const text = useRef();
 
   useEffect(() => {
     gsap.to('#fuck', {
@@ -25,6 +25,14 @@ export default function Index() {
       xPercent: -66, // Questo definisce a che punto si ferma il SVG
       ease: 'none',
     });
+
+    const texts = [
+      'Alexa',
+      'Ok Google',
+      'Hey Siri',
+    ];
+
+    document.getElementById('randomText').innerText = texts[Math.floor(Math.random() * texts.length)];
   }, []);
 
   return (
@@ -32,7 +40,11 @@ export default function Index() {
       <main id="content" className="site-content" role="main">
 
         <section id="intro" className="full-screen bg-secondary">
-          <p className="bigText text-center display-3">Alexa I am home</p>
+          <p className="bigText text-center display-3">
+            <span id="randomText" />
+            {' '}
+            I am home
+          </p>
           <span className="scroll">scroll</span>
 
         </section>
