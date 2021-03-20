@@ -87,14 +87,14 @@ const thermostat = {
       },
       {
         href: 'http://ww.....',
-        text: 'A',
+        text: 'B',
       },
       {
         href: 'http://ww.....',
         text: 'A',
       },
     ],
-    cta: 'can i use my thermostat more safely?',
+    cta: 'can i use my Smart Thermostat more safely?',
   },
 
 };

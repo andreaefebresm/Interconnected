@@ -78,7 +78,24 @@ const doorbell = {
       ],
     },
   ],
-
+  end: {
+    what: 'doorbel how much you use your spaces in the house (map + dirtiness) how untidy you are',
+    links: [
+      {
+        href: 'http://ww.....',
+        text: 'A',
+      },
+      {
+        href: 'http://ww.....',
+        text: 'B',
+      },
+      {
+        href: 'http://ww.....',
+        text: 'A',
+      },
+    ],
+    cta: 'can i use my Smart Doorbell more safely?',
+  },
 };
 
 export default doorbell;
