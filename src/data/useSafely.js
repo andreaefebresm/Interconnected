@@ -1,11 +1,29 @@
+const assistant = 'assistant',
+  vacuum = 'vacuum',
+  doorbell = 'doorbell',
+  bulb = 'bulb',
+  thermostat = 'thermostat',
+  policy = 'policy';
+
+export const categories = {
+  assistant,
+  vacuum,
+  doorbell,
+  bulb,
+  thermostat,
+  policy,
+};
+
 const article = [
   {
+    cat: vacuum,
     who: 'Amazon Alexa',
     title: 'Stop Amazon employees from listening to your Alexa recordings',
     decription: 'Don\'t want to run the risk of anyone reviewing your Alexa recordings? Turn this feature off.',
     link: 'https://www.cnet.com/how-to/stop-amazon-employees-from-listening-to-your-alexa-recordings/',
   },
   {
+    cat: assistant,
     who: 'Amazon Alexa',
     title: 'ALEXA\n,'
       + 'A User\'s Guide',
@@ -13,18 +31,22 @@ const article = [
     link: 'https://datadetoxkit.org/en/privacy/alexa/',
   },
   {
+    cat: vacuum,
+
     who: 'Amazon Alexa',
     title: 'Amazon.com',
     decription: 'Manage your alexa privacy settings',
     link: 'https://www.amazon.com/gp/help/customer/display.html?nodeId=GPGRYRZ494GDFPZ2',
   },
   {
+    cat: assistant,
     who: 'Google Home',
     title: 'How to stop your Google Home from listening to you and storing your audio data',
     decription: 'It should come as no surprise to you that your Google Home smart speaker is listening to you. That\'s inherent in how it works; the speaker is listening to everything you say, waiting for the wake words, "Hey Google" or "Ok Google."',
     link: 'https://www.youtube.com/',
   },
   {
+    cat: assistant,
     who: 'Google Home',
     title: 'How to Stop Your Google Home From Recording All Your Conversations',
     decription: 'Google may be storing everything you say to your Google Home and keeping the recordings forever, just as Alexa does. ',
@@ -69,7 +91,7 @@ const article = [
   {
     who: 'Ring Doorbell',
     title: 'Opting In and Out of Sidewalk',
-    decription: 'Sidewalk is a shared network that helps devices work better. Sidewalk allows you to give and receive benefits, such as helping keep devices in your neighborhood running during internet outages and even helping to find lost pets. \n'
+    decription: 'Sidewalk is a shared network that helps cats work better. Sidewalk allows you to give and receive benefits, such as helping keep cats in your neighborhood running during internet outages and even helping to find lost pets. \n'
       + '\n',
     link: 'https://support.ring.com/hc/en-us/articles/360032524592-Opting-In-and-Out-of-Sidewalk',
   },
@@ -90,7 +112,7 @@ const article = [
   {
     who: 'Ring Doorbell',
     title: 'Amazon Sidewalk: How To Opt Out & Why You Should',
-    decription: 'Amazon is planning on launching Amazon Sidewalk, a shared community Wi-Fi network for many of its devices, and users should choose to opt-out.',
+    decription: 'Amazon is planning on launching Amazon Sidewalk, a shared community Wi-Fi network for many of its cats, and users should choose to opt-out.',
     link: 'https://screenrant.com/amazon-sidewalk-security-opt-out/',
   },
   {
