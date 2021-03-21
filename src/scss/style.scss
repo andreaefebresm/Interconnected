@@ -1,7 +1,4 @@
-
 //qui riscrivere le variabili
-
-
 
 //font-family: 'Archivo', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
@@ -150,7 +147,7 @@ html {
 }
 
 body {
-overflow-x: hidden;
+  overflow-x: hidden;
   background-color: #fcfbf6;
 }
 
@@ -227,6 +224,7 @@ a {
   height: auto;
   display: block;
 }
+
 #panels #panels-container .panel .panels-navigation {
   width: 100%;
   display: -webkit-box;
@@ -247,8 +245,9 @@ a {
 .scroll {
   position: absolute;
   bottom: 5%;
-  left:50%;
+  left: 50%;
 }
+
 //##################### ABOUT #####################
 
 .bordoTopAbout {
@@ -264,7 +263,7 @@ a {
 }
 
 .borderBottomAbout {
-  border-bottom: 1px solid  #497065;
+  border-bottom: 1px solid #497065;
 }
 
 .upper {
@@ -274,16 +273,15 @@ a {
 
 //##################### MENU #####################
 .altezzaSvg {
-height: 10px;
+  height: 10px;
 }
 
 
 //##################### START #####################
 
-#test_svg__blur, #test_svg__blur-2, #test_svg__blur-1, #test_svg__blur-3, #test_svg__blur-4, #test_svg__blur-5, #test_svg__blur-6, #test_svg__blur-7, #test_svg__blur-8  {
+#test_svg__blur, #test_svg__blur-2, #test_svg__blur-1, #test_svg__blur-3, #test_svg__blur-4, #test_svg__blur-5, #test_svg__blur-6  {
   filter: blur(2px);
 }
-
 
 
 .contentGreen {
@@ -303,57 +301,16 @@ button {
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 24px;
-  color:white;
-}
-
-
-.unoa {
+  color: white;
   position: absolute;
-  top: 15%;
-  left: 12%;
+
+  width: 30vw;
   opacity: 0;
+  transform: translateY(20vh);
+
+
 }
 
-.unoaPost {
-  position: absolute;
-  top: 15%;
-  left: 12%;
-  opacity: 1;
-}
-
-.duea {
-  position: absolute;
-  top: 34%;
-  left: 23%;
-  opacity: 0;
-  width: 30%;
-}
-
-.dueaPost {
-  position: absolute;
-  top: 34%;
-  left: 23%;
-  opacity: 1;
-  width: 30%;
-}
-
-.trea {
-  position: absolute;
-  top: 44%;
-  left: 13%;
-  opacity: 0;
-}
-
-.treaPost {
-  position: absolute;
-  top: 44%;
-  left: 13%;
-  opacity: 1;
-}
-
-#test_svg__uno, #test_svg__due, #test_svg__tre{
-  cursor: pointer;
-}
 
 
 

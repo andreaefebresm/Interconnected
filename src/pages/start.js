@@ -1,7 +1,7 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
+import React, {useLayoutEffect, useRef, useState} from 'react';
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import {MotionPathPlugin} from 'gsap/MotionPathPlugin';
 import '../scss/style.scss';
 
 import Header from '../components/Header';
@@ -12,22 +12,25 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 
 function PathOfData({
-  Svg, collectedData, prefix, end,
-}) {
+                      Svg, collectedData, prefix, end,
+                    }) {
   const svgPrefix = prefix || 'test_svg';
   /**
    * Questa variabile ha gli id e le classi che hanno i box gialli.
    * @type {({className: string, id: string}|{className: string, id: string}|{className: string, id: string})[]}
    */
-  const ids = [
+  const defaultStyles = [
     {
-      id: 'uno', className: 'unoa',
+      top: '15%', left: '12%',
     },
     {
-      id: 'due', className: 'duea',
+      top: '34%', left: '23%',
     },
     {
-      id: 'tre', className: 'trea',
+      top: '44%', left: '13%',
+    },
+    {
+      top: '64%', left: '33%',
     },
   ];
 
@@ -35,26 +38,17 @@ function PathOfData({
 
   useLayoutEffect(() => {
     /**
-     * Aggiungo un evento onclick per ciascuna delle etichette che triggerano i box gialli
-     */
-    for (const { id, className } of ids) {
-      document.getElementById(`${prefix || 'test_svg'}__${id}`).addEventListener('click', () => {
-        const el = document.getElementById(id);
-        el.classList.remove(className);
-        el.classList.add(`${className}Post`);
-      });
-    }
-
-    /**
      * La timeline di GSAP
      * @type {gsap.core.Timeline}
      */
     const tl = gsap.timeline({
+      yoyo: true,
       scrollTrigger: {
         trigger: '#panels-container',
         start: 'top top',
         pin: true,
         scrub: 0,
+        invalidateOnRefresh: true,
         end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
       },
     });
@@ -77,29 +71,32 @@ function PathOfData({
         alignOrigin: [0.5, 0.9],
       },
     }, 0);
+
+    tl.to('.box', { transform: 'translateY(0)', opacity:2, duration: .05} )
+
   }, [Svg]);
+
 
   return (
     <div>
       <section id="panels" className="bg-primary bigText">
 
-        <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
+        <div id="panels-container" style={{width: '300%'}} ref={panelsContainer}>
 
           <div className="panel">
-            <Svg className="position-relative" id="path-of-data" />
+            <Svg className="position-relative" id="path-of-data"/>
             {
-              collectedData.map(({ label, description }, i) => (
-                <div id={ids[i].id} className={ids[i].className} key={label}>
-                  <div style={{ width: '30%' }} className="box">
-                    <div style={{ padding: '15px' }}>
-                      <p>
-                        {label}
-                        :
-                      </p>
-                      <p>
-                        {description}
-                      </p>
-                    </div>
+              collectedData.map(({label, description}, i) => (
+                <div className="box" key={label + i} style={defaultStyles[i]}>
+                  <div style={{padding: '15px'}}>
+                    <p>
+                      {label}
+                      :
+                    </p>
+                    <p>
+                      {description}
+                    </p>
+
                   </div>
                 </div>
               ))
@@ -108,7 +105,7 @@ function PathOfData({
         </div>
       </section>
       <section>
-        <FirstOption end={end} />
+        <FirstOption end={end}/>
       </section>
     </div>
 
@@ -125,29 +122,29 @@ export default function Start() {
   }
   const deviceData = data[index];
 
-  const { options, Icon, end } = deviceData;
+  const {options, Icon, end} = deviceData;
   return (
     <div>
-      <Header className="sticky-top" />
+      <Header className="sticky-top"/>
       <main id="content" className="site-content" role="main">
 
         <section id="intro" className="full-screen  ">
 
           <div className="container-fluid">
-            <div className="row justify-content-center align-items-center" style={{ height: '90vh' }}>
+            <div className="row justify-content-center align-items-center" style={{height: '90vh'}}>
               <div className="col-6">
-                <Icon style={{ height: '40vh' }} className="mx-auto w-100" />
+                <Icon style={{height: '40vh'}} className="mx-auto w-100"/>
               </div>
               <div className="col-6">
                 <p className="bigText display-4">
                   Choose one option to
-                  <br />
+                  <br/>
                   interact with the device
                 </p>
                 {
                   options.map(({
-                    label, Svg, collectedData, prefix,
-                  }, i) => (
+                                 label, Svg, collectedData, prefix,
+                               }, i) => (
                     <div className="row pb-3" key={i}>
                       <div className="col-5">
                         <a
@@ -167,7 +164,7 @@ export default function Start() {
           </div>
         </section>
 
-        <div className="w-100" id="discover-data" />
+        <div className="w-100" id="discover-data"/>
         {selectedItem
         && <PathOfData {...selectedItem} />}
       </main>
