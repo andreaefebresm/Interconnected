@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import article, { categories } from '../data/useSafely';
 import '../scss/style.scss';
@@ -88,7 +88,6 @@ export default function UseSafely() {
                 </a>
               ))
             }
-
           </div>
         </div>
       </section>

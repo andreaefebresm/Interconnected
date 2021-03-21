@@ -16,8 +16,7 @@ function PathOfData({
                     }) {
   const svgPrefix = prefix || 'test_svg';
   /**
-   * Questa variabile ha gli id e le classi che hanno i box gialli.
-   * @type {({className: string, id: string}|{className: string, id: string}|{className: string, id: string})[]}
+   * Questa variabile ha le posizioni di default che hanno i box gialli.
    */
   const defaultStyles = [
     {
@@ -72,10 +71,9 @@ function PathOfData({
       },
     }, 0);
 
-    tl.to('.box', { transform: 'translateY(0)', opacity:2, duration: .05} )
+    tl.to('.box', {transform: 'translateY(0)', opacity: 2, duration: .05});
 
   }, [Svg]);
-
 
   return (
     <div>
@@ -86,17 +84,14 @@ function PathOfData({
           <div className="panel">
             <Svg className="position-relative" id="path-of-data"/>
             {
-              collectedData.map(({label, description}, i) => (
-                <div className="box" key={label + i} style={defaultStyles[i]}>
+              collectedData.map(({label, description, style}, i) => (
+                <div className="box" key={label + i} style={{ ...defaultStyles[i], ...style }}>
                   <div style={{padding: '15px'}}>
                     <p>
                       {label}
                       :
                     </p>
-                    <p>
-                      {description}
-                    </p>
-
+                    <p>{description}</p>
                   </div>
                 </div>
               ))
