@@ -21,36 +21,42 @@ export default function UseSafely() {
           {' '}
         </p>
         <a
+          role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.assistant ? 'active' : ''}`}
           onClick={(e) =>e.preventDefault() || setFilter(categories.assistant)}
         >
           Virtual Assistant
         </a>
         <a
+          role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.vacuum ? 'active' : ''}`}
           onClick={(e) =>e.preventDefault() || setFilter(categories.vacuum)}
         >
           Smart Vacuum
         </a>
         <a
+          role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.doorbell ? 'active' : ''}`}
           onClick={(e) =>e.preventDefault() || setFilter(categories.doorbell)}
         >
           Smart Doorbell
         </a>
         <a
+          role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.bulb ? 'active' : ''}`}
           onClick={(e) =>e.preventDefault() || setFilter(categories.bulb)}
         >
           Smart Bulb
         </a>
         <a
+          role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.thermostat ? 'active' : ''}`}
           onClick={(e) =>e.preventDefault() || setFilter(categories.thermostat)}
         >
           Smart Thermostat
         </a>
         <a
+          role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.policy ? 'active' : ''}`}
           onClick={(e) =>e.preventDefault() || setFilter(categories.policy)}
         >
@@ -65,6 +71,7 @@ export default function UseSafely() {
                 who, title, decription, link,
               }) => (
                 <a
+                  target="_blank"
                   key={who + title}
                   className="col-3 pt-4"
                   href={link}
