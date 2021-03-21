@@ -1,4 +1,4 @@
-import { ReactComponent as Assistant1 } from '../svg/vacuum1/test.svg';
+import { ReactComponent as Assistant1 } from '../svg/assistant1/test.svg';
 import { ReactComponent as Assistant2 } from '../svg/vacuum2/test.svg';
 import { ReactComponent as Assistant } from '../svg/assistant.svg';
 
