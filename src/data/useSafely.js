@@ -1,9 +1,9 @@
-const assistant = 'assistant',
-  vacuum = 'vacuum',
-  doorbell = 'doorbell',
-  bulb = 'bulb',
-  thermostat = 'thermostat',
-  policy = 'policy';
+const assistant = 'assistant';
+const vacuum = 'vacuum';
+const doorbell = 'doorbell';
+const bulb = 'bulb';
+const thermostat = 'thermostat';
+const policy = 'policy';
 
 export const categories = {
   assistant,

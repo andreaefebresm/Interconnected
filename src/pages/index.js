@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'gatsby';
@@ -11,6 +11,14 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Index() {
   const panelsContainer = useRef();
   const text = useRef();
+
+  const heys = [
+    'Alexa',
+    'Ok Google',
+    'Hey Siri',
+  ];
+
+  const [heyIndex, setHeyIndex] = useState(0);
 
   useEffect(() => {
     gsap.to('#fuck', {
@@ -26,13 +34,17 @@ export default function Index() {
       ease: 'none',
     });
 
-    const texts = [
-      'Alexa',
-      'Ok Google',
-      'Hey Siri',
-    ];
+    const interval = setInterval(() => {
+      setHeyIndex((prevState) => {
+        let nextIndex = prevState + 1;
 
-    document.getElementById('randomText').innerText = texts[Math.floor(Math.random() * texts.length)];
+        if (nextIndex > (heys.length - 1)) nextIndex = 0;
+
+        return nextIndex;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -41,7 +53,7 @@ export default function Index() {
 
         <section id="intro" className="full-screen bg-secondary">
           <p className="bigText text-center display-3">
-            <span id="randomText" />
+            {heys[heyIndex]}
             {' '}
             I am home
           </p>

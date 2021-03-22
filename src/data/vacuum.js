@@ -14,10 +14,13 @@ const vacuum = {
       prefix: 'test_svg',
       collectedData: [
         {
-          label: 'Map of the house',
+          label: 'Map of yout house',
           description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
             + 'USERS GIVE THE NAME OF EACH ROOM.',
           id: '#test_svg__prova1',
+          style: {
+            left: '30%',
+          },
         },
         {
           label: 'Map of the house',
