@@ -23,42 +23,42 @@ export default function UseSafely() {
         <a
           role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.assistant ? 'active' : ''}`}
-          onClick={(e) =>e.preventDefault() || setFilter(categories.assistant)}
+          onClick={(e) => e.preventDefault() || setFilter(categories.assistant)}
         >
           Virtual Assistant
         </a>
         <a
           role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.vacuum ? 'active' : ''}`}
-          onClick={(e) =>e.preventDefault() || setFilter(categories.vacuum)}
+          onClick={(e) => e.preventDefault() || setFilter(categories.vacuum)}
         >
           Smart Vacuum
         </a>
         <a
           role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.doorbell ? 'active' : ''}`}
-          onClick={(e) =>e.preventDefault() || setFilter(categories.doorbell)}
+          onClick={(e) => e.preventDefault() || setFilter(categories.doorbell)}
         >
           Smart Doorbell
         </a>
         <a
           role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.bulb ? 'active' : ''}`}
-          onClick={(e) =>e.preventDefault() || setFilter(categories.bulb)}
+          onClick={(e) => e.preventDefault() || setFilter(categories.bulb)}
         >
           Smart Bulb
         </a>
         <a
           role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.thermostat ? 'active' : ''}`}
-          onClick={(e) =>e.preventDefault() || setFilter(categories.thermostat)}
+          onClick={(e) => e.preventDefault() || setFilter(categories.thermostat)}
         >
           Smart Thermostat
         </a>
         <a
           role="button"
           className={`btn btn-lg btn-outline-dark ${cat === categories.policy ? 'active' : ''}`}
-          onClick={(e) =>e.preventDefault() || setFilter(categories.policy)}
+          onClick={(e) => e.preventDefault() || setFilter(categories.policy)}
         >
           Privacy Policy
         </a>
@@ -67,13 +67,13 @@ export default function UseSafely() {
         <div className="container-fluid">
           <div className="row">
             {
-              article.filter((i) => (cat ? i.cat === cat : true)).map(({
-                who, title, decription, link,
+              article.map(({
+                who, title, decription, link, cat: category,
               }) => (
                 <a
                   target="_blank"
                   key={who + title}
-                  className="col-3 pt-4"
+                  className={`col-3 pt-4 article ${cat ? (category === cat && 'show') : 'show'}`}
                   href={link}
                   style={{ cursor: 'pointer' }}
                 >
