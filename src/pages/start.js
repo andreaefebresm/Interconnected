@@ -81,7 +81,8 @@ function PathOfData({
 
           <div className="panel">
             <Svg className="position-relative" id="path-of-data" />
-            {
+            <div>
+              {
               collectedData.map(({ label, description, style }, i) => (
                 <div className="box" key={label + i} style={{ ...defaultStyles[i], ...style }}>
                   <div style={{ padding: '15px' }}>
@@ -89,11 +90,12 @@ function PathOfData({
                       {label}
                       :
                     </p>
-                    <p>{description}</p>
+                    <p className="fontText">{description}</p>
                   </div>
                 </div>
               ))
             }
+            </div>
           </div>
         </div>
       </section>
@@ -141,12 +143,13 @@ export default function Start() {
                     <div className="row pb-3" key={i}>
                       <div className="col-5">
                         <a
+                          className="btn btn-lg btn-outline-info"
                           href="#discover-data"
                           onClick={() => setSelectedItem({
                             label, Svg, collectedData, prefix, end,
                           })}
                         >
-                          <button className="display-7">{label}</button>
+                          <span className=" display-7">{label}</span>
                         </a>
                       </div>
                     </div>

@@ -118,6 +118,9 @@ $primary: #FCFBF6;
 //yellow
 $secondary: #F4B63E;
 
+//green
+$dark: #497065;
+
 //Main font
 $font-family-sans-serif: Archivo, sans-serif;
 
@@ -132,7 +135,9 @@ $display-font-sizes: (
   6: 0.8rem
 ) !default;
 
-$btn-border-radius-lg: 0;
+$btn-border-radius-lg: 35px;
+$info: black;
+
 
 @import "~bootstrap";
 
@@ -317,12 +322,24 @@ button {
 }
 
 .article:not(.show) {
+  padding: 0;
   transform: scale(0);
   font-size: 0;
   opacity: 0;
   width: 0;
   height: 0;
-  transition: all 200ms ease-in-out ;
+  transition: all 200ms ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -16,7 +16,7 @@ export const categories = {
 
 const article = [
   {
-    cat: vacuum,
+    cat: assistant,
     who: 'Amazon Alexa',
     title: 'Stop Amazon employees from listening to your Alexa recordings',
     decription: 'Don\'t want to run the risk of anyone reviewing your Alexa recordings? Turn this feature off.',
@@ -31,7 +31,7 @@ const article = [
     link: 'https://datadetoxkit.org/en/privacy/alexa/',
   },
   {
-    cat: vacuum,
+    cat: assistant,
 
     who: 'Amazon Alexa',
     title: 'Amazon.com',
@@ -53,42 +53,49 @@ const article = [
     link: 'https://www.howtogeek.com/413778/how-to-stop-your-google-home-from-recording-all-your-conversations/',
   },
   {
+    cat: assistant,
     who: 'Google Home, Amazon Alexa',
     title: 'How To Make Your Amazon Echo and Google Home as Private as Possible',
     decription: 'With news that Amazon lets human employees listen to Alexa recordings, you might want to tighten up your smart assistant ship.',
     link: 'https://www.wired.com/story/alexa-google-assistant-echo-smart-speaker-privacy-controls/',
   },
   {
+    cat: assistant,
     who: 'Google Home',
     title: 'How to Opt Out of Google Home’s Tracking Features',
     decription: 'Privacy and security have been major themes for Google in 2019. But the conveniences we enjoy, like finding our way through a new city with Google Maps, require (personal) data inputs. ',
     link: 'https://www.reviews.com/home/smart-home/opt-out-of-google-homes-tracking-features/',
   },
   {
+    cat: assistant,
     who: 'Apple Homepod',
     title: 'How to Delete Siri Audio History and Opt Out of Siri Audio Sharing on HomePod',
     decription: 'This article explains how to delete your Siri audio interaction history and opt out of sharing audio recordings with Apple on iPhone, iPad, and iPod touch.',
     link: 'https://www.macrumors.com/how-to/delete-siri-audio-history-opt-out-sharing-homepod/',
   },
   {
+    cat: assistant,
     who: 'Apple Homepod',
     title: 'Ask Siri, Dictation & Privacy',
     decription: 'Siri is designed to protect your information and enable you to choose what you share.',
     link: 'https://support.apple.com/en-us/HT210657',
   },
   {
+    cat: vacuum,
     who: 'Roomba',
     title: 'Opt-Out of Clean Map™ Report Data and the iRobot Cloud',
     decription: '',
     link: 'https://homesupport.irobot.com/app/answers/detail/a_id/1406/~/opt-out-of-clean-map%E2%84%A2-report-data-and-the-irobot-cloud',
   },
   {
+    cat: vacuum,
     who: 'Roomba',
     title: 'How to Keep a Roomba Vacuum Cleaner From Collecting Data About Your Home',
     decription: 'According to iRobot, you can shut down the robotic vac\'s Wi-Fi connection in a few simple steps',
     link: 'https://www.consumerreports.org/roomba/how-to-keep-a-roomba-vacuum-cleaner-from-collecting-data-about-your-home/',
   },
   {
+    cat: doorbell,
     who: 'Ring Doorbell',
     title: 'Opting In and Out of Sidewalk',
     decription: 'Sidewalk is a shared network that helps cats work better. Sidewalk allows you to give and receive benefits, such as helping keep cats in your neighborhood running during internet outages and even helping to find lost pets. \n'
@@ -96,6 +103,7 @@ const article = [
     link: 'https://support.ring.com/hc/en-us/articles/360032524592-Opting-In-and-Out-of-Sidewalk',
   },
   {
+    cat: doorbell,
     who: 'Ring Doorbell',
     title: '\n'
       + 'Ring doorbell and police surveillance: There\'s a new way to opt out of video requests',
@@ -104,42 +112,49 @@ const article = [
     link: 'https://www.cnet.com/how-to/ring-doorbell-and-police-surveillance-theres-a-new-way-to-opt-out-of-video-requests/',
   },
   {
+    cat: doorbell,
     who: 'Ring Doorbell',
     title: 'Don\'t want the new Amazon Sidewalk feature? Here\'s how to opt-out',
     decription: 'I’m trying to figure out how to make sure Amazon Sidewalk isn’t on in my Ring doorbell. Can you help?',
     link: 'https://www.cnet.com/how-to/ring-doorbell-and-police-surveillance-theres-a-new-way-to-opt-out-of-video-requests/',
   },
   {
+    cat: doorbell,
     who: 'Ring Doorbell',
     title: 'Amazon Sidewalk: How To Opt Out & Why You Should',
     decription: 'Amazon is planning on launching Amazon Sidewalk, a shared community Wi-Fi network for many of its cats, and users should choose to opt-out.',
     link: 'https://screenrant.com/amazon-sidewalk-security-opt-out/',
   },
   {
+    cat: doorbell,
     who: 'Ring Doorbell',
     title: 'How to use the Ring Control Center to opt out of third-party ads and services',
     decription: 'In light of recent privacy scandals, the security company Ring has made a concerted effort over the past few months to empower its users to take greater control over their data and video feeds.',
     link: 'https://www.androidcentral.com/how-use-ring-control-center-opt-out-third-party-ads-and-services',
   },
   {
+    cat: doorbell,
     who: 'Ring Doorbell',
     title: 'Ring is finally requiring a basic security feature to help prevent hacks',
     decription: 'Mandatory two-factor authentication is coming soon to your home surveillance system.',
     link: 'https://www.vox.com/recode/2020/2/18/21030600/amazon-ring-two-factor-authentication-privacy-security-update',
   },
   {
+    cat: bulb,
     who: 'Philips Hue',
     title: 'Additional Privacy Notice for Philips Hue customers',
     decription: 'Your privacy is important. Read our Privacy Notice to learn how we process personal data. Contact us, if you have any questions.',
     link: 'https://www.philips-hue.com/en-us/support/legal/privacy-policy',
   },
   {
+    cat: thermostat,
     who: 'Nest Thermostat',
     title: 'Frequently asked questions about privacy.',
     decription: 'Nest collects the data we believe is necessary to provide a great experience with your Nest products and services – to help you save energy.',
     link: 'https://nest.com/privacy-faq/',
   },
   {
+    cat: thermostat,
     who: 'Ecobee Thermostat',
     title: 'FREQUENTLY\n'
       + 'ASKED QUESTIONS',
@@ -147,6 +162,7 @@ const article = [
     link: 'https://www.ecobee.com/donate-your-data/faqs/',
   },
   {
+    cat: assistant,
     who: 'Google Home, Nest Thermostat',
     title: 'See and manage the data in your Google Account',
     decription: 'Your data includes the things you do, like searches, and the things you create, like email.',

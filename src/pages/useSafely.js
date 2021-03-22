@@ -11,11 +11,11 @@ export default function UseSafely() {
   }
 
   return (
-    <div className="contentGreen">
+    <div>
       <Header className="sticky-top" />
       <section className="pt-5" style={{ marginLeft: '30px', marginRight: '30px' }}>
-        <p className="bigText display-4">What can you do</p>
-        <p className="display-5">
+        <p className="bigText display-4 text-dark">What can you do</p>
+        <p className="display-5 text-dark">
           This archive collects guides to opt out from personalisation and to use more safely
           your devices.
           {' '}
@@ -79,9 +79,9 @@ export default function UseSafely() {
                 >
                   <div style={{ border: '1px solid #497065', height: '100%' }}>
                     <div style={{ padding: '10px' }}>
-                      <p>{who}</p>
-                      <p className="bigText display-5">{title}</p>
-                      <p className="fontTextItalic display-6">{decription}</p>
+                      <p className="text-dark">{who}</p>
+                      <p className="bigText display-5 text-dark">{title}</p>
+                      <p className="fontTextItalic display-6 text-dark">{decription}</p>
                     </div>
                   </div>
 

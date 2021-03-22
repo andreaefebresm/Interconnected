@@ -1,5 +1,6 @@
 import { ReactComponent as Vacuum1 } from '../svg/vacuum1/test.svg';
 import { ReactComponent as Vacuum2 } from '../svg/vacuum2/test.svg';
+import { ReactComponent as Vacuum3 } from '../svg/vacuum3/test.svg';
 import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
 
 const vacuum = {
@@ -19,7 +20,7 @@ const vacuum = {
             + 'USERS GIVE THE NAME OF EACH ROOM.',
           id: '#test_svg__prova1',
           style: {
-            left: '30%',
+            left: '10%',
           },
         },
         {
@@ -27,10 +28,17 @@ const vacuum = {
           description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
             + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
             + 'but the fact that you own such type of furniture remains. ',
+          style: {
+            top: '30%',
+            left: '23%',
+          },
         },
         {
           label: 'Map of the house',
           description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          style: {
+            left: '12%',
+          },
         },
       ],
     },
@@ -43,22 +51,32 @@ const vacuum = {
           label: 'Map of the house',
           description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
             + 'USERS GIVE THE NAME OF EACH ROOM.',
+          style: {
+            left: '10%',
+          },
         },
         {
           label: 'Map of the house',
           description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
             + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
             + 'but the fact that you own such type of furniture remains. ',
+          style: {
+            top: '30%',
+            left: '23%',
+          },
         },
         {
           label: 'Map of the house',
           description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          style: {
+            left: '12%',
+          },
         },
       ],
     },
     {
-      label: 'Third Option',
-      Svg: Vacuum2,
+      label: 'Voice Assistant, clean the Kitchen',
+      Svg: Vacuum3,
       prefix: 'test_svg',
 
       collectedData: [
@@ -68,14 +86,45 @@ const vacuum = {
             + 'USERS GIVE THE NAME OF EACH ROOM.',
         },
         {
-          label: 'Map of the house',
+          label: 'Obstacle recognition',
           description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
             + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
             + 'but the fact that you own such type of furniture remains. ',
         },
         {
-          label: 'Map of the house',
+          label: 'Dirtiness Level',
           description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+        },
+        {
+          label: 'Tone of Voice',
+          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          style: {
+            left: '12%',
+          },
+        },
+        {
+          label: 'Query History',
+          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          style: {
+            left: '22%',
+            top: '75%',
+          },
+        },
+        {
+          label: 'Voice Recognition',
+          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          style: {
+            left: '5%',
+            top: '55%',
+          },
+        },
+        {
+          label: 'Distance from Device',
+          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          style: {
+            left: '10%',
+            top: '90%',
+          },
         },
       ],
     },

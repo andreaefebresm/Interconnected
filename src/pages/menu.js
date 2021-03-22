@@ -21,7 +21,7 @@ export default function Menu() {
             data.map(({
               title, description, items, Icon,
             }, index) => (
-              <div className="col-2" key={title} onClick={() => navigate(`/start?selected=${index}`)} role="link" style={{ paddingRight: '20px', paddingLeft: '20px' }}>
+              <div className="col-2" key={title} onClick={() => navigate(`/start?selected=${index}`)} role="link" style={{ cursor: 'pointer', paddingRight: '20px', paddingLeft: '20px' }}>
                 <Icon style={{ height: '15vh' }} className="mx-auto w-100" />
                 <p className="display-8 fontTextStrong pt-2 text-center">{title}</p>
                 <p className="display-8 fontText">{description}</p>
