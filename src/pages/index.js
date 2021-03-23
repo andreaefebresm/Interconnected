@@ -57,7 +57,7 @@ export default function Index() {
             {' '}
             I am home
           </p>
-          <span className="scroll">scroll</span>
+          <a href="#panels" className="scroll" style={{ fontSize: '350%', textDecoration: 'none' }}>⤓</a>
 
         </section>
 
@@ -82,7 +82,7 @@ export default function Index() {
           <div className="container-fluid">
             <div className="row">
               <p className="messapiaSerif finalQuote display-4">Do you know what smart objects can tell about you?</p>
-              <p className="finalQuote"><Link to="/menu">Home</Link></p>
+              <p className="finalQuote"><Link to="/menu" style={{ fontSize: '350%' }}>⤓</Link></p>
             </div>
 
           </div>
