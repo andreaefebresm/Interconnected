@@ -12,7 +12,7 @@ const assistant = {
   Icon: Assistant,
   options: [
     {
-      label: 'assistant option 1',
+      label: 'Voice Assistant, what is the weather like today?',
       Svg: Assistant1,
       prefix: 'test_svg',
 
@@ -35,7 +35,7 @@ const assistant = {
       ],
     },
     {
-      label: 'assistant option 2',
+      label: 'Voice Assistant, add White Wine to my list.',
       Svg: Assistant2,
       prefix: 'test_svg',
 
