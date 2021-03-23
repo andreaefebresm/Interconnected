@@ -1,5 +1,7 @@
 import { ReactComponent as Thermostat } from '../svg/thermosta.svg';
-import { ReactComponent as Thermostat1, ReactComponent as Thermostat2 } from '../svg/vacuum1/test.svg';
+import { ReactComponent as Thermostat1 } from '../svg/thermostat1/test.svg';
+import { ReactComponent as Thermostat2 } from '../svg/thermostat2/test.svg';
+import { ReactComponent as Thermostat3 } from '../svg/thermostat3/test.svg';
 import thermostat1 from '../images/thermostat/thermostat1.jpg';
 import thermostat2 from '../images/thermostat/thermostat2.jpg';
 import thermostat3 from '../images/thermostat/thermostat3.jpg';
@@ -58,7 +60,7 @@ const thermostat = {
     },
     {
       label: 'thermostat Option 3',
-      Svg: Thermostat2,
+      Svg: Thermostat3,
       prefix: 'test_svg',
 
       collectedData: [
