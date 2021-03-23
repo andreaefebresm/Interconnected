@@ -78,7 +78,7 @@ const vacuum = {
       ],
     },
     {
-      label: 'Voice Assistant, clean the Kitchen',
+      label: 'Voice Assistant, clean the kitchen',
       Svg: Vacuum3,
       prefix: 'test_svg',
 

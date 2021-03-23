@@ -28,6 +28,7 @@ export default function EndContent({
                       src={text}
                       className="img-fluid"
                       alt="Responsive image"
+                      height="100"
                     />
                   </a>
                 </div>

@@ -77,12 +77,12 @@ export default function UseSafely() {
                   href={link}
                   style={{ cursor: 'pointer' }}
                 >
-                  <div style={{ border: '1px solid #497065', height: '100%' }}>
+                  <div className="over" style={{ border: '1px solid #497065', height: '100%' }}>
                     <div className="d-flex " style={{ padding: '10px', flexDirection: 'column' }}>
-                      <p className="text-dark">{who}</p>
-                      <p className="bigText display-5 text-dark">{title}</p>
+                      <p className="">{who}</p>
+                      <p className="bigText display-5">{title}</p>
 
-                      <p className="fontTextItalic display-6 text-dark">{decription}</p>
+                      <p className="fontTextItalic display-6">{decription}</p>
 
                     </div>
                   </div>

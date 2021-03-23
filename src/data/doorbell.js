@@ -1,5 +1,6 @@
-import { ReactComponent as Doorbell1 } from '../svg/vacuum1/test.svg';
-import { ReactComponent as Doorbell2 } from '../svg/vacuum2/test.svg';
+import { ReactComponent as Doorbell1 } from '../svg/doorbell1/test.svg';
+import { ReactComponent as Doorbell2 } from '../svg/doorbell2/test.svg';
+import { ReactComponent as Doorbell3 } from '../svg/doorbell3/test.svg';
 import { ReactComponent as DoorBell } from '../svg/doorbell.svg';
 import ring1 from '../images/ring/ring1.jpg';
 import ring2 from '../images/ring/ring2.jpg';
@@ -12,7 +13,7 @@ const doorbell = {
   Icon: DoorBell,
   options: [
     {
-      label: 'doorbell option 1',
+      label: 'Ring the doorbell',
       Svg: Doorbell1,
       prefix: 'test_svg',
 
@@ -35,7 +36,7 @@ const doorbell = {
       ],
     },
     {
-      label: 'doorbell option 2',
+      label: 'Activate the motion sensor by passing in front of the doorbell.',
       Svg: Doorbell2,
       prefix: 'test_svg',
 
@@ -58,8 +59,9 @@ const doorbell = {
       ],
     },
     {
-      label: 'doorbell option 3',
-      Svg: Doorbell1,
+      label: 'Voice assistant, \n'
+        + 'talk to front door.',
+      Svg: Doorbell3,
       prefix: 'test_svg',
 
       collectedData: [

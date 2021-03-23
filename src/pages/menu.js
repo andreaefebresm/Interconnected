@@ -23,7 +23,7 @@ export default function Menu() {
             }, index) => (
               <div className="card col-2 scuro" key={title} onClick={() => navigate(`/start?selected=${index}`)} role="link" style={{ cursor: 'pointer', marginRight: '20px', marginLeft: '20px' }}>
                 <div className="card-body">
-                  <Icon style={{ height: '15vh' }} className="mx-auto w-100" />
+                  <Icon style={{ height: '15vh', paddingTop: '15px', paddingBottom: '15px' }} className="mx-auto w-100" />
                   <p className="display-8 fontTextStrong pt-2 ">{title}</p>
                   <p className="display-8 fontText">{description}</p>
                   <p className="display-6 fontTextItalic">{items}</p>

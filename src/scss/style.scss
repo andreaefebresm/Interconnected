@@ -338,6 +338,16 @@ button {
   transition: all 200ms ease-in-out;
 }
 
+.over {
+  color: #497065;
+}
+
+.over:hover {
+  color: white;
+  background-color: #497065;
+  transition: all 90ms ease-in-out;
+}
+
 .marginFilter > a {
   margin-right:10px ;
   margin-left: 10px ;

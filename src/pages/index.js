@@ -17,6 +17,9 @@ export default function Index() {
     'Alexa',
     'Ok Google',
     'Hey Siri',
+    'Roomba',
+    'Ring Doorbell',
+    'Nest',
   ];
 
   const [heyIndex, setHeyIndex] = useState(0);

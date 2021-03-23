@@ -143,7 +143,7 @@ export default function Start() {
                     <div className="row pb-3" key={i}>
                       <div className="col-5">
                         <a
-                          className="btn btn-lg btn-outline-info"
+                          className="btn btn-lg btn-outline-info w-100"
                           href="#discover-data"
                           onClick={() => setSelectedItem({
                             label, Svg, collectedData, prefix, end,
