@@ -1,5 +1,6 @@
-import { ReactComponent as Bulb1 } from '../svg/vacuum1/test.svg';
-import { ReactComponent as Bulb2 } from '../svg/vacuum2/test.svg';
+import { ReactComponent as Bulb1 } from '../svg/bulb1/test.svg';
+import { ReactComponent as Bulb2 } from '../svg/bulb2/test.svg';
+import { ReactComponent as Bulb3 } from '../svg/bulb3/test.svg';
 import { ReactComponent as Bulb } from '../svg/bulb.svg';
 import bulb1 from '../images/bulb/bulb1.jpg';
 import bulb2 from '../images/bulb/bulb2.jpg';
@@ -12,7 +13,7 @@ const bulb = {
   Icon: Bulb,
   options: [
     {
-      label: 'bulb option 1',
+      label: 'Change the color of the smart bulb',
       Svg: Bulb1,
       prefix: 'test_svg',
       collectedData: [
@@ -37,7 +38,7 @@ const bulb = {
       ],
     },
     {
-      label: 'bulb option 2',
+      label: 'Turn on the light via app',
       Svg: Bulb2,
       collectedData: [
         {
@@ -58,8 +59,8 @@ const bulb = {
       ],
     },
     {
-      label: 'bulb option 3',
-      Svg: Bulb1,
+      label: 'Voice assistant, I am home',
+      Svg: Bulb3,
       collectedData: [
         {
           label: 'Map of the house',

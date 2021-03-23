@@ -13,7 +13,7 @@ const thermostat = {
   Icon: Thermostat,
   options: [
     {
-      label: 'thermostat Option 1',
+      label: 'Turn the temperature up.',
       Svg: Thermostat1,
       prefix: 'test_svg',
 
@@ -36,7 +36,7 @@ const thermostat = {
       ],
     },
     {
-      label: 'thermostat Option 2',
+      label: 'Temperature self-regulation mode.',
       Svg: Thermostat2,
       prefix: 'test_svg',
 
@@ -59,7 +59,7 @@ const thermostat = {
       ],
     },
     {
-      label: 'thermostat Option 3',
+      label: 'Voice assistant, make my thermostat warmer by 2 degrees',
       Svg: Thermostat3,
       prefix: 'test_svg',
 
