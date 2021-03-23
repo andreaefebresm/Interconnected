@@ -13,7 +13,7 @@ export default function UseSafely() {
   return (
     <div>
       <Header className="sticky-top" />
-      <section className="pt-5" style={{ marginLeft: '30px', marginRight: '30px' }}>
+      <section className="pt-5 marginFilter" style={{ marginLeft: '30px', marginRight: '30px' }}>
         <p className="bigText display-4 text-dark">What can you do</p>
         <p className="display-5 text-dark">
           This archive collects guides to opt out from personalisation and to use more safely
