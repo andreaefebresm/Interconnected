@@ -16,16 +16,18 @@ export default function Menu() {
           <p className="offset-1 display-5 fontTextItalic">Choose one device to discover it.</p>
         </div>
 
-        <div className="row justify-content-center" style={{ paddingTop: '15vh' }}>
+        <div className="row justify-content-center" style={{ paddingTop: '5vh' }}>
           {
             data.map(({
               title, description, items, Icon,
             }, index) => (
-              <div className="col-2" key={title} onClick={() => navigate(`/start?selected=${index}`)} role="link" style={{ cursor: 'pointer', paddingRight: '20px', paddingLeft: '20px' }}>
-                <Icon style={{ height: '15vh' }} className="mx-auto w-100" />
-                <p className="display-8 fontTextStrong pt-2 text-center">{title}</p>
-                <p className="display-8 fontText">{description}</p>
-                <p className="display-6 fontTextItalic">{items}</p>
+              <div className="card col-2 scuro" key={title} onClick={() => navigate(`/start?selected=${index}`)} role="link" style={{ cursor: 'pointer', marginRight: '20px', marginLeft: '20px' }}>
+                <div className="card-body">
+                  <Icon style={{ height: '15vh' }} className="mx-auto w-100" />
+                  <p className="display-8 fontTextStrong pt-2 text-center">{title}</p>
+                  <p className="display-8 fontText">{description}</p>
+                  <p className="display-6 fontTextItalic">{items}</p>
+                </div>
               </div>
 
             ))

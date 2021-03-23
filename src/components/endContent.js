@@ -20,7 +20,19 @@ export default function EndContent({
         </div>
         <div className="col-12">
           <div className="row row-cols-3">
-            {links.map(({ href, text }, i) => <div><div style={{ border: '1px solid black' }}><a href={href} key={i + text}>{text}</a></div></div>)}
+            {links.map(({ href, text }, i) => (
+              <div>
+                <div style={{ border: '1px solid black' }}>
+                  <a href={href} key={i + text}>
+                    <img
+                      src={text}
+                      className="img-fluid"
+                      alt="Responsive image"
+                    />
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
           <Link to="/useSafely">
             <div className="row pt-5">

@@ -1,6 +1,9 @@
 import { ReactComponent as Assistant1 } from '../svg/assistant1/test.svg';
 import { ReactComponent as Assistant2 } from '../svg/assistant2/test.svg';
 import { ReactComponent as Assistant } from '../svg/assistant.svg';
+import assistant1 from '../images/assistant/assistant1.jpg';
+import assistant2 from '../images/assistant/assistant2.jpg';
+import assistant3 from '../images/assistant/assistant3.jpg';
 
 const assistant = {
   title: 'VOICE ASSISTANT',
@@ -82,16 +85,16 @@ const assistant = {
     what: 'assistant much you use your spaces in the house (map + dirtiness) how untidy you are',
     links: [
       {
-        href: 'http://ww.....',
-        text: 'A',
+        href: 'https://www.theverge.com/2019/7/11/20690020/google-assistant-home-human-contractors-listening-recordings-vrt-nws',
+        text: assistant1,
       },
       {
-        href: 'http://ww.....',
-        text: 'B',
+        href: 'https://money.cnn.com/2018/05/24/technology/alexa-secret-recording/index.html',
+        text: assistant2,
       },
       {
-        href: 'http://ww.....',
-        text: 'A',
+        href: 'https://www.wired.com/story/whos-listening-talk-google-assistant/',
+        text: assistant3,
       },
     ],
     cta: 'can i use my Voice Assistant more safely?',
