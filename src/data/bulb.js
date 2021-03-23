@@ -1,6 +1,9 @@
 import { ReactComponent as Bulb1 } from '../svg/vacuum1/test.svg';
 import { ReactComponent as Bulb2 } from '../svg/vacuum2/test.svg';
 import { ReactComponent as Bulb } from '../svg/bulb.svg';
+import bulb1 from '../images/bulb/bulb1.jpg';
+import bulb2 from '../images/bulb/bulb2.jpg';
+import bulb3 from '../images/bulb/bulb3.jpg';
 
 const bulb = {
   title: 'SMART BULB',
@@ -80,16 +83,16 @@ const bulb = {
     what: 'bulb much you use your spaces in the house (map + dirtiness) how untidy you are',
     links: [
       {
-        href: 'http://ww.....',
-        text: 'A',
+        href: 'https://medium.com/syncedreview/can-a-smart-light-bulb-steal-your-personal-data-80937fa27ae0',
+        text: bulb1,
       },
       {
-        href: 'http://ww.....',
-        text: 'B',
+        href: 'https://www.cbsnews.com/news/are-smart-light-bulbs-a-security-risk/',
+        text: bulb2,
       },
       {
-        href: 'http://ww.....',
-        text: 'A',
+        href: 'https://www.techrepublic.com/article/report-smart-bulbs-have-a-major-security-problem/',
+        text: bulb3,
       },
     ],
     cta: 'can i use my Smart Bulbs more safely?',

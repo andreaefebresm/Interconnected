@@ -1,5 +1,8 @@
 import { ReactComponent as Thermostat } from '../svg/thermosta.svg';
 import { ReactComponent as Thermostat1, ReactComponent as Thermostat2 } from '../svg/vacuum1/test.svg';
+import thermostat1 from '../images/thermostat/thermostat1.jpg';
+import thermostat2 from '../images/thermostat/thermostat2.jpg';
+import thermostat3 from '../images/thermostat/thermostat3.jpg';
 
 const thermostat = {
   title: 'SMART THERMOSTAT',
@@ -82,16 +85,16 @@ const thermostat = {
     what: 'how much you use your spaces in the house (map + dirtiness) how untidy you are',
     links: [
       {
-        href: 'http://ww.....',
-        text: 'A',
+        href: 'https://www.theguardian.com/technology/2020/mar/08/how-to-stop-your-smart-home-spying-on-you-lightbulbs-doorbell-ring-google-assistant-alexa-privacy',
+        text: thermostat1,
       },
       {
-        href: 'http://ww.....',
-        text: 'B',
+        href: 'https://www.newsweek.com/2019/11/01/privacy-internet-things-amazon-ring-google-nest-1467559.html',
+        text: thermostat2,
       },
       {
-        href: 'http://ww.....',
-        text: 'A',
+        href: 'https://www.pcmag.com/news/turning-a-nest-smart-thermostat-into-a-data-stealing-spy-in-15-seconds',
+        text: thermostat3,
       },
     ],
     cta: 'can i use my Smart Thermostat more safely?',

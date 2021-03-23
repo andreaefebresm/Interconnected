@@ -1,6 +1,9 @@
 import { ReactComponent as Doorbell1 } from '../svg/vacuum1/test.svg';
 import { ReactComponent as Doorbell2 } from '../svg/vacuum2/test.svg';
 import { ReactComponent as DoorBell } from '../svg/doorbell.svg';
+import ring1 from '../images/ring/ring1.jpg';
+import ring2 from '../images/ring/ring2.jpg';
+import ring3 from '../images/ring/ring3.jpg';
 
 const doorbell = {
   title: 'SMART DOORBELL',
@@ -82,16 +85,16 @@ const doorbell = {
     what: 'doorbel how much you use your spaces in the house (map + dirtiness) how untidy you are',
     links: [
       {
-        href: 'http://ww.....',
-        text: 'A',
+        href: 'https://www.eff.org/deeplinks/2020/01/ring-doorbell-app-packed-third-party-trackers',
+        text: ring1,
       },
       {
-        href: 'http://ww.....',
-        text: 'B',
+        href: 'https://www.privacyinternational.org/long-read/3971/one-ring-watch-them-all',
+        text: ring2,
       },
       {
-        href: 'http://ww.....',
-        text: 'A',
+        href: 'https://www.thezebra.com/resources/home/doorbell-camera-survey/',
+        text: ring3,
       },
     ],
     cta: 'can i use my Smart Doorbell more safely?',
