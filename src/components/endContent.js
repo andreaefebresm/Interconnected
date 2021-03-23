@@ -23,7 +23,7 @@ export default function EndContent({
             {links.map(({ href, text }, i) => (
               <div>
                 <div style={{ border: '1px solid black' }}>
-                  <a href={href} key={i + text}>
+                  <a href={href} target="blank" key={i + text}>
                     <img
                       src={text}
                       className="img-fluid"

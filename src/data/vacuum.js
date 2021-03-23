@@ -2,6 +2,9 @@ import { ReactComponent as Vacuum1 } from '../svg/vacuum1/test.svg';
 import { ReactComponent as Vacuum2 } from '../svg/vacuum2/test.svg';
 import { ReactComponent as Vacuum3 } from '../svg/vacuum3/test.svg';
 import { ReactComponent as Vacuum } from '../svg/vacuum.svg';
+import vacuum1 from '../images/vacuum/vacuum1.jpg';
+import vacuum2 from '../images/vacuum/vacuum2.jpg';
+import vacuum3 from '../images/vacuum/vacuum3.jpg';
 
 const vacuum = {
   title: 'SMART VACUUM CLEANER',
@@ -133,16 +136,16 @@ const vacuum = {
     what: 'vacuum much you use your spaces in the house (map + dirtiness) how untidy you are',
     links: [
       {
-        href: 'http://ww.....',
-        text: 'A',
+        href: 'https://www.nytimes.com/2017/07/25/technology/roomba-irobot-data-privacy.html',
+        text: vacuum1,
       },
       {
-        href: 'http://ww.....',
-        text: 'B',
+        href: 'https://www.theguardian.com/technology/2017/jul/25/roomba-maker-could-share-maps-users-homes-google-amazon-apple-irobot-robot-vacuum',
+        text: vacuum2,
       },
       {
-        href: 'http://ww.....',
-        text: 'A',
+        href: 'https://futurism.com/the-byte/roomba-i7-maps-house',
+        text: vacuum3,
       },
     ],
     cta: 'can i use my Vacuum more safely?',
