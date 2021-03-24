@@ -39,7 +39,7 @@ export default function EndContent({
           </div>
           <Link to="/useSafely">
             <div className="row animaz">
-              <p className="bigText display-3" style={{ borderTop: '1px solid black' }}>
+              <p className="bigText display-4" style={{ borderTop: '1px solid black' }}>
                 {cta}
 
                 <ArrowR />
