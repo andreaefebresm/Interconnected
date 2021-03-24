@@ -154,11 +154,12 @@ html {
   --font-xbold: 700;
   --font-xxbold: 800;
   --fontitalic: italic;
+  --color-main: #497065;
 }
 
 body {
   overflow-x: hidden;
-  background-color: #fcfbf6;
+  background-color:$primary;
 }
 
 main {
@@ -179,17 +180,17 @@ a {
 }
 
 .fontText {
-  font-family: var(--font-text);
+  font-family: $font-family-sans-serif;
   line-height: 1.1rem;
 }
 
 .fontTextStrong {
-  font-family: var(--font-text);
+  font-family: $font-family-sans-serif;
   font-weight: var(--font-bold);
 }
 
 .fontTextItalic {
-  font-family: var(--font-text);
+  font-family: $font-family-sans-serif;
   font-style: var(--fontitalic);
   font-weight: var(--font-light);
 }
@@ -259,30 +260,30 @@ a {
 }
 .scroll:hover {
   text-decoration: none;
-  color:black;
+  color:$info;
 }
 
 //##################### ABOUT #####################
 
 .bordoTopAbout {
-  border-top: 1px solid #497065;
+  border-top: 1px solid $dark;
 }
 
 .bordoBottomAbout {
-  border-bottom: 1px solid #497065;
+  border-bottom: 1px solid $dark;
 }
 
 .borderLeftAbout {
-  border-left: 1px solid #497065;
+  border-left: 1px solid $dark;
 }
 
 .borderBottomAbout {
-  border-bottom: 1px solid #497065;
+  border-bottom: 1px solid $dark;
 }
 
 .upper {
   text-transform: uppercase;
-  color: #497065;
+  color: $dark;
 }
 
 //##################### MENU #####################
@@ -303,20 +304,20 @@ a {
 
 
 .contentGreen {
-  color: #497065;
+  color: $dark;
 }
 
 button {
-  border: 1px solid black;
+  border: 1px solid $info;
   border-radius: 30px;
-  background-color: #FCFBF6;
+  background-color: $primary;
   padding: 0.5rem;
   font-weight: var(--font-bold);
 }
 
 .box {
   background: white;
-  border: 1px solid #497065;
+  border: 1px solid $dark;
   box-sizing: border-box;
   position: absolute;
 
@@ -341,7 +342,7 @@ button {
 }
 
 .over {
-  color: #497065;
+  color: $dark;
 }
 
 .over:hover {
