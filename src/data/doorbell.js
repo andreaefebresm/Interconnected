@@ -124,7 +124,7 @@ const doorbell = {
           description: faceRec.descr,
           style: {
             left: '12%',
-            top: '35%',
+            top: '36%',
           },
         },
         {
@@ -147,7 +147,7 @@ const doorbell = {
           label: dist.title,
           description: dist.descr,
           style: {
-            top: '68%',
+            top: '70%',
             left: '22%',
           },
         },
@@ -156,7 +156,7 @@ const doorbell = {
           description: query.descr,
           style: {
             left: '0.5%',
-            top: '32%',
+            top: '34%',
           },
         },
         {

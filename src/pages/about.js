@@ -42,16 +42,16 @@ export default function About() {
         </div>
         <div className="row bordoTopAbout bordoBottomAbout">
           <div className="col-2">
-            <div className="row pt-2 pb-2">
+            <div className="row pt-2 pb-2 animaz2">
               <Link to="#primo" className="upper">{paragraph[0].title}</Link>
             </div>
-            <div className="row bordoTopAbout pt-2 pb-2">
+            <div className="row bordoTopAbout pt-2 pb-2 animaz2">
               <Link to="#secondo" className="upper">{paragraph[1].title}</Link>
             </div>
-            <div className="row bordoTopAbout pt-2 pb-2">
+            <div className="row bordoTopAbout pt-2 pb-2 animaz2">
               <Link to="#terzo" className="upper">{paragraph[2].title}</Link>
             </div>
-            <div className="row bordoTopAbout bordoBottomAbout pt-2 pb-2">
+            <div className="row bordoTopAbout bordoBottomAbout pt-2 pb-2 animaz2">
               <Link to="#quarto" className="upper">{paragraph[3].title}</Link>
             </div>
           </div>

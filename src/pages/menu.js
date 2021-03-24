@@ -26,7 +26,9 @@ export default function Menu() {
                 key={title}
                 onClick={() => navigate(`/start?selected=${index}`)}
                 role="link"
-                style={{ cursor: 'pointer', marginRight: '20px', marginLeft: '20px' }}
+                style={{
+                  cursor: 'pointer', marginRight: '20px', marginLeft: '20px', backgroundColor: '#FCFBF6',
+                }}
               >
                 <div className="card-body">
                   <Icon style={{ height: '15vh', paddingTop: '15px', paddingBottom: '15px' }} className="mx-auto w-100" />
