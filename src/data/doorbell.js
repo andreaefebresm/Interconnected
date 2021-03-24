@@ -7,7 +7,7 @@ import ring2 from '../images/ring/ring2.jpg';
 import ring3 from '../images/ring/ring3.jpg';
 
 const facial = { title: 'Facial expression', descr: 'The video recordings of the people who ring the doorbell are stored by the company. The artificial intelligence is capable to recognise facial expressions and understand the emotions of your visitors.' };
-const presence = { title: 'Presence in the house', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const presence = { title: 'Presence in the house', descr: 'Video recordings of the people that knock on your door are stored. A history of the presence of certain people in your house may be generated.' };
 const faceRec = { title: 'Face recognition', descr: 'The artificial intelligence is capable to spot the difference between faces that interact with the device. A history of who visits you may be generated.' };
 const outside = { title: 'Recording of the outside', descr: 'Smart doorbell have motion sensors that activate a video recording of the outside. The people who are passing in front of your door are recorded without their permission.' };
 const tone = { title: 'Tone of voice', descr: 'Voice recordings are stored and analysed: artificial intelligence can tell if your tone of voice is sad, happy or angry. The emotions are also linked to the requests you make.' };
