@@ -9,10 +9,7 @@ export default function About() {
   const paragraph = [
     {
       title: 'Starting point',
-      content: 'Knowledge about what the Internet of Things is and how it works is part of the domain of experts using technical and abstract language. On the other hand, users of interconnected devices interact with the complex IoT infrastructure on a daily basis without directly assimilating its implications. Users\' lack of knowledge about IoT puts the privacy of their personal and sensitive data at risk. Reviewing how interconnected devices are communicated to users allows identifying and reporting which aspects should be covered to promote critical informed use. Communication about the operation of interconnected devices to users is scarce, technical and incomplete. The platforms used by users to understand and inform themselves on personal data are not offering an omni comprehensive communication on the topic. There is hence an urgency to arise questions upon the implications of interconnected devices.\n'
-        + '\n'
-        + '\n'
-        + 'Interconnected is a project developed as Master Degree Thesis Interconnected: interrogating Internet of Things communication  at Politecnico di Milano by Andrea Elena Febres Medina.\n',
+      content: 'Knowledge about what the Internet of Things is and how it works is part of the domain of experts using technical and abstract language. On the other hand, users of interconnected devices interact with the complex IoT infrastructure on a daily basis without directly assimilating its implications. Users\' lack of knowledge about IoT puts the privacy of their personal and sensitive data at risk. Reviewing how interconnected devices are communicated to users allows identifying and reporting which aspects should be covered to promote critical informed use. Communication about the operation of interconnected devices to users is scarce, technical and incomplete. The platforms used by users to understand and inform themselves on personal data are not offering an omni comprehensive communication on the topic. There is hence an urgency to arise questions upon the implications of interconnected devices.',
     },
     {
       title: 'What\'s the goal',
@@ -24,7 +21,7 @@ export default function About() {
     },
     {
       title: 'Relevance',
-      content: 'quarto testo',
+      content: ' Interconnected is a project developed as Master Degree Thesis Interconnected: interrogating Internet of Things communication  at Politecnico di Milano by Andrea Elena Febres Medina. This website was coded with the help of Michele Bruno and Federico Pozzi.',
     },
 
   ];
