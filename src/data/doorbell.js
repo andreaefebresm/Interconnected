@@ -6,6 +6,15 @@ import ring1 from '../images/ring/ring1.jpg';
 import ring2 from '../images/ring/ring2.jpg';
 import ring3 from '../images/ring/ring3.jpg';
 
+const facial = { title: 'Facial expression', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const presence = { title: 'Presence in the house', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const faceRec = { title: 'Face recognition', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const outside = { title: 'Recording of the outside', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const tone = { title: 'Tone of voice', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const voice = { title: 'Voice recognition', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const query = { title: 'Query history', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const dist = { title: 'Distance from the device', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+
 const doorbell = {
   title: 'SMART DOORBELL',
   description: 'Notifies the smartphone of the home owner when a visitor arrives at the door.',
@@ -19,19 +28,34 @@ const doorbell = {
 
       collectedData: [
         {
-          label: 'Map of the house',
-          description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
-            + 'USERS GIVE THE NAME OF EACH ROOM.',
+          label: facial.title,
+          description: facial.descr,
+          style: {
+            left: '10%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
-            + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
-            + 'but the fact that you own such type of furniture remains. ',
+          label: presence.title,
+          description: presence.descr,
+          style: {
+            top: '30%',
+            left: '23%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          label: faceRec.title,
+          description: faceRec.descr,
+          style: {
+            left: '12%',
+          },
+        },
+        {
+          label: outside.title,
+          description: outside.descr,
+          style: {
+            left: '22%',
+            top: '70%',
+          },
         },
       ],
     },
@@ -42,19 +66,34 @@ const doorbell = {
 
       collectedData: [
         {
-          label: 'Map of the house',
-          description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
-            + 'USERS GIVE THE NAME OF EACH ROOM.',
+          label: facial.title,
+          description: facial.descr,
+          style: {
+            left: '10%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
-            + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
-            + 'but the fact that you own such type of furniture remains. ',
+          label: presence.title,
+          description: presence.descr,
+          style: {
+            top: '30%',
+            left: '23%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          label: faceRec.title,
+          description: faceRec.descr,
+          style: {
+            left: '12%',
+          },
+        },
+        {
+          label: outside.title,
+          description: outside.descr,
+          style: {
+            left: '22%',
+            top: '70%',
+          },
         },
       ],
     },
@@ -66,19 +105,67 @@ const doorbell = {
 
       collectedData: [
         {
-          label: 'Map of the house',
-          description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
-            + 'USERS GIVE THE NAME OF EACH ROOM.',
+          label: facial.title,
+          description: facial.descr,
+          style: {
+            left: '10%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
-            + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
-            + 'but the fact that you own such type of furniture remains. ',
+          label: presence.title,
+          description: presence.descr,
+          style: {
+            top: '20%',
+            left: '23%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          label: faceRec.title,
+          description: faceRec.descr,
+          style: {
+            left: '12%',
+            top: '35%',
+          },
+        },
+        {
+          label: outside.title,
+          description: outside.descr,
+          style: {
+            left: '23%',
+            top: '48%',
+          },
+        },
+        {
+          label: tone.title,
+          description: tone.descr,
+          style: {
+            left: '10%',
+            top: '55%',
+          },
+        },
+        {
+          label: dist.title,
+          description: dist.descr,
+          style: {
+            top: '68%',
+            left: '22%',
+          },
+        },
+        {
+          label: query.title,
+          description: query.descr,
+          style: {
+            left: '0.5%',
+            top: '32%',
+          },
+        },
+        {
+          label: voice.title,
+          description: voice.descr,
+          style: {
+            left: '5%',
+            top: '75%',
+          },
         },
       ],
     },
