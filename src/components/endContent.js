@@ -12,7 +12,7 @@ export default function EndContent({
       <div className="row">
         <div className="col-10">
           <div className="row">
-            <p className="bigText display-2">BECAUSE STORING THIS DATA COMPANIES KNOW:</p>
+            <p className="bigText display-2">STORING THIS DATA COMPANIES KNOW:</p>
             <p className="display-4">
               {what}
             </p>
