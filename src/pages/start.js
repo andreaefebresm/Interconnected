@@ -146,7 +146,7 @@ export default function Start() {
                     label, Svg, collectedData, prefix,
                   }, i) => (
                     <div className="row pb-3" key={i}>
-                      <div className="col-5">
+                      <div className="col-8 h-100">
                         <a
                           className="btn btn-lg btn-outline-info w-100"
                           href="#discover-data"
