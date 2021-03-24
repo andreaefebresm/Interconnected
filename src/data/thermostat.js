@@ -122,7 +122,7 @@ const thermostat = {
   ],
 
   end: {
-    what: 'how much you use your spaces in the house (map + dirtiness) how untidy you are',
+    what: 'Your habits in the house, how long do you stay in the house and how often you go out. You can read more in the articles below.',
     links: [
       {
         href: 'https://www.theguardian.com/technology/2020/mar/08/how-to-stop-your-smart-home-spying-on-you-lightbulbs-doorbell-ring-google-assistant-alexa-privacy',
