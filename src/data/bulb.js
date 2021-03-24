@@ -6,6 +6,14 @@ import bulb1 from '../images/bulb/bulb1.jpg';
 import bulb2 from '../images/bulb/bulb2.jpg';
 import bulb3 from '../images/bulb/bulb3.jpg';
 
+const people = { title: 'People in the room', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const presence = { title: 'Presence in the house', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const rooms = { title: 'Rooms usage', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const tone = { title: 'Tone of voice', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const voice = { title: 'Voice recognition', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const query = { title: 'Query history', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const dist = { title: 'Distance from the device', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+
 const bulb = {
   title: 'SMART BULB',
   description: 'Light can be controlled with just a few taps on smartphone, tablet and virtual assistants.',
@@ -18,22 +26,27 @@ const bulb = {
       prefix: 'test_svg',
       collectedData: [
         {
-          label: 'Map of the house',
-          description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
-            + 'USERS GIVE THE NAME OF EACH ROOM.',
-          id: 'uno',
+          label: people.title,
+          description: people.descr,
+          id: '#test_svg__prova1',
+          style: {
+            left: '10%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
-            + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
-            + 'but the fact that you own such type of furniture remains. ',
-          id: 'due',
+          label: presence.title,
+          description: presence.descr,
+          style: {
+            top: '30%',
+            left: '23%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
-          id: 'tre',
+          label: rooms.title,
+          description: rooms.descr,
+          style: {
+            left: '12%',
+          },
         },
       ],
     },
@@ -42,19 +55,27 @@ const bulb = {
       Svg: Bulb2,
       collectedData: [
         {
-          label: 'Map of the house',
-          description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
-            + 'USERS GIVE THE NAME OF EACH ROOM.',
+          label: people.title,
+          description: people.descr,
+          id: '#test_svg__prova1',
+          style: {
+            left: '10%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
-            + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
-            + 'but the fact that you own such type of furniture remains. ',
+          label: presence.title,
+          description: presence.descr,
+          style: {
+            top: '30%',
+            left: '23%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          label: rooms.title,
+          description: rooms.descr,
+          style: {
+            left: '12%',
+          },
         },
       ],
     },
@@ -63,19 +84,60 @@ const bulb = {
       Svg: Bulb3,
       collectedData: [
         {
-          label: 'Map of the house',
-          description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
-            + 'USERS GIVE THE NAME OF EACH ROOM.',
+          label: people.title,
+          description: people.descr,
+          id: '#test_svg__prova1',
+          style: {
+            left: '12%',
+            top: '10%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
-            + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
-            + 'but the fact that you own such type of furniture remains. ',
+          label: presence.title,
+          description: presence.descr,
+          style: {
+            top: '30%',
+            left: '23%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          label: rooms.title,
+          description: rooms.descr,
+          style: {
+            left: '12%',
+          },
+        },
+        {
+          label: tone.title,
+          description: tone.descr,
+          style: {
+            left: '0.5%',
+            top: '20%',
+          },
+        },
+        {
+          label: query.title,
+          description: query.descr,
+          style: {
+            left: '22%',
+            top: '70%',
+          },
+        },
+        {
+          label: voice.title,
+          description: voice.descr,
+          style: {
+            left: '1%',
+            top: '56%',
+          },
+        },
+        {
+          label: dist.title,
+          description: dist.descr,
+          style: {
+            left: '10%',
+            top: '75%',
+          },
         },
       ],
     },
