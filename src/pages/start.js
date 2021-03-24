@@ -16,7 +16,7 @@ function PathOfData({
 }) {
   const svgPrefix = prefix || 'test_svg';
   /**
-   * Questa variabile ha le posizioni di default che hanno i box gialli.
+   * Questa variabile ha le posizioni di default che hanno i box verdi.
    */
   const defaultStyles = [
     {

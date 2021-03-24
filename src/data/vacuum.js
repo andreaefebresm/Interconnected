@@ -131,7 +131,7 @@ const vacuum = {
           description: voice.descr,
           style: {
             left: '1%',
-            top: '56%',
+            top: '50%',
           },
         },
         {
@@ -139,7 +139,7 @@ const vacuum = {
           description: dist.descr,
           style: {
             left: '10%',
-            top: '75%',
+            top: '73%',
           },
         },
       ],
