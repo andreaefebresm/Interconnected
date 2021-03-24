@@ -10,62 +10,60 @@ export default function UseSafely() {
     return cat === value ? setCat() : setCat(value);
   }
 
+  const filters = [
+    {
+      label: 'Virtual Assistant',
+      name: 'assistant',
+    },
+    {
+      label: 'Smart Vacuum',
+      name: 'vacuum',
+    },
+    {
+      label: 'Smart Doorbell',
+      name: 'doorbell',
+    },
+    {
+      label: 'Smart Bulb',
+      name: 'bulb',
+    },
+    {
+      label: 'Smart Thermostat',
+      name: 'thermostat',
+    },
+    {
+      label: 'Privacy Policy',
+      name: 'policy',
+    },
+  ];
+
   return (
     <div>
       <Header className="sticky-top" />
       <section className="pt-5 marginFilter" style={{ marginLeft: '30px', marginRight: '30px' }}>
-        <p className="bigText display-4 text-dark">What can you do</p>
-        <p className="display-5 text-dark">
+        <h1 className="bigText display-4 text-dark">What can you do</h1>
+        <h2 className="display-5 text-dark">
           This archive collects guides to opt out from personalisation and to use more safely
           your devices.
           {' '}
-        </p>
-        <a
-          role="button"
-          className={`btn btn-lg btn-outline-dark ${cat === categories.assistant ? 'active' : ''}`}
-          onClick={(e) => e.preventDefault() || setFilter(categories.assistant)}
-        >
-          Virtual Assistant
-        </a>
-        <a
-          role="button"
-          className={`btn btn-lg btn-outline-dark ${cat === categories.vacuum ? 'active' : ''}`}
-          onClick={(e) => e.preventDefault() || setFilter(categories.vacuum)}
-        >
-          Smart Vacuum
-        </a>
-        <a
-          role="button"
-          className={`btn btn-lg btn-outline-dark ${cat === categories.doorbell ? 'active' : ''}`}
-          onClick={(e) => e.preventDefault() || setFilter(categories.doorbell)}
-        >
-          Smart Doorbell
-        </a>
-        <a
-          role="button"
-          className={`btn btn-lg btn-outline-dark ${cat === categories.bulb ? 'active' : ''}`}
-          onClick={(e) => e.preventDefault() || setFilter(categories.bulb)}
-        >
-          Smart Bulb
-        </a>
-        <a
-          role="button"
-          className={`btn btn-lg btn-outline-dark ${cat === categories.thermostat ? 'active' : ''}`}
-          onClick={(e) => e.preventDefault() || setFilter(categories.thermostat)}
-        >
-          Smart Thermostat
-        </a>
-        <a
-          role="button"
-          className={`btn btn-lg btn-outline-dark ${cat === categories.policy ? 'active' : ''}`}
-          onClick={(e) => e.preventDefault() || setFilter(categories.policy)}
-        >
-          Privacy Policy
-        </a>
+        </h2>
+        {
+          filters.map(({ label, name }) => (
+            <a
+              key={name}
+              role="button"
+              className={`btn btn-lg btn-outline-dark m-1 ${cat === categories[name] ? 'active' : ''}`}
+              onClick={(e) => e.preventDefault() || setFilter(categories[name])}
+            >
+              {label}
+            </a>
+          ))
+        }
+
       </section>
       <section style={{ marginLeft: '30px', marginRight: '30px' }}>
         <div className="container-fluid">
-          <div className="row">
+          <div className="row ">
             {
               article.map(({
                 who, title, decription, link, cat: category,
@@ -73,18 +71,20 @@ export default function UseSafely() {
                 <a
                   target="_blank"
                   key={who + title}
-                  className={`col-3 pt-4 article ${cat ? (category === cat && 'show') : 'show'}`}
+                  className={`col-12 col-md-4 col-lg-3 article mt-4 px-4 ${cat ? (category === cat && 'show') : 'show'}`}
                   href={link}
                   style={{ cursor: 'pointer' }}
                 >
-                  <div className="over" style={{ border: '1px solid #497065', height: '100%' }}>
-                    <div className="d-flex " style={{ padding: '10px', flexDirection: 'column' }}>
+                  <div
+                    className="row row-cols-1 over border border-dark  h-100"
+                  >
+                    <div>
                       <p className="">{who}</p>
-                      <p className="bigText display-5">{title}</p>
-
-                      <p className="fontTextItalic display-6">{decription}</p>
-
+                      <h3 className="bigText display-5">{title}</h3>
                     </div>
+
+                    <p className="fontTextItalic display-6 h-auto align-self-end">{decription}</p>
+
                   </div>
 
                 </a>

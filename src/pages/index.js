@@ -25,17 +25,15 @@ export default function Index() {
   const [heyIndex, setHeyIndex] = useState(0);
 
   useEffect(() => {
-    gsap.to('#fuck', {
+    const anim = gsap.to('#fuck', {
       scrollTrigger: {
         trigger: '#panels-container',
         start: 'top top',
         pin: true,
         scrub: 0,
-
-        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
+        end: `+=${panelsContainer.current.offsetWidth - innerWidth}`,
       },
       xPercent: -66, // Questo definisce a che punto si ferma il SVG
-      ease: 'none',
     });
 
     const interval = setInterval(() => {
@@ -48,8 +46,11 @@ export default function Index() {
       });
     }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+    return () => {
+      clearInterval(interval);
+      anim.kill();
+    };
+  }, [panelsContainer]);
 
   return (
     <div>

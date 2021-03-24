@@ -12,19 +12,25 @@ export default function Menu() {
       <Header className="sticky-top" />
       <div className="container-fluid pt-5">
         <div className="row">
-          <p className="offset-1 col-9 display-3 bigText">Do you know what smart objects can tell about you?</p>
-          <p className="offset-1 display-5 fontTextItalic">Choose one device to discover it.</p>
+          <h1 className="offset-1 col-9 display-3 bigText">Do you know what smart objects can tell about you?</h1>
+          <h3 className="offset-1 display-5 fontTextItalic">Choose one device to discover it.</h3>
         </div>
 
-        <div className="row justify-content-center" style={{ paddingTop: '5vh' }}>
+        <div className="row  justify-content-center" style={{ paddingTop: '5vh' }}>
           {
             data.map(({
               title, description, items, Icon,
             }, index) => (
-              <div className="card col-2 scuro" key={title} onClick={() => navigate(`/start?selected=${index}`)} role="link" style={{ cursor: 'pointer', marginRight: '20px', marginLeft: '20px' }}>
+              <div
+                className="col-12 col-md-3 col-lg-2 mb-5 card scuro"
+                key={title}
+                onClick={() => navigate(`/start?selected=${index}`)}
+                role="link"
+                style={{ cursor: 'pointer', marginRight: '20px', marginLeft: '20px' }}
+              >
                 <div className="card-body">
                   <Icon style={{ height: '15vh', paddingTop: '15px', paddingBottom: '15px' }} className="mx-auto w-100" />
-                  <p className="display-8 fontTextStrong pt-2 ">{title}</p>
+                  <h2 className="display-7 fontTextStrong pt-2 ">{title}</h2>
                   <p className="display-8 fontText">{description}</p>
                   <p className="display-6 fontTextItalic">{items}</p>
                 </div>
