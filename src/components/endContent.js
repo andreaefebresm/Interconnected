@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { ReactComponent as ArrowR } from '../svg/arrowR.svg';
 
 import '../scss/style.scss';
 import { Link } from 'gatsby';
@@ -39,12 +40,17 @@ export default function EndContent({
             <div className="row pt-5">
               <p className="bigText display-3" style={{ borderTop: '1px solid black' }}>
                 {cta}
+
+                <ArrowR />
               </p>
             </div>
           </Link>
           <Link to="/menu">
             <div className="row ">
-              <p className="bigText display-3" style={{ borderTop: '1px solid black' }}>explore more</p>
+              <p className="bigText display-3" style={{ borderTop: '1px solid black' }}>
+                explore more &nbsp;
+                <ArrowR />
+              </p>
             </div>
           </Link>
         </div>
