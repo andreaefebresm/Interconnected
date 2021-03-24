@@ -6,8 +6,8 @@ import bulb1 from '../images/bulb/bulb1.jpg';
 import bulb2 from '../images/bulb/bulb2.jpg';
 import bulb3 from '../images/bulb/bulb3.jpg';
 
-const people = { title: 'People in the room', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
-const presence = { title: 'Presence in the house', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const people = { title: 'People in the room', descr: 'Smart bulbs have infrared sensors that can potentially detect the heat in the room and give insights of how many people are in a room.' };
+const presence = { title: 'Presence in the house', descr: 'Every interaction with the light bulb is registered and stored. The history of the interactions allow artificial intelligence to generate a pattern of use of the house.' };
 const rooms = { title: 'Rooms usage', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
 const tone = { title: 'Tone of voice', descr: 'Voice recordings are stored and analysed: artificial intelligence can tell if your tone of voice is sad, happy or angry. The emotions are also linked to the requests you make.' };
 const voice = { title: 'Voice recognition', descr: 'Virtual assistants can recognise whose is the voice that is talking: some devices give the possibility to give names to users. The history of the voices gives an idea of who lives the house.' };
