@@ -137,7 +137,7 @@ const thermostat = {
         text: thermostat3,
       },
     ],
-    cta: 'can i use my Smart Thermostat more safely?',
+    cta: 'Can I use my smart thermostat safely?',
   },
 
 };
