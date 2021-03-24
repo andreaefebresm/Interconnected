@@ -60,7 +60,7 @@ function PathOfData({
     }, 0);
 
     /**
-     * Animazione dell'etichetta che si mouove
+     * Animazione dell'etichetta, che si mouove
      */
     tl.to(`#${svgPrefix}__` + 'simuove', {
       motionPath: {
