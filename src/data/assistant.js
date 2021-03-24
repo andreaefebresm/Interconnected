@@ -23,19 +23,34 @@ const assistant = {
 
       collectedData: [
         {
-          label: 'Map of the house',
-          description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
-            + 'USERS GIVE THE NAME OF EACH ROOM.',
+          label: tone.title,
+          description: tone.descr,
+          style: {
+            left: '10%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
-            + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
-            + 'but the fact that you own such type of furniture remains. ',
+          label: dist.title,
+          description: dist.descr,
+          style: {
+            top: '30%',
+            left: '23%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          label: query.title,
+          description: query.descr,
+          style: {
+            left: '12%',
+          },
+        },
+        {
+          label: voice.title,
+          description: voice.descr,
+          style: {
+            left: '22%',
+            top: '70%',
+          },
         },
       ],
     },
@@ -46,19 +61,34 @@ const assistant = {
 
       collectedData: [
         {
-          label: 'Map of the house',
-          description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
-            + 'USERS GIVE THE NAME OF EACH ROOM.',
+          label: tone.title,
+          description: tone.descr,
+          style: {
+            left: '10%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
-            + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
-            + 'but the fact that you own such type of furniture remains. ',
+          label: dist.title,
+          description: dist.descr,
+          style: {
+            top: '30%',
+            left: '23%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          label: query.title,
+          description: query.descr,
+          style: {
+            left: '12%',
+          },
+        },
+        {
+          label: voice.title,
+          description: voice.descr,
+          style: {
+            left: '22%',
+            top: '70%',
+          },
         },
       ],
     },
