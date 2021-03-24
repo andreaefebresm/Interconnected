@@ -132,7 +132,8 @@ $display-font-sizes: (
   4: 2.5rem,
   5: 2rem,
   7: 1.3rem,
-  6: 0.8rem
+  6: 0.8rem,
+  8: 1.7rem
 ) !default;
 
 $btn-border-radius-lg: 35px;
@@ -314,11 +315,9 @@ button {
 }
 
 .box {
-  background: #F4B63E;
-  border: 1px solid #000000;
+  background: white;
+  border: 1px solid #497065;
   box-sizing: border-box;
-  border-radius: 24px;
-  color: white;
   position: absolute;
 
   width: 30vw;

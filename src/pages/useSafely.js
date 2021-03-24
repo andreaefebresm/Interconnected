@@ -79,7 +79,7 @@ export default function UseSafely() {
                     className="row row-cols-1 over border border-dark  h-100"
                   >
                     <div>
-                      <p className="">{who}</p>
+                      <p className="pt-2">{who}</p>
                       <h3 className="bigText display-5">{title}</h3>
                     </div>
 

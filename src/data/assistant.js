@@ -5,6 +5,11 @@ import assistant1 from '../images/assistant/assistant1.jpg';
 import assistant2 from '../images/assistant/assistant2.jpg';
 import assistant3 from '../images/assistant/assistant3.jpg';
 
+const tone = { title: 'Tone of voice', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const voice = { title: 'Voice recognition', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const query = { title: 'Query history', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+const dist = { title: 'Distance from the device', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the.' };
+
 const assistant = {
   title: 'VOICE ASSISTANT',
   description: 'It can perform tasks or services for an individual based on commands or questions',

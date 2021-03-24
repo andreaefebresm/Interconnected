@@ -80,7 +80,7 @@ function PathOfData({
 
   return (
     <div>
-      <section id="panels" className="bg-primary bigText">
+      <section id="panels" className="bg-primary">
 
         <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
 
@@ -90,8 +90,8 @@ function PathOfData({
               {
                 collectedData.map(({ label, description, style }, i) => (
                   <div className="box" key={label + i} style={{ ...defaultStyles[i], ...style }}>
-                    <div style={{ padding: '15px' }}>
-                      <p>
+                    <div className="text-dark" style={{ padding: '15px' }}>
+                      <p className="bigText display-8">
                         {label}
                         :
                       </p>
