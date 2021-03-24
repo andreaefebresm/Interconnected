@@ -10,7 +10,7 @@ export default function EndContent({
   return (
     <div className="container-fluid" style={{ height: '90vh' }}>
       <div className="row">
-        <div className="col-10">
+        <div className="col-11">
           <div className="row">
             <p className="bigText display-2">STORING THIS DATA COMPANIES KNOW:</p>
             <p className="display-4">
@@ -48,7 +48,7 @@ export default function EndContent({
           <Link to="/menu">
             <div className="row ">
               <p className="bigText display-3" style={{ borderTop: '1px solid black' }}>
-                explore more &nbsp;
+                Explore more devices &nbsp;
                 <ArrowR />
               </p>
             </div>
