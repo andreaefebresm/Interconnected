@@ -13,7 +13,7 @@ export default function EndContent({
         <div className="col-11">
           <div className="row">
             <p className="bigText display-2">STORING THIS DATA COMPANIES KNOW:</p>
-            <p className="display-4">
+            <p className="display-5">
               {what}
             </p>
             <p>Read more information about what companies know in these articles.</p>
@@ -49,7 +49,7 @@ export default function EndContent({
           <Link to="/menu">
             <div className="row animaz">
               <p className="bigText display-4" style={{ borderTop: '1px solid black' }}>
-                Explore more devices &nbsp;
+                EXPLORE MORE DEVICES &nbsp;
                 <ArrowR />
               </p>
             </div>

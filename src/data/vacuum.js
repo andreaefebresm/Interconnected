@@ -146,7 +146,7 @@ const vacuum = {
     },
   ],
   end: {
-    what: 'vacuum much you use your spaces in the house (map + dirtiness) how untidy you are',
+    what: 'What is your furniture and which room is more used. And this data is shared to your other devices.',
     links: [
       {
         href: 'https://www.nytimes.com/2017/07/25/technology/roomba-irobot-data-privacy.html',
@@ -161,7 +161,7 @@ const vacuum = {
         text: vacuum3,
       },
     ],
-    cta: 'can i use my Vacuum more safely?',
+    cta: 'CAN I USE SMART VACUUMS SAFELY?',
   },
 };
 

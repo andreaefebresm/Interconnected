@@ -132,7 +132,7 @@ const assistant = {
         text: assistant3,
       },
     ],
-    cta: 'Can I use the virtual assistant safely?',
+    cta: 'CAN I USE THE VIRTUAL ASSISTANT SAFELY?',
   },
 };
 

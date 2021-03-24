@@ -122,7 +122,7 @@ const thermostat = {
   ],
 
   end: {
-    what: 'Your habits in the house, how long do you stay in the house and how often you go out. You can read more in the articles below.',
+    what: 'Your habits in the house, how long do you stay in the house and how often you go out. And this data is shared to your other devices.',
     links: [
       {
         href: 'https://www.theguardian.com/technology/2020/mar/08/how-to-stop-your-smart-home-spying-on-you-lightbulbs-doorbell-ring-google-assistant-alexa-privacy',
@@ -137,7 +137,7 @@ const thermostat = {
         text: thermostat3,
       },
     ],
-    cta: 'Can I use my smart thermostat safely?',
+    cta: 'CAN I USE SMART THERMOSTATS SAFELY?',
   },
 
 };

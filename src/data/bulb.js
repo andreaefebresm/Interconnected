@@ -143,7 +143,7 @@ const bulb = {
     },
   ],
   end: {
-    what: 'bulb much you use your spaces in the house (map + dirtiness) how untidy you are',
+    what: 'If you are home, how often and which rooms you use the most. And this data is shared to your other devices.',
     links: [
       {
         href: 'https://medium.com/syncedreview/can-a-smart-light-bulb-steal-your-personal-data-80937fa27ae0',
@@ -158,7 +158,7 @@ const bulb = {
         text: bulb3,
       },
     ],
-    cta: 'can i use my Smart Bulbs more safely?',
+    cta: 'CAN I USE SMART BULBS SAFELY?',
   },
 };
 

@@ -171,7 +171,7 @@ const doorbell = {
     },
   ],
   end: {
-    what: 'doorbel how much you use your spaces in the house (map + dirtiness) how untidy you are',
+    what: 'Who are your visitors, what is their mood and who passes in front of your door. And this data is shared to your other devices.',
     links: [
       {
         href: 'https://www.eff.org/deeplinks/2020/01/ring-doorbell-app-packed-third-party-trackers',
@@ -186,7 +186,7 @@ const doorbell = {
         text: ring3,
       },
     ],
-    cta: 'can i use my Smart Doorbell more safely?',
+    cta: 'CAN I USE SMART DOORBELLS SAFELY?',
   },
 };
 
