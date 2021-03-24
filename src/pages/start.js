@@ -70,7 +70,12 @@ function PathOfData({
       },
     }, 0);
 
-    tl.to('.box', { transform: 'translateY(0)', opacity: 2, duration: 0.05 });
+    tl.to('.box', {
+      transform: 'translateY(0)',
+      opacity: 2,
+      duration: 0.05,
+      stagger: 0.045,
+    });
   }, [Svg]);
 
   return (
@@ -83,18 +88,18 @@ function PathOfData({
             <Svg className="position-relative" id="path-of-data" />
             <div>
               {
-              collectedData.map(({ label, description, style }, i) => (
-                <div className="box" key={label + i} style={{ ...defaultStyles[i], ...style }}>
-                  <div style={{ padding: '15px' }}>
-                    <p>
-                      {label}
-                      :
-                    </p>
-                    <p className="fontText">{description}</p>
+                collectedData.map(({ label, description, style }, i) => (
+                  <div className="box" key={label + i} style={{ ...defaultStyles[i], ...style }}>
+                    <div style={{ padding: '15px' }}>
+                      <p>
+                        {label}
+                        :
+                      </p>
+                      <p className="fontText">{description}</p>
+                    </div>
                   </div>
-                </div>
-              ))
-            }
+                ))
+              }
             </div>
           </div>
         </div>
