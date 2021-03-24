@@ -16,7 +16,7 @@ export default function EndContent({
             <p className="display-4">
               {what}
             </p>
-            <p>fasnvajwsk</p>
+            <p>Read more information about what companies know in these articles.</p>
           </div>
 
         </div>
@@ -48,7 +48,7 @@ export default function EndContent({
           </Link>
           <Link to="/menu">
             <div className="row animaz">
-              <p className="bigText display-3" style={{ borderTop: '1px solid black' }}>
+              <p className="bigText display-4" style={{ borderTop: '1px solid black' }}>
                 Explore more devices &nbsp;
                 <ArrowR />
               </p>

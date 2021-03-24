@@ -117,7 +117,7 @@ const assistant = {
     },
   ],
   end: {
-    what: 'assistant much you use your spaces in the house (map + dirtiness) how untidy you are',
+    what: 'What is your mood when you express certain requests, who talks more with the device, what happens in your house. And this data is shared to your other devices.',
     links: [
       {
         href: 'https://www.theverge.com/2019/7/11/20690020/google-assistant-home-human-contractors-listening-recordings-vrt-nws',
@@ -132,7 +132,7 @@ const assistant = {
         text: assistant3,
       },
     ],
-    cta: 'can i use my Voice Assistant more safely?',
+    cta: 'Can I use the virtual assistant safely?',
   },
 };
 
