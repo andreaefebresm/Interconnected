@@ -23,7 +23,7 @@ export default function EndContent({
         <div className="col-12">
           <div className="row row-cols-3 pb-5">
             {links.map(({ href, text }, i) => (
-              <div>
+              <div key={i}>
                 <div style={{ border: '1px solid black' }}>
                   <a href={href} target="blank" key={i + text}>
                     <img

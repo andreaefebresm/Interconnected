@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { Link } from 'gatsby';
 import { ReactComponent as Intro } from '../svg/intro.svg';
 import { ReactComponent as Intro2 } from '../svg/intro2.svg';
 import { ReactComponent as Arrow } from '../svg/arrow.svg';
 import '../scss/style.scss';
+
+gsap.registerPlugin(MotionPathPlugin);
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,6 +16,7 @@ export default function Index() {
   const panelsContainer = useRef();
   const text = useRef();
 
+  const svgPrefix = 'intro_svg';
   const heys = [
     'Alexa',
     'Ok Google',
@@ -25,16 +29,39 @@ export default function Index() {
   const [heyIndex, setHeyIndex] = useState(0);
 
   useEffect(() => {
-    const anim = gsap.to('#fuck', {
+    /**
+   * La timeline di GSAP
+   * @type {gsap.core.Timeline}
+   */
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#panels-container',
         start: 'top top',
         pin: true,
         scrub: 0,
-        end: `+=${panelsContainer.current.offsetWidth - innerWidth}`,
+        invalidateOnRefresh: true,
+        end: () => `+=${panelsContainer.current.offsetWidth - innerWidth}`,
       },
-      xPercent: -66, // Questo definisce a che punto si ferma il SVG
     });
+
+    /**
+     * Movimento sull'asse x di tutto l'svg
+     */
+    tl.to('#path-of-data', {
+      xPercent: -66, // Questo definisce a che punto si ferma il SVG
+      ease: 'none',
+    }, 0);
+
+    /**
+     * Animazione dell'etichetta, che si mouove
+     */
+    tl.to(`#${svgPrefix}__` + 'simuove-5', {
+      motionPath: {
+        path: `#${svgPrefix}__` + 'path',
+        align: `#${svgPrefix}__` + 'path',
+        alignOrigin: [0.5, 0.9],
+      },
+    }, 0);
 
     const interval = setInterval(() => {
       setHeyIndex((prevState) => {
@@ -50,7 +77,7 @@ export default function Index() {
       clearInterval(interval);
       anim.kill();
     };
-  }, [panelsContainer]);
+  }, [panelsContainer, Intro]);
 
   return (
     <div>
@@ -71,7 +98,7 @@ export default function Index() {
           <div id="panels-container" style={{ width: '300%' }} ref={panelsContainer}>
 
             <div className="panel">
-              <Intro className="position-relative" id="fuck" />
+              <Intro className="position-relative" id="path-of-data" />
 
             </div>
 
@@ -83,7 +110,7 @@ export default function Index() {
           <Intro2 />
         </section>
 
-        <section id="intro" className="full-screen bg-primary">
+        <section className="full-screen bg-primary">
           <div className="container-fluid">
             <div className="row">
               <p className="bigText finalQuote display-4">Do you know what smart objects can tell about you?</p>
