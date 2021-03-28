@@ -35,12 +35,16 @@ function PathOfData({
 
   const panelsContainer = useRef();
 
+  let tl;
+
   useLayoutEffect(() => {
+    if (tl && tl.kill) tl.kill();
+
     /**
      * La timeline di GSAP
      * @type {gsap.core.Timeline}
      */
-    const tl = gsap.timeline({
+    tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#panels-container',
         start: 'top top',
@@ -167,7 +171,7 @@ export default function Start() {
 
         <div className="w-100" id="discover-data" />
         {selectedItem
-        && <PathOfData {...selectedItem} />}
+        && <PathOfData {...selectedItem} key={selectedItem.Svg} />}
       </main>
 
     </div>

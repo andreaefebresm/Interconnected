@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import { ReactComponent as ArrowR } from '../svg/arrowR.svg';
-
-import '../scss/style.scss';
+import React from 'react';
 import { Link } from 'gatsby';
+import { ReactComponent as ArrowR } from '../svg/arrowR.svg';
+import '../scss/style.scss';
 
 export default function EndContent({
   links, what, cta,

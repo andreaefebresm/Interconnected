@@ -75,7 +75,7 @@ export default function Index() {
 
     return () => {
       clearInterval(interval);
-      anim.kill();
+      tl.kill();
     };
   }, [panelsContainer, Intro]);
 
