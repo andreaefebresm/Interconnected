@@ -20,13 +20,8 @@ export default function About() {
       title: 'How was this project done?',
       content: 'The project was designed after a research on smart objects used in homes. The research was made from the user’s point of view following the question: “How can an average user understand how the IoT is structured?”. The following step was to search on Google.com “Internet of Things ecosystem” to see what the answers were. In the first results were used some diagrams to explain better how information is sent and managed by the different things, alongside confusing textual descriptions regarding the topic. It was then decided to use a visual medium, the diagrams, that are of course a simplification of reality but give a general overview on how the whole ecosystem is represented. This decision led to the query “Internet of Things ecosystem diagram”, searched in Google using the Images search engine. The results of this research were used to create the main leit motiv of the project, hence the connections between entities. ',
     },
-    {
-      title: 'Relevance',
-      content: ' Interconnected is a project developed as Master Degree Thesis Interconnected: interrogating Internet of Things communication  at Politecnico di Milano by Andrea Elena Febres Medina. This website was coded with the help of Michele Bruno and Federico Pozzi.',
-    },
 
   ];
-
   return (
     <div className="contentGreen">
       <Header />
@@ -50,7 +45,7 @@ export default function About() {
               <Link to="#terzo" className="upper">{paragraph[2].title}</Link>
             </div>
             <div className="row bordoTopAbout bordoBottomAbout pt-2 pb-2 animaz2">
-              <Link to="#quarto" className="upper">{paragraph[3].title}</Link>
+              <Link to="#quarto" className="upper">Relevance</Link>
             </div>
           </div>
           <div className="col-10 overflow-auto borderLeftAbout" style={{ height: '70vh' }}>
@@ -69,6 +64,18 @@ export default function About() {
 
               ))
             }
+                <p className="fontText" id="quarto">
+                  <span className="fontTextStrong">Relevance</span>
+                  <br />
+                  Interconnected is a project developed as Master Degree Thesis Interconnected: interrogating Internet of Things communication  at Politecnico di Milano by Andrea Elena Febres Medina. This website was coded with the help of
+                  &nbsp;
+                  <a className="fw-bold" href="https://github.com/michelebruno" target="blank" style={{ color: '#497065' }}>Michele Bruno</a>
+                  {' '}
+                  &nbsp;and&nbsp;
+                  {' '}
+                  <a className="fw-bold" href="https://federicopozzi.github.io/portfolio/" target="blank" style={{ color: '#497065' }}>Federico Pozzi</a>
+                  .
+                </p>
               </div>
             </div>
           </div>
