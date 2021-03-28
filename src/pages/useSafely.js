@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import article, { categories } from '../data/useSafely';
 import '../scss/style.scss';
+import Footer from '../components/Footer';
 
 export default function UseSafely() {
   const [cat, setCat] = useState();
@@ -93,6 +94,7 @@ export default function UseSafely() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
 
   );
