@@ -139,6 +139,8 @@ $display-font-sizes: (
 $btn-border-radius-lg: 35px;
 $info: black;
 
+$success: black;
+
 $card-border-radius: 0;
 $card-border-color: #497065;
 
@@ -343,12 +345,19 @@ button {
 
 .over {
   color: $dark;
+  cursor:pointer;
 }
 
 .over:hover {
   color: white;
   background-color: $dark;
   transition: all 90ms ease-in-out;
+  cursor:pointer;
+}
+
+.notOver {
+  color: $success;
+  cursor: auto;
 }
 
 .marginFilter > a {
@@ -373,4 +382,8 @@ button {
 .scuro:hover {
   color:white;
   background-color: black;
+}
+
+.bordoVerde {
+  border: 1px solid red;
 }

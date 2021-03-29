@@ -67,17 +67,16 @@ export default function UseSafely() {
           <div className="row ">
             {
               article.map(({
-                who, title, decription, link, cat: category,
+                who, title, decription, link, cat: category, classe, over,
               }) => (
                 <a
                   target="_blank"
                   key={who + title}
                   className={`col-12 col-md-4 col-lg-3 article mt-4 px-4 ${cat ? (category === cat && 'show') : 'show'}`}
                   href={link}
-                  style={{ cursor: 'pointer' }}
                 >
                   <div
-                    className="row row-cols-1 over border border-dark  h-100"
+                    className={`row row-cols-1 border  h-100 ${classe} ${over}`}
                   >
                     <div>
                       <p className="pt-2">{who}</p>
