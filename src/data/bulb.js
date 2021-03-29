@@ -2,6 +2,7 @@ import { ReactComponent as Bulb1 } from '../svg/bulb1/test.svg';
 import { ReactComponent as Bulb2 } from '../svg/bulb2/test.svg';
 import { ReactComponent as Bulb3 } from '../svg/bulb3/test.svg';
 import { ReactComponent as Bulb } from '../svg/bulb.svg';
+import BulbPng from '../components/Bulb';
 import bulb1 from '../images/bulb/bulb1.jpg';
 import bulb2 from '../images/bulb/bulb2.jpg';
 import bulb3 from '../images/bulb/bulb3.jpg';
@@ -18,7 +19,7 @@ const bulb = {
   title: 'SMART BULB',
   description: 'Light can be controlled with just a few taps on smartphone, tablet and virtual assistants.',
   items: 'Wyze Bulb, Philips Hue, Sengled Smart Wi-Fi LED',
-  Icon: Bulb,
+  Icon: BulbPng,
   options: [
     {
       label: 'Change the color of the smart bulb',
@@ -128,7 +129,7 @@ const bulb = {
           description: voice.descr,
           style: {
             left: '1%',
-            top: '56%',
+            top: '53%',
           },
         },
         {
