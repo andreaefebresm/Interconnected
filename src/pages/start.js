@@ -90,7 +90,9 @@ function PathOfData({
 
           <div className="panel">
             <Svg className="position-relative" id="path-of-data" />
+
             <div>
+              <p style={{ position: 'absolute', top: '10%', left: '22%' }}>asvpdenve</p>
               {
                 collectedData.map(({ label, description, style }, i) => (
                   <div className="box" key={label + i} style={{ ...defaultStyles[i], ...style }}>
@@ -105,7 +107,9 @@ function PathOfData({
                 ))
               }
             </div>
+
           </div>
+
         </div>
       </section>
       <section>
