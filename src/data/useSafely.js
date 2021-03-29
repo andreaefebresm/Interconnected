@@ -357,7 +357,7 @@ const article = [
     over: disattivi2,
   },
   {
-    cat: bulb,
+    cat: thermostat,
     who: 'Banggood',
     title: 'Banggood BECA Thermostat WiFi',
     decription: 'Guide not available yet.',
@@ -365,7 +365,7 @@ const article = [
     over: disattivi2,
   },
   {
-    cat: bulb,
+    cat: thermostat,
     who: 'Hive',
     title: 'Hive Smart Active Heating Multizone System',
     decription: 'Guide not available yet.',
@@ -373,7 +373,7 @@ const article = [
     over: disattivi2,
   },
   {
-    cat: bulb,
+    cat: thermostat,
     who: 'Backlight',
     title: 'Smart Thermostat WiFi Water/Gas Boiler Backlight',
     decription: 'Guide not available yet.',
@@ -381,7 +381,7 @@ const article = [
     over: disattivi2,
   },
   {
-    cat: bulb,
+    cat: thermostat,
     who: 'Honeywell',
     title: 'Honeywell Lyric T6 SMART Thermostat WI-FI',
     decription: 'Guide not available yet.',
