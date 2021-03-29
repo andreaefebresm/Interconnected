@@ -27,7 +27,7 @@ export default function Menu() {
                 onClick={() => navigate(`/start?selected=${index}`)}
                 role="link"
                 style={{
-                  cursor: 'pointer', marginRight: '20px', marginLeft: '20px', backgroundColor: '#FCFBF6',
+                  cursor: 'pointer', marginRight: '20px', marginLeft: '20px',
                 }}
               >
                 <div className="card-body">

@@ -1,6 +1,8 @@
 import { ReactComponent as Assistant1 } from '../svg/assistant1/test.svg';
 import { ReactComponent as Assistant2 } from '../svg/assistant2/test.svg';
 import { ReactComponent as Assistant } from '../svg/assistant.svg';
+import AssistantPng from '../components/Assistant';
+import AssistantPng2 from '../components/AssistantPng2';
 import assistant1 from '../images/assistant/assistant1.jpg';
 import assistant2 from '../images/assistant/assistant2.jpg';
 import assistant3 from '../images/assistant/assistant3.jpg';
@@ -14,7 +16,7 @@ const assistant = {
   title: 'VOICE ASSISTANT',
   description: 'It can perform tasks or services for an individual based on commands or questions',
   items: 'Home pod, Google Home, Amazon Echo',
-  Icon: Assistant,
+  Icon: AssistantPng,
   options: [
     {
       label: 'Voice Assistant, what is the weather like today?',
