@@ -32,10 +32,6 @@ export default function UseSafely() {
       label: 'Smart Thermostat',
       name: 'thermostat',
     },
-    {
-      label: 'Privacy Policy',
-      name: 'policy',
-    },
   ];
 
   return (

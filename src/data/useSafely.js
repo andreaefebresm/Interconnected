@@ -3,7 +3,6 @@ const vacuum = 'vacuum';
 const doorbell = 'doorbell';
 const bulb = 'bulb';
 const thermostat = 'thermostat';
-const policy = 'policy';
 const attivi1 = 'border-dark';
 const attivi2 = 'over';
 const disattivi1 = 'border-success';
@@ -15,7 +14,6 @@ export const categories = {
   doorbell,
   bulb,
   thermostat,
-  policy,
 };
 
 const article = [
@@ -31,7 +29,7 @@ const article = [
   {
     cat: assistant,
     who: 'Amazon Alexa',
-    title: 'ALEXA\n,'
+    title: 'ALEXA,\n'
       + 'A User\'s Guide',
     decription: 'Alexa is the friendly voice-assistant behind Amazon\'s Echo speaker. She seems patient, smart, and funny. But who is she really?',
     link: 'https://datadetoxkit.org/en/privacy/alexa/',
@@ -213,6 +211,14 @@ const article = [
     link: 'https://myaccount.google.com/dashboard?hl=en',
     classe: attivi1,
     over: attivi2,
+  },
+  {
+    cat: assistant,
+    who: 'XIAOMI',
+    title: 'XIAOMI Original Xiaomi Redmi Xiao',
+    decription: 'Guide not available yet.',
+    classe: disattivi1,
+    over: disattivi2,
   },
 
 ];

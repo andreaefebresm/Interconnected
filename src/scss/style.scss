@@ -139,7 +139,7 @@ $display-font-sizes: (
 $btn-border-radius-lg: 35px;
 $info: black;
 
-$success: black;
+$success: #c3c3c3;
 
 $card-border-radius: 0;
 $card-border-color: #497065;
@@ -356,7 +356,8 @@ button {
 }
 
 .notOver {
-  color: $success;
+  color: white;
+  background-color: $success;
   cursor: auto;
 }
 
