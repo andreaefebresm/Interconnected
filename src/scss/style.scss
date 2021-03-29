@@ -388,3 +388,8 @@ button {
 .bordoVerde {
   border: 1px solid red;
 }
+
+.imgOver:hover {
+  opacity: 0.5;
+  transition: 100ms ease;
+}

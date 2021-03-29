@@ -27,7 +27,7 @@ export default function EndContent({
                   <a href={href} target="blank" key={i + text}>
                     <img
                       src={text}
-                      className="img-fluid"
+                      className="img-fluid imgOver"
                       alt="Responsive image"
                       height="100"
                     />
