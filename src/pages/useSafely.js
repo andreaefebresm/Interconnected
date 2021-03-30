@@ -5,7 +5,13 @@ import '../scss/style.scss';
 import Footer from '../components/Footer';
 
 export default function UseSafely() {
-  const [cat, setCat] = useState();
+  let filterDefault;
+  if (typeof window !== 'undefined') {
+    const params = new URLSearchParams(window.location.search);
+
+    filterDefault = typeof params.get('cat') !== 'undefined' ? params.get('cat') : 0;
+  }
+  const [cat, setCat] = useState(filterDefault);
 
   function setFilter(value) {
     return cat === value ? setCat() : setCat(value);

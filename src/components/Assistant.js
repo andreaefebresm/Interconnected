@@ -2,14 +2,14 @@ import React from 'react';
 
 import assistantPng from '../images/assistant.png';
 
-export default function AssistantPng() {
+export default function AssistantPng({ style, className }) {
   return (
-    <div className="d-flex justify-content-center">
+    <div className={`text-center ${className}`}>
       <img
         src={assistantPng}
         className="img-fluid mx-auto"
         alt="Responsive image"
-        style={{ height: '15vh' }}
+        style={style}
       />
     </div>
   );

@@ -162,6 +162,7 @@ const vacuum = {
       },
     ],
     cta: 'CAN I USE SMART VACUUMS SAFELY?',
+    device: 'vacuum',
   },
 };
 

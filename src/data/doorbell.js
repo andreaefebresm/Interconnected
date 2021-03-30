@@ -187,6 +187,7 @@ const doorbell = {
       },
     ],
     cta: 'CAN I USE SMART DOORBELLS SAFELY?',
+    device: 'doorbell',
   },
 };
 

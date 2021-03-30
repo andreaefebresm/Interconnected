@@ -6,7 +6,8 @@ import Footer from '../components/Footer';
 import '../scss/style.scss';
 
 export default function About() {
-  const intro = '';
+  const intro = 'Technology is not neutral. We’re inside of what we make, and it’s inside of us.\n'
+    + '            We’re living in a world of connections — and it matters which ones get made and unmade.';
   const paragraph = [
     {
       title: 'Starting point',
@@ -31,8 +32,7 @@ export default function About() {
       <div className="container-fluid h-100">
         <div className="row">
           <p className="display-4 col-11">
-            Technology is not neutral. We’re inside of what we make, and it’s inside of us.
-            We’re living in a world of connections — and it matters which ones get made and unmade.
+            {intro}
             <em> Donna Haraway, 1991</em>
           </p>
         </div>

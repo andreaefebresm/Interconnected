@@ -2,14 +2,14 @@ import React from 'react';
 
 import bulbPng from '../images/bulb.png';
 
-export default function BulbPng() {
+export default function BulbPng({ style, className }) {
   return (
-    <div className="d-flex justify-content-center">
+    <div className={`text-center ${className}`}>
       <img
         src={bulbPng}
         className="img-fluid mx-auto"
         alt="Responsive image"
-        style={{ height: '15vh' }}
+        style={style}
       />
     </div>
   );

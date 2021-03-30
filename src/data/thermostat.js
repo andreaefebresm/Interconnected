@@ -138,6 +138,7 @@ const thermostat = {
       },
     ],
     cta: 'CAN I USE SMART THERMOSTATS SAFELY?',
+    device: 'thermostat',
   },
 
 };

@@ -133,6 +133,7 @@ const assistant = {
       },
     ],
     cta: 'CAN I USE THE VIRTUAL ASSISTANT SAFELY?',
+    device: 'assistant',
   },
 };
 

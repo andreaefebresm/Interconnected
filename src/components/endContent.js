@@ -4,7 +4,7 @@ import { ReactComponent as ArrowR } from '../svg/arrowR.svg';
 import '../scss/style.scss';
 
 export default function EndContent({
-  links, what, cta,
+  links, what, cta, device,
 }) {
   return (
     <div className="container-fluid" style={{ height: '90vh' }}>
@@ -36,7 +36,7 @@ export default function EndContent({
               </div>
             ))}
           </div>
-          <Link to="/useSafely">
+          <Link to={`/useSafely?cat=${device}`}>
             <div className="row animaz">
               <p className="bigText display-4" style={{ borderTop: '1px solid black' }}>
                 {cta}

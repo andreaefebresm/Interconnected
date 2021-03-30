@@ -159,6 +159,7 @@ const bulb = {
       },
     ],
     cta: 'CAN I USE SMART BULBS SAFELY?',
+    device: 'bulb',
   },
 };
 
