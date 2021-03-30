@@ -74,7 +74,7 @@ function PathOfData({
       },
     }, 0);
 
-    tl.to('.box1', {
+    tl.to('.annotation', {
       transform: 'translateY(0)',
       opacity: 2,
       duration: 0.05,
@@ -100,7 +100,7 @@ function PathOfData({
 
             <div>
               <p
-                className="box1"
+                className="annotation"
                 style={{
                   position: 'absolute', top: '10%', left: '23%', width: '35vh',
                 }}
