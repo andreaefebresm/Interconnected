@@ -87,7 +87,7 @@ export default function Index() {
           <p className="bigText text-center display-3">
             {heys[heyIndex]}
             {' '}
-            I am home
+            <span className="home">I am home</span>
           </p>
           <a href="#panels" className="scroll" style={{ fontSize: '200%', textDecoration: 'none' }}><Arrow /></a>
 
