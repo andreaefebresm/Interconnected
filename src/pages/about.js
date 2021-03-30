@@ -31,7 +31,7 @@ export default function About() {
       <Header />
       <div className="container-fluid h-100">
         <div className="row">
-          <p className="display-4 col-11">
+          <p className="display-9 col-11">
             {intro}
             <em> Donna Haraway, 1991</em>
           </p>
@@ -54,21 +54,21 @@ export default function About() {
           <div className="col-10 overflow-auto borderLeftAbout" style={{ height: '70vh' }}>
             <div className="row">
               <div className="col-10">
-                <p className="fontText pt-2">{intro}</p>
+                <p className="fontText2 pt-2">{intro}</p>
                 {
               paragraph.map(({
                 content, title, ordine,
               }) => (
-                <p className="fontText" id={ordine}>
-                  <span className="fontTextStrong">{title}</span>
+                <p className="fontText2" id={ordine}>
+                  <span className="fontTextStrong2">{title}</span>
                   <br />
                   {content}
                 </p>
 
               ))
             }
-                <p className="fontText" id="quarto">
-                  <span className="fontTextStrong">Relevance</span>
+                <p className="fontText2" id="quarto">
+                  <span className="fontTextStrong2">Relevance</span>
                   <br />
                   Interconnected is a project developed as Master Degree Thesis Interconnected: interrogating Internet of Things communication  at Politecnico di Milano by Andrea Elena Febres Medina. This website was coded with the help of
                   &nbsp;

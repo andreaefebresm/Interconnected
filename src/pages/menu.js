@@ -33,7 +33,7 @@ export default function Menu() {
                 <div className="card-body">
                   <Icon style={{ height: '15vh', paddingTop: '15px', paddingBottom: '15px' }} className="mx-auto w-100" />
                   <h2 className="display-7 fontTextStrong pt-2 ">{title}</h2>
-                  <p className="display-9 fontText">{description}</p>
+                  <p className="display-10 fontText">{description}</p>
                   <p className="display-6 fontTextItalic">{items}</p>
                 </div>
               </div>

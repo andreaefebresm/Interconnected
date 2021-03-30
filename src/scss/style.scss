@@ -133,7 +133,8 @@ $display-font-sizes: (
   5: 2rem,
   7: 1.3rem,
   6: 0.8rem,
-  8: 1.7rem
+  8: 1.7rem,
+  9: 3rem,
 ) !default;
 
 $btn-border-radius-lg: 35px;
@@ -184,6 +185,18 @@ a {
 .fontText {
   font-family: $font-family-sans-serif;
   line-height: 1.1rem;
+}
+
+.fontText2 {
+  font-family: $font-family-sans-serif;
+  line-height: 2rem;
+  font-size: 1.7rem;
+}
+
+.fontTextStrong2 {
+  font-family: $font-family-sans-serif;
+  font-weight: var(--font-bold);
+  font-size: 1.9rem;
 }
 
 .fontTextStrong {
