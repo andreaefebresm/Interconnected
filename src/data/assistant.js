@@ -1,8 +1,6 @@
 import { ReactComponent as Assistant1 } from '../svg/assistant1/test.svg';
 import { ReactComponent as Assistant2 } from '../svg/assistant2/test.svg';
-import { ReactComponent as Assistant } from '../svg/assistant.svg';
 import AssistantPng from '../components/Assistant';
-import AssistantPng2 from '../components/AssistantPng2';
 import assistant1 from '../images/assistant/assistant1.jpg';
 import assistant2 from '../images/assistant/assistant2.jpg';
 import assistant3 from '../images/assistant/assistant3.jpg';

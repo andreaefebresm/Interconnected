@@ -1,6 +1,6 @@
 import React from 'react';
 
-import bulbPng from '../svg/bulb.png';
+import bulbPng from '../images/bulb.png';
 
 export default function BulbPng() {
   return (

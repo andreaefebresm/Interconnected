@@ -1,6 +1,6 @@
 import React from 'react';
 
-import assistantPng from '../svg/assistant.png';
+import assistantPng from '../images/assistant.png';
 
 export default function AssistantPng() {
   return (

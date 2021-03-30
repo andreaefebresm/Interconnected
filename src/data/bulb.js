@@ -1,7 +1,6 @@
 import { ReactComponent as Bulb1 } from '../svg/bulb1/test.svg';
 import { ReactComponent as Bulb2 } from '../svg/bulb2/test.svg';
 import { ReactComponent as Bulb3 } from '../svg/bulb3/test.svg';
-import { ReactComponent as Bulb } from '../svg/bulb.svg';
 import BulbPng from '../components/Bulb';
 import bulb1 from '../images/bulb/bulb1.jpg';
 import bulb2 from '../images/bulb/bulb2.jpg';
