@@ -329,6 +329,11 @@ button {
 
 }
 
+.box1 {
+  opacity: 0;
+  transform: translateY(20vh);
+}
+
 .article {
   transition: all 200ms ease-in-out 200ms, font-size 0ms 200ms;
 }

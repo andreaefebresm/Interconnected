@@ -74,6 +74,13 @@ function PathOfData({
       },
     }, 0);
 
+    tl.to('.box1', {
+      transform: 'translateY(0)',
+      opacity: 2,
+      duration: 0.05,
+      stagger: 0.045,
+    });
+
     tl.to('.box', {
       transform: 'translateY(0)',
       opacity: 2,
@@ -92,7 +99,14 @@ function PathOfData({
             <Svg className="position-relative" id="path-of-data" />
 
             <div>
-              <p style={{ position: 'absolute', top: '10%', left: '22%' }}>asvpdenve</p>
+              <p
+                className="box1"
+                style={{
+                  position: 'absolute', top: '10%', left: '23%', width: '35vh',
+                }}
+              >
+                * The blur represents the possibility that this data arriver to the parties, even if it is unknown.
+              </p>
               {
                 collectedData.map(({ label, description, style }, i) => (
                   <div className="box" key={label + i} style={{ ...defaultStyles[i], ...style }}>
