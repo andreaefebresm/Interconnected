@@ -6,13 +6,9 @@ import vacuum1 from '../images/vacuum/vacuum1.jpg';
 import vacuum2 from '../images/vacuum/vacuum2.jpg';
 import vacuum3 from '../images/vacuum/vacuum3.jpg';
 
-const map = { title: 'Map of the house', descr: 'Proximity sensors combined with artificial intelligence recognise obstacles as walls. Users give the name to each room and the map is created.' };
-const obstacle = { title: 'Obstacle recognition', descr: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the company’s servers and an A.I. recognises the object shape. The photos are stored only for few seconds but the fact that you own such type of furniture remains.' };
-const dirty = { title: 'Dirtiness level', descr: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets full faster. The history of emptying the bin gives an idea of which room is used the most.' };
-const tone = { title: 'Tone of voice', descr: 'Voice recordings are stored and analysed: artificial intelligence can tell if your tone of voice is sad, happy or angry. The emotions are also linked to the requests you make.' };
-const voice = { title: 'Voice recognition', descr: 'Virtual assistants can recognise whose is the voice that is talking: some devices give the possibility to give names to users. The history of the voices gives an idea of who lives the house.' };
-const query = { title: 'Query history', descr: 'Every interaction with the virtual assistant is recorded and stored. The history and the repetition of requests gives a pattern of your habits and preferred things.' };
-const dist = { title: 'Distance from the device', descr: 'Artificial Intelligence can detect from the echo the distance from the device. Since the device is also capable of locating itself in the house, the company knows which room you use the most.' };
+import {
+  tone, voice, query, dist, map, obstacle, dirty,
+} from './finalCard';
 
 const vacuum = {
   title: 'SMART VACUUM CLEANER',

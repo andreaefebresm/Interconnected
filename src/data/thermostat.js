@@ -6,12 +6,9 @@ import thermostat1 from '../images/thermostat/thermostat1.jpg';
 import thermostat2 from '../images/thermostat/thermostat2.jpg';
 import thermostat3 from '../images/thermostat/thermostat3.jpg';
 
-const presence = { title: 'Presence in the house', descr: 'Smart thermostats are able to self-regulate themselves based on your presence in the house. Therefore, the history of temperature and your preferences creates a pattern of your habits.' };
-const rooms = { title: 'Rooms usage', descr: 'The temperature preference in certain rooms is registered to self-regulate the thermostat. The habits of the people inside the house are stored.' };
-const tone = { title: 'Tone of voice', descr: 'Voice recordings are stored and analysed: artificial intelligence can tell if your tone of voice is sad, happy or angry. The emotions are also linked to the requests you make.' };
-const voice = { title: 'Voice recognition', descr: 'Virtual assistants can recognise whose is the voice that is talking: some devices give the possibility to give names to users. The history of the voices gives an idea of who lives the house.' };
-const query = { title: 'Query history', descr: 'Every interaction with the virtual assistant is recorded and stored. The history and the repetition of requests gives a pattern of your habits and preferred things.' };
-const dist = { title: 'Distance from the device', descr: 'Artificial Intelligence can detect from the echo the distance from the device. Since the device is also capable of locating itself in the house, the company knows which room you use the most.' };
+import {
+  tone, voice, query, dist, presenceThermostat, roomsThermostat,
+} from './finalCard';
 
 const thermostat = {
   title: 'SMART THERMOSTAT',
@@ -26,15 +23,15 @@ const thermostat = {
 
       collectedData: [
         {
-          label: presence.title,
-          description: presence.descr,
+          label: presenceThermostat.title,
+          description: presenceThermostat.descr,
           style: {
             left: '10%',
           },
         },
         {
-          label: rooms.title,
-          description: rooms.descr,
+          label: roomsThermostat.title,
+          description: roomsThermostat.descr,
           style: {
             top: '30%',
             left: '21%',
@@ -49,15 +46,15 @@ const thermostat = {
 
       collectedData: [
         {
-          label: presence.title,
-          description: presence.descr,
+          label: presenceThermostat.title,
+          description: presenceThermostat.descr,
           style: {
             left: '10%',
           },
         },
         {
-          label: rooms.title,
-          description: rooms.descr,
+          label: roomsThermostat.title,
+          description: roomsThermostat.descr,
           style: {
             top: '30%',
             left: '21%',
@@ -72,15 +69,15 @@ const thermostat = {
 
       collectedData: [
         {
-          label: presence.title,
-          description: presence.descr,
+          label: presenceThermostat.title,
+          description: presenceThermostat.descr,
           style: {
             left: '10%',
           },
         },
         {
-          label: rooms.title,
-          description: rooms.descr,
+          label: roomsThermostat.title,
+          description: roomsThermostat.descr,
           style: {
             top: '30%',
             left: '21%',
