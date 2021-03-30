@@ -1,12 +1,14 @@
 import { ReactComponent as Assistant1 } from '../svg/assistant1/test.svg';
 import { ReactComponent as Assistant2 } from '../svg/assistant2/test.svg';
+import { ReactComponent as Vacuum3 } from '../svg/vacuum3/test.svg';
+
 import AssistantPng from '../components/Assistant';
 import assistant1 from '../images/assistant/assistant1.jpg';
 import assistant2 from '../images/assistant/assistant2.jpg';
 import assistant3 from '../images/assistant/assistant3.jpg';
 
 import {
-  tone, voice, query, dist,
+  tone, voice, query, dist, map, obstacle, dirty,
 } from './finalCard';
 
 const assistant = {
@@ -92,25 +94,66 @@ const assistant = {
       ],
     },
     {
-      label: 'assistant option 3',
-      Svg: Assistant2,
+      label: 'Voice Assistant, clean the kitchen',
+      Svg: Vacuum3,
       prefix: 'test_svg',
 
       collectedData: [
         {
-          label: 'Map of the house',
-          description: 'PROXIMITY SENSORS COMBINED WITH ARTIFICIAL INTELLINGENCE* RECOGNISE OBSTACLES AS WALLS.\n'
-            + 'USERS GIVE THE NAME OF EACH ROOM.',
+          label: map.title,
+          description: map.descr,
+          id: '#test_svg__prova1',
+          style: {
+            left: '12%',
+            top: '10%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'Some smart vacuum cleaners have cameras in them and take photos. These photos are sent to the '
-            + 'company’s servers and an A.I. recognises if the object is a table. The photos are stored only for few seconds '
-            + 'but the fact that you own such type of furniture remains. ',
+          label: obstacle.title,
+          description: obstacle.descr,
+          style: {
+            top: '30%',
+            left: '23%',
+          },
         },
         {
-          label: 'Map of the house',
-          description: 'The vacuum robot analyses how many times it has to empty the bin and in which room the bin gets fuller.',
+          label: dirty.title,
+          description: dirty.descr,
+          style: {
+            left: '12%',
+          },
+        },
+        {
+          label: tone.title,
+          description: tone.descr,
+          style: {
+            left: '0.5%',
+            top: '20%',
+          },
+        },
+        {
+          label: query.title,
+          description: query.descr,
+          style: {
+            left: '22%',
+            top: '70%',
+          },
+        },
+        {
+          label: voice.title,
+          description: voice.descr,
+          style: {
+            left: '1%',
+            top: '50%',
+          },
+        },
+        {
+          label: dist.title,
+          description: dist.descr,
+          style: {
+            left: '10%',
+            top: '73%',
+          },
         },
       ],
     },
