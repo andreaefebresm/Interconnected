@@ -6,6 +6,7 @@ import { Link } from 'gatsby';
 import { ReactComponent as Intro } from '../svg/intro.svg';
 import { ReactComponent as Intro2 } from '../svg/intro2.svg';
 import { ReactComponent as Arrow } from '../svg/arrow.svg';
+import Gif from '../components/gif';
 import '../scss/style.scss';
 
 gsap.registerPlugin(MotionPathPlugin);
@@ -107,7 +108,8 @@ export default function Index() {
         </section>
 
         <section id="intro" className="full-screen bg-primary h-100">
-          <Intro2 />
+          {/* <Intro2 /> */}
+          <Gif />
         </section>
 
         <section className="full-screen bg-primary">
