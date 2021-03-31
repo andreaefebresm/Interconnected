@@ -348,17 +348,12 @@ button {
 }
 
 .article {
-  transition: all 200ms ease-in-out 200ms, font-size 0ms 200ms;
+  transition: all 200ms ease-in-out 200ms;
 }
 
 .article:not(.show) {
-  padding: 0 !important;
-  transform: scale(0);
-  font-size: 0;
-  opacity: 0;
-  width: 0;
-  height: 0;
-  transition: all 200ms ease-in-out, font-size 0ms;
+  display: none;
+  transition: all 200ms ease-in-out;
 }
 
 .over {
