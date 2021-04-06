@@ -113,7 +113,7 @@
 }
 
 //background color
-$primary: #FCFBF6;
+$primary: #FBF8F5;
 
 //yellow
 $secondary: #F4B63E;
@@ -390,7 +390,7 @@ button {
 }
 
 .scuro {
-  background-color: #FCFBF6;
+  background-color: $primary;
 }
 
 .scuro:hover {
