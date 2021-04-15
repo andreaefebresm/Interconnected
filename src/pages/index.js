@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { Link } from 'gatsby';
+import Seo from '../components/Seo';
 import { ReactComponent as Intro } from '../svg/intro.svg';
 import { ReactComponent as Intro2 } from '../svg/intro2.svg';
 import { ReactComponent as Arrow } from '../svg/arrow.svg';
@@ -82,6 +83,7 @@ export default function Index() {
 
   return (
     <div>
+      <Seo />
       <main id="content" className="site-content" role="main">
 
         <section id="intro" className="full-screen bg-secondary">
