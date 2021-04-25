@@ -1,7 +1,7 @@
 module.exports = {
-  pathPrefix: '/MakingConnectionsVisible',
+  /* pathPrefix: '/Interconnected', */
   siteMetadata: {
-    title: 'MakingConnectionsVisible',
+    title: 'Interconnected',
   },
   plugins: [
     'gatsby-plugin-sass',

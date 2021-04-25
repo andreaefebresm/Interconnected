@@ -83,7 +83,7 @@ export default function Index() {
 
   return (
     <div>
-      <Seo />
+
       <main id="content" className="site-content" role="main">
 
         <section id="intro" className="full-screen bg-secondary">
