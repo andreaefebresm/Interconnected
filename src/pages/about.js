@@ -110,7 +110,7 @@ export default function About() {
               </div>
 
             </div>
-            <div className="col-10 overflow-auto borderLeftAbout" style={{ height: '70vh' }}>
+            <div className="col-10 overflow-auto borderLeftAbout" style={{ height: '85vh' }}>
               <div className="row">
                 <div className="col-10">
                   {
