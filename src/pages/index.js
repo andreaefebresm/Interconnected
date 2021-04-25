@@ -8,7 +8,6 @@ import { ReactComponent as Intro } from '../svg/intro.svg';
 import { ReactComponent as Intro2 } from '../svg/intro2.svg';
 import { ReactComponent as Arrow } from '../svg/arrow.svg';
 import Gif from '../components/gif';
-import '../scss/style.scss';
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -84,6 +83,7 @@ export default function Index() {
   return (
     <div>
 
+      <Seo />
       <main id="content" className="site-content" role="main">
 
         <section id="intro" className="full-screen bg-secondary">
