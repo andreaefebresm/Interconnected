@@ -2,12 +2,14 @@ module.exports = {
   /* pathPrefix: '/Interconnected', */
   siteMetadata: {
     title: 'Interconnected',
+    siteUrl: 'https://interconnectedata.it/',
   },
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-svgr',
       options: {

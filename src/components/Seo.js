@@ -3,12 +3,15 @@ import { Helmet } from 'react-helmet';
 
 import cover from '../images/cover.png';
 
-function Seo() {
+function Seo({ title }) {
   return (
     <div className="App">
       <Helmet>
 
-        <title>Interconnected</title>
+        <title>
+          {title ? `${title} | ` : ''}
+          Interconnected
+        </title>
         <meta name="title" content="Interconnected" />
         <meta
           name="description"

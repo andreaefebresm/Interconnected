@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import article, { categories } from '../data/useSafely';
 import '../scss/style.scss';
 import Footer from '../components/Footer';
+import Layout from '../components/Layout';
 
 export default function UseSafely() {
   let filterDefault;
@@ -41,8 +42,7 @@ export default function UseSafely() {
   ];
 
   return (
-    <div>
-      <Header className="sticky-top" />
+    <Layout>
       <section className="pt-5 marginFilter" style={{ marginLeft: '30px', marginRight: '30px' }}>
         <h1 className="bigText display-4 text-dark">What can you do</h1>
         <h2 className="display-5 text-dark">
@@ -96,7 +96,7 @@ export default function UseSafely() {
         </div>
       </section>
       <Footer />
-    </div>
+    </Layout>
 
   );
 }

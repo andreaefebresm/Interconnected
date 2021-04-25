@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import EndContent from '../components/endContent';
+import EndContent from './endContent';
 
 import '../scss/style.scss';
 import { gsap } from 'gsap';

@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 import '../scss/style.scss';
+import Layout from '../components/Layout';
 
 export default function About() {
   const intro = 'Technology is not neutral. We’re inside of what we make, and it’s inside of us.\n'
@@ -27,65 +28,66 @@ export default function About() {
 
   ];
   return (
-    <div className="contentGreen">
-      <Header />
-      <div className="container-fluid h-100">
-        <div className="row">
-          <p className="display-9 col-11">
-            {intro}
-            <em> Donna Haraway, 1991</em>
-          </p>
-        </div>
-        <div className="row bordoTopAbout bordoBottomAbout">
-          <div className="col-2">
-            <div className="row pt-2 pb-2 animaz2">
-              <Link to="#primo" className="upper">{paragraph[0].title}</Link>
-            </div>
-            <div className="row bordoTopAbout pt-2 pb-2 animaz2">
-              <Link to="#secondo" className="upper">{paragraph[1].title}</Link>
-            </div>
-            <div className="row bordoTopAbout pt-2 pb-2 animaz2">
-              <Link to="#terzo" className="upper">{paragraph[2].title}</Link>
-            </div>
-            <div className="row bordoTopAbout bordoBottomAbout pt-2 pb-2 animaz2">
-              <Link to="#quarto" className="upper">Relevance</Link>
-            </div>
+    <Layout title="About">
+      <div className="contentGreen">
+        <div className="container-fluid h-100">
+          <div className="row">
+            <p className="display-9 col-11">
+              {intro}
+              <em> Donna Haraway, 1991</em>
+            </p>
           </div>
-          <div className="col-10 overflow-auto borderLeftAbout" style={{ height: '70vh' }}>
-            <div className="row">
-              <div className="col-10">
-                <p className="fontText2 pt-2">{intro}</p>
-                {
-              paragraph.map(({
-                content, title, ordine,
-              }) => (
-                <p className="fontText2" id={ordine}>
-                  <span className="fontTextStrong2">{title}</span>
-                  <br />
-                  {content}
-                </p>
+          <div className="row bordoTopAbout bordoBottomAbout">
+            <div className="col-2">
+              <div className="row pt-2 pb-2 animaz2">
+                <Link to="#primo" className="upper">{paragraph[0].title}</Link>
+              </div>
+              <div className="row bordoTopAbout pt-2 pb-2 animaz2">
+                <Link to="#secondo" className="upper">{paragraph[1].title}</Link>
+              </div>
+              <div className="row bordoTopAbout pt-2 pb-2 animaz2">
+                <Link to="#terzo" className="upper">{paragraph[2].title}</Link>
+              </div>
+              <div className="row bordoTopAbout bordoBottomAbout pt-2 pb-2 animaz2">
+                <Link to="#quarto" className="upper">Relevance</Link>
+              </div>
+            </div>
+            <div className="col-10 overflow-auto borderLeftAbout" style={{ height: '70vh' }}>
+              <div className="row">
+                <div className="col-10">
+                  <p className="fontText2 pt-2">{intro}</p>
+                  {
+                    paragraph.map(({
+                      content, title, ordine,
+                    }) => (
+                      <p className="fontText2" id={ordine}>
+                        <span className="fontTextStrong2">{title}</span>
+                        <br />
+                        {content}
+                      </p>
 
-              ))
-            }
-                <p className="fontText2" id="quarto">
-                  <span className="fontTextStrong2">Relevance</span>
-                  <br />
-                  Interconnected is a project developed as Master Degree Thesis Interconnected: interrogating Internet of Things communication  at Politecnico di Milano by Andrea Elena Febres Medina. This website was coded with the help of
-                  &nbsp;
-                  <a className="fw-bold" href="https://github.com/michelebruno" target="blank" style={{ color: '#497065' }}>Michele Bruno</a>
-                  {' '}
-                  &nbsp;and&nbsp;
-                  {' '}
-                  <a className="fw-bold" href="https://federicopozzi.github.io/portfolio/" target="blank" style={{ color: '#497065' }}>Federico Pozzi</a>
-                  .
-                </p>
+                    ))
+                  }
+                  <p className="fontText2" id="quarto">
+                    <span className="fontTextStrong2">Relevance</span>
+                    <br />
+                    Interconnected is a project developed as Master Degree Thesis Interconnected: interrogating Internet of Things communication  at Politecnico di Milano by Andrea Elena Febres Medina. This website was coded with the help of
+                    &nbsp;
+                    <a className="fw-bold" href="https://github.com/michelebruno" target="blank" style={{ color: '#497065' }}>Michele Bruno</a>
+                    {' '}
+                    &nbsp;and&nbsp;
+                    {' '}
+                    <a className="fw-bold" href="https://federicopozzi.github.io/portfolio/" target="blank" style={{ color: '#497065' }}>Federico Pozzi</a>
+                    .
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }

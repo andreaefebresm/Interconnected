@@ -1,21 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { Link } from 'gatsby';
-import Seo from '../components/Seo';
+import gsap from 'gsap';
+import Layout from '../components/Layout';
 import { ReactComponent as Intro } from '../svg/intro.svg';
-import { ReactComponent as Intro2 } from '../svg/intro2.svg';
 import { ReactComponent as Arrow } from '../svg/arrow.svg';
 import Gif from '../components/gif';
 
-gsap.registerPlugin(MotionPathPlugin);
-
-gsap.registerPlugin(ScrollTrigger);
-
 export default function Index() {
   const panelsContainer = useRef();
-  const text = useRef();
 
   const svgPrefix = 'intro_svg';
   const heys = [
@@ -81,11 +73,8 @@ export default function Index() {
   }, [panelsContainer, Intro]);
 
   return (
-    <div>
-
-      <Seo />
+    <Layout header={false}>
       <main id="content" className="site-content" role="main">
-
         <section id="intro" className="full-screen bg-secondary">
           <p className="bigText text-center display-3">
             {heys[heyIndex]}
@@ -93,7 +82,6 @@ export default function Index() {
             <span className="home">I am home</span>
           </p>
           <a href="#panels" className="scroll" style={{ fontSize: '200%', textDecoration: 'none' }}><Arrow /></a>
-
         </section>
 
         <section id="panels" className="bg-primary bigText">
@@ -110,7 +98,6 @@ export default function Index() {
         </section>
 
         <section id="intro" className="full-screen bg-primary h-100">
-          {/* <Intro2 /> */}
           <Gif />
         </section>
 
@@ -131,7 +118,7 @@ export default function Index() {
         </section>
 
       </main>
-    </div>
+    </Layout>
 
   );
 }

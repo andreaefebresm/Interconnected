@@ -2,14 +2,12 @@ import React from 'react';
 import { navigate } from 'gatsby';
 import Header from '../components/Header';
 
-import '../scss/style.scss';
-
 import data from '../data';
+import Layout from '../components/Layout';
 
 export default function Menu() {
   return (
-    <div>
-      <Header className="sticky-top" />
+    <Layout title="Menu">
       <div className="container-fluid pt-5">
         <div className="row">
           <h1 className="offset-1 col-9 display-3 bigText">Do you know what smart objects can tell about you?</h1>
@@ -44,7 +42,7 @@ export default function Menu() {
 
       </div>
 
-    </div>
+    </Layout>
 
   );
 }

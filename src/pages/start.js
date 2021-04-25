@@ -1,15 +1,10 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import '../scss/style.scss';
 
-import Header from '../components/Header';
-import FirstOption from './firstOption';
+import FirstOption from '../components/firstOption';
 import data from '../data';
-
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MotionPathPlugin);
+import Layout from '../components/Layout';
 
 function PathOfData({
   Svg, collectedData, prefix, end,
@@ -144,10 +139,11 @@ export default function Start() {
   }
   const deviceData = data[index];
 
-  const { options, Icon, end } = deviceData;
+  const {
+    options, Icon, end, title,
+  } = deviceData;
   return (
-    <div>
-      <Header className="sticky-top" />
+    <Layout title={title}>
       <main id="content" className="site-content" role="main">
 
         <section id="intro" className="full-screen  ">
@@ -192,7 +188,7 @@ export default function Start() {
         && <PathOfData {...selectedItem} key={selectedItem.Svg} />}
       </main>
 
-    </div>
+    </Layout>
 
   );
 }
