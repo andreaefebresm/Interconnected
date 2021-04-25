@@ -1,5 +1,5 @@
 /*!
- * GSAP 3.6.0
+ * GSAP 3.6.1
  * https://greensock.com
  *
  * @license Copyright 2008-2021, GreenSock. All rights reserved.
@@ -9,7 +9,7 @@
 */
 
 /*!
- * MotionPathPlugin 3.6.0
+ * MotionPathPlugin 3.6.1
  * https://greensock.com
  *
  * @license Copyright 2008-2021, GreenSock. All rights reserved.
@@ -19,7 +19,7 @@
 */
 
 /*!
- * ScrollTrigger 3.6.0
+ * ScrollTrigger 3.6.1
  * https://greensock.com
  *
  * @license Copyright 2008-2021, GreenSock. All rights reserved.
@@ -29,7 +29,7 @@
 */
 
 /*!
- * matrix 3.6.0
+ * matrix 3.6.1
  * https://greensock.com
  *
  * Copyright 2008-2021, GreenSock. All rights reserved.
