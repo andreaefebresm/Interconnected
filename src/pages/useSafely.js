@@ -65,7 +65,7 @@ export default function UseSafely() {
 
       </section>
       <section style={{ marginLeft: '30px', marginRight: '30px' }}>
-        <div className="container-fluid">
+        <div>
           <div className="row ">
             {
               article.map(({

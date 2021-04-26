@@ -10,12 +10,11 @@ export default function Menu() {
     <Layout title="Menu">
       <div className="container-fluid pt-5">
         <div className="row">
-          <div className="col">
-            <h1 className="offset-1 col-9 display-3 bigText">Do you know what smart objects can tell about you?</h1>
-            <h3 className="offset-1 display-5 fontTextItalic">Choose one device to discover it.</h3>
+          <div className="offset-md-1 col-12 col-md-9 ">
+            <h1 className="display-3 bigText">Do you know what smart objects can tell about you?</h1>
+            <h3 className="display-5 fontTextItalic">Choose one device to discover it.</h3>
           </div>
         </div>
-
         <div className="row  justify-content-center" style={{ paddingTop: '5vh' }}>
           {
             data.map(({

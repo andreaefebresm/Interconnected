@@ -6,6 +6,71 @@ import FirstOption from '../components/firstOption';
 import data from '../data';
 import Layout from '../components/Layout';
 
+export default function Start() {
+  const [selectedItem, setSelectedItem] = useState();
+  let index = 0;
+  if (typeof window !== 'undefined') {
+    const params = new URLSearchParams(window.location.search);
+
+    index = typeof params.get('selected') !== 'undefined' ? params.get('selected') : 0;
+  }
+  const deviceData = data[index];
+
+  const {
+    options, Icon, end, title,
+  } = deviceData;
+  return (
+    <Layout title={title}>
+      <main id="content" className="site-content" role="main">
+
+        <section id="intro" className="full-screen  ">
+
+          <div className="container-fluid">
+            <div className="row justify-content-center align-items-center" style={{ minHeight: '90vh' }}>
+              <div className="col-12 col-md-6">
+                <Icon style={{ height: '40vh' }} className="mx-auto w-100" />
+              </div>
+              <div className="col-12 col-md-6">
+                <p className="bigText display-4">
+                  Choose one option to
+                  <br />
+                  interact with the device
+                </p>
+                <div className="row ">
+                  {
+                    options.map(({
+                      label, Svg, collectedData, prefix,
+                    }, i) => (
+                      <div className="pb-3 col-12 col-md-8 h-100" key={i}>
+                        <a
+                          className="btn btn-lg btn-outline-info w-100"
+                          href="#discover-data"
+                          onClick={() => setSelectedItem({
+                            label, Svg, collectedData, prefix, end,
+                          })}
+                        >
+                          <span className="display-7">{label}</span>
+                        </a>
+                      </div>
+                    ))
+                  }
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="w-100" id="discover-data" />
+        {selectedItem
+        && <PathOfData {...selectedItem} key={selectedItem.Svg} />}
+      </main>
+
+    </Layout>
+
+  );
+}
+
 function PathOfData({
   Svg, collectedData, prefix, end,
 }) {
@@ -125,70 +190,6 @@ function PathOfData({
         <FirstOption end={end} />
       </section>
     </div>
-
-  );
-}
-
-export default function Start() {
-  const [selectedItem, setSelectedItem] = useState();
-  let index = 0;
-  if (typeof window !== 'undefined') {
-    const params = new URLSearchParams(window.location.search);
-
-    index = typeof params.get('selected') !== 'undefined' ? params.get('selected') : 0;
-  }
-  const deviceData = data[index];
-
-  const {
-    options, Icon, end, title,
-  } = deviceData;
-  return (
-    <Layout title={title}>
-      <main id="content" className="site-content" role="main">
-
-        <section id="intro" className="full-screen  ">
-
-          <div className="container-fluid">
-            <div className="row justify-content-center align-items-center" style={{ height: '90vh' }}>
-              <div className="col-6">
-                <Icon style={{ height: '40vh' }} className="mx-auto w-100" />
-              </div>
-              <div className="col-6">
-                <p className="bigText display-4">
-                  Choose one option to
-                  <br />
-                  interact with the device
-                </p>
-                {
-                  options.map(({
-                    label, Svg, collectedData, prefix,
-                  }, i) => (
-                    <div className="row pb-3" key={i}>
-                      <div className="col-8 h-100">
-                        <a
-                          className="btn btn-lg btn-outline-info w-100"
-                          href="#discover-data"
-                          onClick={() => setSelectedItem({
-                            label, Svg, collectedData, prefix, end,
-                          })}
-                        >
-                          <span className=" display-7">{label}</span>
-                        </a>
-                      </div>
-                    </div>
-                  ))
-                }
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div className="w-100" id="discover-data" />
-        {selectedItem
-        && <PathOfData {...selectedItem} key={selectedItem.Svg} />}
-      </main>
-
-    </Layout>
 
   );
 }
