@@ -54,6 +54,7 @@ export default function Index() {
         align: `#${svgPrefix}__` + 'path',
         alignOrigin: [0.5, 0.9],
       },
+      ease: 'none',
     }, 0);
 
     const interval = setInterval(() => {
@@ -101,22 +102,19 @@ export default function Index() {
           <Gif />
         </section>
 
-        <section className="full-screen bg-primary">
-          <div className="container-fluid">
-            <div className="row justify-content-center">
-              <div className="col-12 col-md-5">
-                <p className="bigText finalQuote display-4">Do you know what smart objects can tell about you?</p>
-              </div>
-              <div className="col-12">
-                <p className="pt-5 text-center bigText">
-                  <Link to="/menu" style={{ fontSize: '100%' }}>
-                    Click to explore
-                    <br />
-                    <Arrow className="freccia" />
-                  </Link>
-                </p>
-              </div>
-
+        <section className="container-fluid bg-primary">
+          <div className="row justify-content-center align-content-center min-vh-100">
+            <div className="col-12 col-md-5">
+              <p className="bigText finalQuote display-4">Do you know what smart objects can tell about you?</p>
+            </div>
+            <div className="col-12">
+              <p className="pt-5 text-center bigText">
+                <Link to="/menu" style={{ fontSize: '100%' }}>
+                  Click to explore
+                  <br />
+                  <Arrow className="freccia" />
+                </Link>
+              </p>
             </div>
 
           </div>

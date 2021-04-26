@@ -4,15 +4,18 @@ import { Helmet } from 'react-helmet';
 import cover from '../images/cover.png';
 
 function Seo({ title }) {
+  const _title = `${title ? `${title} | ` : ''} Interconnected`;
   return (
     <div className="App">
       <Helmet>
 
         <title>
-          {title ? `${title} | ` : ''}
-          Interconnected
+          {_title}
         </title>
-        <meta name="title" content="Interconnected" />
+        <meta
+          name="title"
+          content={_title}
+        />
         <meta
           name="description"
           content="Knowledge about what the Internet of Things is and how it works is part of the domain of experts using technical and abstract language. On the other hand, users of interconnected devices interact with the complex IoT infrastructure on a daily basis without directly assimilating its implications"

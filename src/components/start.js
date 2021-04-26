@@ -127,17 +127,18 @@ function PathOfData({
         align: `#${svgPrefix}__` + 'path',
         alignOrigin: [0.5, 0.9],
       },
+      ease: 'none',
     }, 0);
 
     tl.to('.annotation', {
-      transform: 'translateY(0)',
+      y: 0,
       opacity: 2,
       duration: 0.05,
       stagger: 0.045,
     });
 
     tl.to('.box', {
-      transform: 'translateY(0)',
+      y: 0,
       opacity: 2,
       duration: 0.05,
       stagger: 0.045,
