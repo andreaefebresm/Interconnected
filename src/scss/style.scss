@@ -55,6 +55,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Favorit-Light';
+  src: url('../font/favorit-light-webfont.woff2') format('woff2'),
+  url('../font/favorit-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: Favorit-Exp-Light;
