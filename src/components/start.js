@@ -2,18 +2,13 @@ import React, { useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import '../scss/style.scss';
 
-import FirstOption from '../components/firstOption';
+import FirstOption from './firstOption';
 import data from '../data';
-import Layout from '../components/Layout';
+import Layout from './Layout';
 
-export default function Start() {
+export default function Start({ pageContext: { index } }) {
   const [selectedItem, setSelectedItem] = useState();
-  let index = 0;
-  if (typeof window !== 'undefined') {
-    const params = new URLSearchParams(window.location.search);
 
-    index = typeof params.get('selected') !== 'undefined' ? params.get('selected') : 0;
-  }
   const deviceData = data[index];
 
   const {

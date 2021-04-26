@@ -6,6 +6,13 @@ import data from '../data';
 import Layout from '../components/Layout';
 
 export default function Menu() {
+  const devices = [
+    'thermostat',
+    'doorbell',
+    'assistant',
+    'vacuum',
+    'bulb',
+  ];
   return (
     <Layout title="Menu">
       <div className="container-fluid pt-5">
@@ -29,7 +36,7 @@ export default function Menu() {
               >
                 <div
                   className="card h-100 card scuro "
-                  onClick={() => navigate(`/start?selected=${index}`)}
+                  onClick={() => navigate(`/${devices[index]}`)}
                   role="link"
                 >
 
