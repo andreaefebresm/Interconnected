@@ -263,15 +263,14 @@ a {
 
 .finalQuote {
   text-align: center;
-  padding-right: 30vh;
-  padding-left: 30vh;
   margin-top: 20vh;;
 }
 
 .scroll {
   position: absolute;
   bottom: 5%;
-  left: 50%;
+  width: 100%;
+  text-align: center;
 }
 .scroll:hover {
   text-decoration: none;

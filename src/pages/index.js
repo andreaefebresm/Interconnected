@@ -103,15 +103,20 @@ export default function Index() {
 
         <section className="full-screen bg-primary">
           <div className="container-fluid">
-            <div className="row">
-              <p className="bigText finalQuote display-4">Do you know what smart objects can tell about you?</p>
-              <p className="finalQuote bigText">
-                <Link to="/menu" style={{ fontSize: '100%' }}>
-                  Click to explore
-                  <br />
-                  <Arrow className="freccia" />
-                </Link>
-              </p>
+            <div className="row justify-content-center">
+              <div className="col-12 col-md-5">
+                <p className="bigText finalQuote display-4">Do you know what smart objects can tell about you?</p>
+              </div>
+              <div className="col-12">
+                <p className="pt-5 text-center bigText">
+                  <Link to="/menu" style={{ fontSize: '100%' }}>
+                    Click to explore
+                    <br />
+                    <Arrow className="freccia" />
+                  </Link>
+                </p>
+              </div>
+
             </div>
 
           </div>

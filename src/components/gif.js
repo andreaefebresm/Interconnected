@@ -5,7 +5,7 @@ export default function Gif() {
   return (
     <div className="d-flex justify-content-center">
 
-      <img src={introGif} style={{ transform: 'scale(0.9)' }} />
+      <img src={introGif} className="img-fluid p-md-1" />
     </div>
   );
 }
