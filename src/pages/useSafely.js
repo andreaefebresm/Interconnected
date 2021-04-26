@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
 import article, { categories } from '../data/useSafely';
 import '../scss/style.scss';
 import Footer from '../components/Footer';
@@ -42,7 +41,7 @@ export default function UseSafely() {
   ];
 
   return (
-    <Layout>
+    <Layout title="What can you do?">
       <section className="pt-5 marginFilter" style={{ marginLeft: '30px', marginRight: '30px' }}>
         <h1 className="bigText display-4 text-dark">What can you do</h1>
         <h2 className="display-5 text-dark">
@@ -52,14 +51,13 @@ export default function UseSafely() {
         </h2>
         {
           filters.map(({ label, name }) => (
-            <a
+            <button
               key={name}
-              role="button"
               className={`btn btn-lg btn-outline-dark m-1 ${cat === categories[name] ? 'active' : ''}`}
               onClick={(e) => e.preventDefault() || setFilter(categories[name])}
             >
               {label}
-            </a>
+            </button>
           ))
         }
 
